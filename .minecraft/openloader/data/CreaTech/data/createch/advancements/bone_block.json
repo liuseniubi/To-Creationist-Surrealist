@@ -1,0 +1,31 @@
+{
+    "parent": "createch:silkworm",
+    "display":
+    {
+        "icon":
+        {
+            "item":"minecraft:bone_block"
+        },
+        "title":{
+            "translate":"advancements.createch.bone_block.title"
+        },
+        "description":{
+            "translate":"advancements.createch.bone_block.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"minecraft:bone_block"}]
+            }
+        }
+    }
+}

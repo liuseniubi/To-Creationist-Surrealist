@@ -1,0 +1,44 @@
+{
+    "parent": "createch:andesite_alloy",
+    "display":
+    {
+        "icon":
+        {
+            "item":"travel_anchors:travel_anchor"
+        },
+        "title":{
+            "translate":"advancements.createch.travel_anchor.title"
+        },
+        "description":{
+            "translate":"advancements.createch.travel_anchor.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"travel_anchors:travel_anchor"}]
+            }
+        },
+        "1":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"travel_anchors:travel_staff"}]
+            }
+        }
+    },
+    "requirements": [
+        [0],
+        [1]
+    ]
+}

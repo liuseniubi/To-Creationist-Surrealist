@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+	"ingredients": [{
+			"type": "drawerstooltip:standard",
+			"content": {
+				"item": "thermal:enderium_ingot"
+			},
+			"amount": 256
+		}
+	],
+	"result": {
+		"item": "contenttweaker:certification_enderium_ingot"
+	}
+}

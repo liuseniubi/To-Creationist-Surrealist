@@ -1,0 +1,31 @@
+{
+    "parent": "createch:ultimate_ingot",
+    "display":
+    {
+        "icon":
+        {
+            "item":"torcherino:torcherino"
+        },
+        "title":{
+            "translate":"advancements.createch.torcherino.title"
+        },
+        "description":{
+            "translate":"advancements.createch.torcherino.description"
+        },
+        "frame":"challenge",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"torcherino:torcherino"}]
+            }
+        }
+    }
+}

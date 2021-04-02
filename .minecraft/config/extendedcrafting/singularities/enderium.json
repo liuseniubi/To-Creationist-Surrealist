@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.enderium",
+  "colors": [
+    "1d7e8c",
+    "76f0e5"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/enderium"
+  }
+}

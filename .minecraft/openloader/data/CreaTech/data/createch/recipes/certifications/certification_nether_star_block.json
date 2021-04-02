@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+	"ingredients": [{
+			"type": "drawerstooltip:standard",
+			"content": {
+				"item": "extendedcrafting:nether_star_block"
+			},
+			"amount": 128
+		}
+	],
+	"result": {
+		"item": "contenttweaker:certification_nether_star_block"
+	}
+}

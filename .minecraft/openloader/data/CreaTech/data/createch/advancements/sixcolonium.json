@@ -1,0 +1,31 @@
+{
+    "parent": "createch:steel_casing",
+    "display":
+    {
+        "icon":
+        {
+            "item":"contenttweaker:mur"
+        },
+        "title":{
+            "translate":"advancements.createch.sixcolonium.title"
+        },
+        "description":{
+            "translate":"advancements.createch.sixcolonium.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"contenttweaker:sixcolonium"}]
+            }
+        }
+    }
+}

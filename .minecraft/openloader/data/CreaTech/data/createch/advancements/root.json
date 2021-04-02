@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "contenttweaker:graduate"
+		},
+		"title":{
+			"translate": "advancements.createch.root.title"
+		},
+		"description": {
+			"translate": "advancements.createch.root.description"
+		},
+		"background": "minecraft:textures/block/birch_planks.png"
+	},
+	"criteria": {
+		"root": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+        "function": "createch:createch"
+    }
+}

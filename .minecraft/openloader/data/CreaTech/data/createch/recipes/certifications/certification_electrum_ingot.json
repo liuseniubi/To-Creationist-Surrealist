@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+	"ingredients": [{
+			"type": "drawerstooltip:standard",
+			"content": {
+				"item": "thermal:electrum_ingot"
+			},
+			"amount": 256
+		}
+	],
+	"result": {
+		"item": "contenttweaker:certification_electrum_ingot"
+	}
+}

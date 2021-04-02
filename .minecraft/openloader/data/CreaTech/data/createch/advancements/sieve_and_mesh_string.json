@@ -1,0 +1,31 @@
+{
+    "parent": "createch:string",
+    "display":
+    {
+        "icon":
+        {
+            "item":"exnihilosequentia:sieve"
+        },
+        "title":{
+            "translate":"advancements.createch.sieve_and_mesh_string.title"
+        },
+        "description":{
+            "translate":"advancements.createch.sieve_and_mesh_string.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"exnihilosequentia:sieve"}]
+            }
+        }
+    }
+}

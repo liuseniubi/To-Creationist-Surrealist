@@ -1,0 +1,31 @@
+{
+    "parent": "createch:crucible_fired",
+    "display":
+    {
+        "icon":
+        {
+            "item":"exnihiloauto:highly_compressed_cobble"
+        },
+        "title":{
+            "translate":"advancements.createch.cobblestone.title"
+        },
+        "description":{
+            "translate":"advancements.createch.cobblestone.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"exnihiloauto:highly_compressed_cobble"}]
+            }
+        }
+    }
+}

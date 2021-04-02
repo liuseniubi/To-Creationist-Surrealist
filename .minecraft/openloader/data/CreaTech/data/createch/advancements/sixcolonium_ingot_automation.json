@@ -1,0 +1,31 @@
+{
+    "parent": "createch:black_iron_ingot_automation",
+    "display":
+    {
+        "icon":
+        {
+            "item":"contanttweaker:sixcolonium"
+        },
+        "title":{
+            "translate":"advancements.createch.sixcolonium_automation.title"
+        },
+        "description":{
+            "translate":"advancements.createch.sixcolonium_automation.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"contenttweaker:certification_sixcolonium"}]
+            }
+        }
+    }
+}

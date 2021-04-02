@@ -1,0 +1,8 @@
+{
+    "type": "thermal:rock_gen",
+    "adjacent": "exnihilosequentia:witchwater",
+    "below": "create:andesite_casing",
+    "result": {
+      "item": "minecraft:andesite"
+    }
+}

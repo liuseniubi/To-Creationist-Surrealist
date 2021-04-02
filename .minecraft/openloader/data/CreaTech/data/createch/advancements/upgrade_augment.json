@@ -1,0 +1,63 @@
+{
+    "parent": "createch:andesite_alloy",
+    "display":
+    {
+        "icon":
+        {
+            "item":"thermal:upgrade_augment_3"
+        },
+        "title":{
+            "translate":"advancements.createch.upgrade_augment.title"
+        },
+        "description":{
+            "translate":"advancements.createch.upgrade_augment.description"
+        },
+        "frame":"challenge",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"item":"thermal:upgrade_augment_1"}
+                ]
+            }
+        },
+        "1":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"item":"thermal:upgrade_augment_2"}
+                ]
+            }
+        },
+        "2":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"item":"thermal:upgrade_augment_3"}
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["0"],
+        ["1"],
+        ["2"]
+    ],
+    "rewards": {
+        "experience": 300
+    }
+}

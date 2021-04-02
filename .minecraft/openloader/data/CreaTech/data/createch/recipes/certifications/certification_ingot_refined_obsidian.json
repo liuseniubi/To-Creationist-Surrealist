@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+	"ingredients": [{
+			"type": "drawerstooltip:standard",
+			"content": {
+				"item": "mekanism:ingot_refined_obsidian"
+			},
+			"amount": 256
+		}
+	],
+	"result": {
+		"item": "contenttweaker:certification_ingot_refined_obsidian"
+	}
+}

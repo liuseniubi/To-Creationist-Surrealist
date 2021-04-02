@@ -1,0 +1,31 @@
+{
+    "parent": "createch:orepots_automation",
+    "display":
+    {
+        "icon":
+        {
+            "item":"create:brass_ingot"
+        },
+        "title":{
+            "translate":"advancements.createch.brass_automation.title"
+        },
+        "description":{
+            "translate":"advancements.createch.brass_automation.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"contenttweaker:certification_brass_ingot"}]
+            }
+        }
+    }
+}

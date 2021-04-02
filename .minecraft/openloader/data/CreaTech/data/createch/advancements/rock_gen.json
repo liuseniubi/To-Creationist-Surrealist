@@ -1,0 +1,31 @@
+{
+    "parent": "createch:steel_casing",
+    "display":
+    {
+        "icon":
+        {
+            "item":"thermal:device_rock_gen"
+        },
+        "title":{
+            "translate":"advancements.createch.rock_gen.title"
+        },
+        "description":{
+            "translate":"advancements.createch.rock_gen.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "0":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [{"item":"thermal:device_rock_gen"}]
+            }
+        }
+    }
+}

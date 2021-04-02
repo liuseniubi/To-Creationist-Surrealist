@@ -1,0 +1,43 @@
+{
+    "parent": "createch:sieve_and_mesh_string",
+    "display":
+    {
+        "icon":
+        {
+            "item":"minecraft:clay"
+        },
+        "title":{
+            "translate":"advancements.createch.clay.title"
+        },
+        "description":{
+            "translate":"advancements.createch.clay.description"
+        },
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "clay":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {
+                        "item":"minecraft:clay"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+          "clay"
+        ]
+      ],
+    "rewards": {
+        "loot": ["createch:clay"]
+    }
+}
