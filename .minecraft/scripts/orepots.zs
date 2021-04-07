@@ -15,7 +15,7 @@ val crops = <recipetype:botanypots:crop>;
 // soils.create(id, input, renderBlock, growthModifier, category);
 soils.create("cobblestone", <item:minecraft:cobblestone>, <blockstate:minecraft:cobblestone>, 0, "oredirts");
 soils.create("stone", <item:minecraft:stone>, <blockstate:minecraft:stone>, 0.1, "oredirts");
-soils.create("diamond_block>", <item:minecraft:diamond_block>, <blockstate:minecraft:diamond_block>, 0.2, "oredirts");
+soils.create("diamond_block", <item:minecraft:diamond_block>, <blockstate:minecraft:diamond_block>, 0.2, "oredirts");
 soils.create("beacon", <item:minecraft:beacon>, <blockstate:minecraft:beacon>, 0.3, "oredirts");
 soils.create("quartz_growth_accelerator", <item:appliedenergistics2:quartz_growth_accelerator>, <blockstate:appliedenergistics2:quartz_growth_accelerator>, 0.3, "jtcsq");
 soils.create("insanium_farmland", <item:mysticalagradditions:insanium_farmland>, <blockstate:mysticalagradditions:insanium_farmland>, 0.5, ["dirt","farmland","inferium","prudentium","tertium","imperium","supremium","insanium"]);
