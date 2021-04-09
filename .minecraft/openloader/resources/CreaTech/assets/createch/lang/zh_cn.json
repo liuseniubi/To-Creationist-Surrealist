@@ -11,6 +11,7 @@
 
     "gui.appliedenergistics2.inWorldCraftingPresses": "所有压印模板需要合成。",
 
+    "_comment": "advancements",
     "advancements.createch.root.title": "§eCreaTech！",
     "advancements.createch.root.description": "欢迎您游玩 CreaTech！",
     "advancements.createch.graduate.title": "毕业物品！",
@@ -22,7 +23,7 @@
     "advancements.createch.handheld_table.title": "手持工作台",
     "advancements.createch.handheld_table.description": "觉得频繁放下工作台很烦？试试它吧！（制作一个手持工作台）",
     "advancements.createch.clay.title": "通往无限矿物的第一步",
-    "advancements.createch.clay.description": "如果觉得黏土不够了，试试把砂砾扔入水里。（获得一块黏土）",
+    "advancements.createch.clay.description": "如果觉得黏土不够了，可以用锤子打掉圆石。（获得一块黏土）",
     "advancements.createch.botany_pot.title": "“植物”盆栽？",
     "advancements.createch.botany_pot.description": "植物盆栽不一定只能种植物哦！（获得任意植物盆）",
     "advancements.createch.orepots.title": "无限矿物！",
@@ -97,12 +98,13 @@
     "advancements.createch.nether_star_block_automation.title": "最强王者！",
     "advancements.createch.nether_star_block_automation.description": "凋零：结束了。（制作自动化凭证——下界之星块）",
 
+    "_comment": "tips",
     "tips.title.tip":"六色的小提示：",
     "createch.tip.jei": "遇到问题请多查查 JEI。",
     "createch.tip.clay": "前期多收集点黏土会很有用。",
-    "createch.tip.ae2": "使用 Applied Energistics 2 mod 来做自动化能够大大提升效率。",
+    "createch.tip.ae2": "使用 Applied Energistics 2 来做自动化能够大大提升效率。",
     "createch.tip.trashcan": "超级垃圾桶能销毁任何类型的垃圾。",
-    "createch.tip.mek": "MEK 的大部分终极机器合成已经删除，请使用终极工厂安装器。",
+    "createch.tip.mek": "Mekanism 的大部分终极机器合成已经删除，请使用终极工厂安装器。",
     "createch.tip.kelp": "海带也能通过 Botany Pots 的植物盆栽种植。",
     "createch.tip.jei_hide": "有很多没用的东西在 JEI 中被隐藏了。",
     "createch.tip.ae&drawer": "抽屉管理器连上 ME 存储总线能连接到 AE 网络里。",
@@ -112,7 +114,9 @@
     "createch.tip.thank": "感谢 MOJANG，感谢所有 Mod 作者，感谢所有译者，感谢所有帮助过我的人。",
     "createch.tip.niconiconi": "六色六色六！",
     "createch.tip.capacity_card": "你可以将容量卡放进压印器。",
+    "createch.tip.portal": "下界传送门与末地传送门均无法开启，因为本包不需要进入下界，进入末地请吃下末地蛋糕。",
     
+    "_comment": "jeis",
     "createch.jei.orepot1": "友情提示：",
     "createch.jei.orepot2": "此矿物可通过 Botany Pots 的植物盆栽种出来。",
     "createch.jei.orepot3": "可种植的东西可在 JEI 搜索 §4$growables §r 查看。",
@@ -124,5 +128,6 @@
     "createch.jei.torcherino2": "§m（在？PY 又痒了？.jpg）",
     "createch.jei.cable_anchor1": "所有伪装板因美观而在 JEI 中隐藏。",
     "createch.jei.cable_anchor2":  "您可以像原版 mod 一样正常合成并使用伪装板。",
-    "createch.jei.graduate": "本整合包毕业物品，感谢您游玩本整合包！"
+    "createch.jei.graduate": "本整合包毕业物品，感谢您游玩本整合包！",
+    "createch.jei.portal": "下界传送门已设置为无法开启，本包不需要进入下界。"
 }

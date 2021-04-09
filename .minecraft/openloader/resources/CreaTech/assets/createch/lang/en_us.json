@@ -11,6 +11,7 @@
 
     "gui.appliedenergistics2.inWorldCraftingPresses": "All the Processor Press can be crafted.",
 
+    "_comment": "advancements",
     "advancements.createch.root.title": "CreaTech!",
     "advancements.createch.root.description": "Welcome to CreaTech!",
     "advancements.createch.graduate.title": "Graduated!",
@@ -22,7 +23,7 @@
     "advancements.createch.handheld_table.title": "Handheld Table",
     "advancements.createch.handheld_table.description": "Feeling annoyed by placing Craft Table frequently? Try these! (Craft a Handheld Table)",
     "advancements.createch.clay.title": "The first step to INFINITE ORES",
-    "advancements.createch.clay.description": "If you don't think the clay is enough, try throwing the gravel into the water. (Collect some Clay)",
+    "advancements.createch.clay.description": "If you don't think the Clay is enough, try hammering the Cobblestones. (Collect some Clay)",
     "advancements.createch.botany_pot.title": "*Botany* Pot?",
     "advancements.createch.botany_pot.description": "Botany Pots don't have to plant botanical things! (Craft any type of Botany Pot)",
     "advancements.createch.orepots.title": "INFINITE ORES!",
@@ -97,6 +98,7 @@
     "advancements.createch.nether_star_block_automation.title": "Nether Star Block Automation.",
     "advancements.createch.nether_star_block_automation.description": "Wither:The End? (Craft the Certification - Nether Star Block)",
 
+    "_comment": "tips",
     "tips.title.tip":"Six_color's tip:",
     "createch.tip.jei": "Search JEI maybe help.",
     "createch.tip.clay": "It's useful to collect clay in the early age.",
@@ -112,7 +114,9 @@
     "createch.tip.thank": "Thank Mojang, thank all the Mod authers, thank all translators, thank everyone who helped me.",
     "createch.tip.niconiconi": "Niconiconi!",
     "createch.tip.capacity_card": "You can put the Capacity Card into the Inscriber.",
-    
+    "createch.tip.portal": "Both the nether portal and the end portal cannot be opened because this modpack does not need to enter the nether. Please eat the End Cake if you want to enter the end.",
+
+    "_comment": "jeis",
     "createch.jei.orepot1": "Tip:",
     "createch.jei.orepot2": "This ore can be grown in Botany pots.",
     "createch.jei.orepot3": "You can search §l§4$growables &rfor all the things can be grown in Botany pots that I added.",
@@ -124,5 +128,6 @@
     "createch.jei.torcherino2": "",
     "createch.jei.cable_anchor1": "All facades are hidden in JEI due to beauty.",
     "createch.jei.cable_anchor2": "You can craft and use the facades just like the original mod.",
-    "createch.jei.graduate": "Graduation items in this modpack, Thank for your playing!"
+    "createch.jei.graduate": "Graduation items in this modpack, Thank for your playing!",
+    "createch.jei.portal": "The Nether portal was set to unopenable, because this modpack have no need to enter the Nether."
 }
