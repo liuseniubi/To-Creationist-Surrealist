@@ -1,4 +1,6 @@
 {
+    "block.minecraft.soul_torch": "加 速 火 吧",
+
     "createch.mcfunction.start": "§b§l欢迎游玩 CreaTech 整合包！",
 
     "singularity.extendedcrafting.enderium": "末影锭",
@@ -23,7 +25,7 @@
     "advancements.createch.handheld_table.title": "手持工作台",
     "advancements.createch.handheld_table.description": "觉得频繁放下工作台很烦？试试它吧！（制作一个手持工作台）",
     "advancements.createch.clay.title": "通往无限矿物的第一步",
-    "advancements.createch.clay.description": "如果觉得黏土不够了，可以用锤子打掉圆石。（获得一块黏土）",
+    "advancements.createch.clay.description": "获得一块黏土",
     "advancements.createch.botany_pot.title": "“植物”盆栽？",
     "advancements.createch.botany_pot.description": "植物盆栽不一定只能种植物哦！（获得任意植物盆）",
     "advancements.createch.orepots.title": "无限矿物！",
@@ -115,6 +117,7 @@
     "createch.tip.niconiconi": "六色六色六！",
     "createch.tip.capacity_card": "你可以将容量卡放进压印器。",
     "createch.tip.portal": "下界传送门与末地传送门均无法开启，因为本包不需要进入下界，进入末地请吃下末地蛋糕。",
+    "createch.tip.flux_dust": "在这个包只有末地有基岩，要获得通量粉尘的话要先进入末地哦。",
     
     "_comment": "jeis",
     "createch.jei.orepot1": "友情提示：",

@@ -3,6 +3,14 @@
     {
       "item":"minecraft:bone_meal",
       "count": 32
+    },
+    {
+      "item":"minecraft:torch",
+      "count": 8
+    },
+    {
+      "item":"minecraft:soul_torch",
+      "count": 1
     }
   ]
 }

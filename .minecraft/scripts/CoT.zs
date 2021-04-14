@@ -3,93 +3,53 @@ import mods.contenttweaker.item.ItemBuilder;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("graduate");
-new ItemBuilder()
+var stackable as string[] = [
+    "steel_plate",
+    "sixcolonium",
+    "sixcolonium_plate",
+    "sixcolonium_nugget",
+    "osmium_chunk_ore",
+    "osmium_piece_ore",
+    "tnt_seeds",
+    "tnt_essence"
+];
+
+for i in stackable {
+    new ItemBuilder()
     .withMaxStackSize(64)
-    .build("steel_plate");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("sixcolonium");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("sixcolonium_plate");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("osmium_chunk_ore");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("osmium_piece_ore");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("sixcolonium_nugget");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("tnt_seeds");
-new ItemBuilder()
-    .withMaxStackSize(64)
-    .build("tnt_essence");
-new ItemBuilder()
+    .build(i);
+}
+
+var unstackable as string[] = [
+    "graduate",
+    "mur",
+    "certification_bronze_ingot",
+    "certification_black_iron_ingot",
+    "certification_constantan_ingot",
+    "certification_crystaltine_ingot",
+    "certification_electrum_ingot",
+    "certification_ender_ingot",
+    "certification_enderium_ingot",
+    "certification_enhanced_ender_ingot",
+    "certification_brass_ingot",
+    "certification_ingot_refined_glowstone",
+    "certification_ingot_refined_obsidian",
+    "certification_steel_ingot",
+    "certification_invar_ingot",
+    "certification_lumium_ingot",
+    "certification_nether_star_block",
+    "certification_sea_lantern",
+    "certification_redstone_ingot",
+    "certification_signalum_ingot",
+    "certification_sixcolonium"
+];
+
+for i in unstackable {
+    new ItemBuilder()
     .withMaxStackSize(1)
-    .build("mur");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_bronze_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_black_iron_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_constantan_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_crystaltine_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_electrum_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_ender_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_enderium_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_enhanced_ender_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_brass_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_ingot_refined_glowstone");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_ingot_refined_obsidian");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_steel_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_invar_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_lumium_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_nether_star_block");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_sea_lantern");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_redstone_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_signalum_ingot");
-new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("certification_sixcolonium");
+    .build(i);
+}
+
 
 //   _____ _                     __          
 //  / ___/(_)  __    _________  / /___  _____

@@ -1,0 +1,11 @@
+{
+    "item.ceramics.clay_bucket": "木桶",
+    "item.ceramics.clay_bucket.tooltip": "当装有热流体后会破裂",
+    "item.ceramics.clay_bucket.filled": "%s 木桶",
+    "item.ceramics.milk_clay_bucket": "牛奶木桶",
+    "item.ceramics.cracked_clay_bucket": "破裂的木桶",
+    "item.ceramics.cracked_clay_bucket.filled": "%s 木桶",
+    "item.ceramics.cracked_clay_bucket.tooltip": "倒出流体时桶会损坏",
+    "item.ceramics.cracked_milk_clay_bucket": "破裂的牛奶木桶",
+    "item.ceramics.cracked_milk_clay_bucket.tooltip": "倒出流体时桶会损坏"
+}

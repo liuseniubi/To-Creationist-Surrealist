@@ -1,4 +1,6 @@
 {
+    "block.minecraft.soul_torch": "Torchrino",
+
     "createch.mcfunction.start": "§b§lWelcome to CreaTech!",
 
     "singularity.extendedcrafting.enderium": "Enderium",
@@ -23,7 +25,7 @@
     "advancements.createch.handheld_table.title": "Handheld Table",
     "advancements.createch.handheld_table.description": "Feeling annoyed by placing Craft Table frequently? Try these! (Craft a Handheld Table)",
     "advancements.createch.clay.title": "The first step to INFINITE ORES",
-    "advancements.createch.clay.description": "If you don't think the Clay is enough, try hammering the Cobblestones. (Collect some Clay)",
+    "advancements.createch.clay.description": "Collect some Clays",
     "advancements.createch.botany_pot.title": "*Botany* Pot?",
     "advancements.createch.botany_pot.description": "Botany Pots don't have to plant botanical things! (Craft any type of Botany Pot)",
     "advancements.createch.orepots.title": "INFINITE ORES!",
@@ -115,6 +117,7 @@
     "createch.tip.niconiconi": "Niconiconi!",
     "createch.tip.capacity_card": "You can put the Capacity Card into the Inscriber.",
     "createch.tip.portal": "Both the nether portal and the end portal cannot be opened because this modpack does not need to enter the nether. Please eat the End Cake if you want to enter the end.",
+    "createch.tip.flux_dust": "If you want to find some Bedrocks to get some Flux Dusts, I recommend you to got to the End.",
 
     "_comment": "jeis",
     "createch.jei.orepot1": "Tip:",

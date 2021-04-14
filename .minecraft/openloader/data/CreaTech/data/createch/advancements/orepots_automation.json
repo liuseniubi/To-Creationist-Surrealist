@@ -138,6 +138,17 @@
                     {"item":"mekanism:block_uranium"}
                 ]
             }
+        },
+        "silver":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"tag":"forge:storage_blocks/silver"}
+                ]
+            }
         }
     },
     "requirements": [
@@ -151,6 +162,7 @@
         ["zinc"],
         ["osmium"],
         ["lead"],
-        ["uranium"]
+        ["uranium"],
+        ["silver"]
     ]
 }

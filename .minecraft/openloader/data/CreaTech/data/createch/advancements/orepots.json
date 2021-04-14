@@ -106,7 +106,7 @@
                 ]
             }
         },
-        "quartz":
+        "certus_quartz":
         {
             "trigger":"minecraft:inventory_changed",
             "conditions":
@@ -204,6 +204,17 @@
                     {"item":"mekanism:block_uranium"}
                 ]
             }
+        },
+        "silver":
+        {
+            "trigger":"minecraft:inventory_changed",
+            "conditions":
+            {
+                "items":
+                [
+                    {"tag":"forge:storage_blocks/silver"}
+                ]
+            }
         }
     },
     "requirements": [
@@ -215,7 +226,7 @@
         ["coal"],
         ["netherite"],
         ["redstone"],
-        ["quartz"],
+        ["certus_quartz"],
         ["nickel"],
         ["fluix"],
         ["copper"],
@@ -223,7 +234,8 @@
         ["fluorite"],
         ["osmium"],
         ["lead"],
-        ["uranium"]
+        ["uranium"],
+        ["silver"]
     ],
     "rewards": {
         "loot": ["createch:orepots"]

@@ -23,8 +23,6 @@ var graduate = game.localize("createch.jei.graduate");
 
 // hide
 mods.jei.JEI.hideItem(<item:contenttweaker:mur>);
-mods.jei.JEI.hideRecipe("extendedcrafting:compressor", "extendedcrafting:infused_enderium_singularity");
-mods.jei.JEI.hideRecipe("ceramics:kiln", "ceramics:clay_plate_kiln");
 
 // orepot
 mods.jei.JEI.addInfo(<item:minecraft:coal_ore>, [orepot1, orepot2, orepot3]);
