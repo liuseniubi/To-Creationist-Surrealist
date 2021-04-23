@@ -118,6 +118,7 @@
     "createch.tip.capacity_card": "你可以将容量卡放进压印器。",
     "createch.tip.portal": "下界传送门与末地传送门均无法开启，因为本包不需要进入下界，进入末地请吃下末地蛋糕。",
     "createch.tip.flux_dust": "在这个包只有末地有基岩，要获得通量粉尘的话要先进入末地哦。",
+    "createch.tip.famous5000": "特别感谢 Famous5000 修复了其中一些提示的英文翻译，如果有什么地方看起来不对的话，请向他求助。",
     
     "_comment": "jeis",
     "createch.jei.orepot1": "友情提示：",

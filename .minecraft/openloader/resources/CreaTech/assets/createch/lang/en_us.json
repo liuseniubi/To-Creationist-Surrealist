@@ -118,6 +118,7 @@
     "createch.tip.capacity_card": "You can put the Capacity Card into the Inscriber.",
     "createch.tip.portal": "Both the nether portal and the end portal cannot be opened because this modpack does not need to enter the nether. Please eat the End Cake if you want to enter the end.",
     "createch.tip.flux_dust": "If you want to find some Bedrocks to get some Flux Dusts, I recommend you to got to the End.",
+    "createch.tip.famous5000": "Special thanks to Famous5000 for fixing some of these tips! If anything looks off in the English variation, please yell at him.",
 
     "_comment": "jeis",
     "createch.jei.orepot1": "Tip:",
