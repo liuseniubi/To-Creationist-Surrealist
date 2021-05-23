@@ -118,8 +118,10 @@
     "createch.tip.capacity_card": "你可以将容量卡放进压印器。",
     "createch.tip.portal": "下界传送门与末地传送门均无法开启，因为本包不需要进入下界，进入末地请吃下末地蛋糕。",
     "createch.tip.flux_dust": "在这个包只有末地有基岩，要获得通量粉尘的话要先进入末地哦。",
-    "createch.tip.famous5000": "特别感谢 Famous5000 修复了其中一些提示的英文翻译，如果有什么地方看起来不对的话，请向他求助。",
-    
+    "createch.tip.famous5000": "特别感谢 Famous5000 修复了其中的一些提示的英语翻译！",
+    "createch.tip.hakzn_anox": "HakZn_Anox 曾经叫 YanDIOda，为什么改名字了呢？我也不知道！",
+    "createch.tip.huyalance": "隐身怪也叫呆头，但这不是他最想要得到的 tips，但是我们还是做上去了。AwA",
+
     "_comment": "jeis",
     "createch.jei.orepot1": "友情提示：",
     "createch.jei.orepot2": "此矿物可通过 Botany Pots 的植物盆栽种出来。",
@@ -133,5 +135,13 @@
     "createch.jei.cable_anchor1": "所有伪装板因美观而在 JEI 中隐藏。",
     "createch.jei.cable_anchor2":  "您可以像原版 mod 一样正常合成并使用伪装板。",
     "createch.jei.graduate": "本整合包毕业物品，感谢您游玩本整合包！",
-    "createch.jei.portal": "下界传送门已设置为无法开启，本包不需要进入下界。"
+    "createch.jei.portal": "下界传送门已设置为无法开启，本包不需要进入下界。",
+
+    "_comment": "tooltips",
+    "createch.tooltip.cobblestone": "方块形式是防爆方块",
+    "createch.tooltip.thunder_stick": "没有可用配方时会销毁物品！",
+    "createch.tooltip.explosive_stick": "爆炸会破坏方块，并且没有可用配方时会销毁物品！",
+    "createch.tooltip.leaves": "树叶可以通过手打或者自然掉落获得",
+    "createch.tooltip.basic_component": "除非特殊标注，否则不会在合成中消耗。",
+    "createch.tooltip.onlyforcrafting": "仅用于合成"
 }

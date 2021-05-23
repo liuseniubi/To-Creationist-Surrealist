@@ -53,5 +53,6 @@ minecraft:decorated
 mekanism:disk
 mekanism:ore
 mekanism:ore_retrogen
+create:create_config_driven_ore
 appliedenergistics2:charged_quartz_ore
 mysticalagriculture:soulstone

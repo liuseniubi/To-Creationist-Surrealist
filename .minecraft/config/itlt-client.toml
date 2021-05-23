@@ -21,7 +21,7 @@
 	#This will take priority over loadCustomIcon
 	useTechnicIcon = false
 	#Change this value to change the name of the MineCraft window
-	windowDisplayTitle = "CreaTech"
+	windowDisplayTitle = "2CS"
 	#Set to true to attempt to get the display name of the pack of the info json file \nThis will take priority over windowDisplayTitle
 	useTechnicDisplayName = true
 	#Set to true to load a custom icon from config\itlt\icon.png

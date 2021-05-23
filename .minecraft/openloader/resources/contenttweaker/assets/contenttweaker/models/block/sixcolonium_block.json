@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "contenttweaker:block/sixcolonium_block_side",
+    "north": "contenttweaker:block/sixcolonium_block_side",
+    "south": "contenttweaker:block/sixcolonium_block_side",
+    "east": "contenttweaker:block/sixcolonium_block_side",
+    "west": "contenttweaker:block/sixcolonium_block_side",
+    "up": "contenttweaker:block/sixcolonium_block_top",
+    "down": "contenttweaker:block/sixcolonium_block_bottom"
+  }
+}

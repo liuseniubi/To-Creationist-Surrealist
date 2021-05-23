@@ -1,9 +1,13 @@
 {
-	"x": -100,
-	"y": 24,
-	"width": 200,
+	"x": 20,
+	"y": 0,
+	"width": 50,
 	"height": 20,
 	"langKey": "menu.multiplayer",
+	"texture": "packmenu:textures/gui/button.png",
+	"fontColor": 0,
+	"dropShadow": false,
+	"hoverFontColor": 13882323,
 	"action": "OPEN_GUI",
 	"data": "MULTIPLAYER"
 }
