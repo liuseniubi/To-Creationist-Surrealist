@@ -4,6 +4,23 @@ import crafttweaker.api.tag.MCTag;
 
 val air = <item:minecraft:air>;
 
+// furnace
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:gold_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:iron_ingot>);
+
 // crafting tables
 #iron plate
 craftingTable.addShaped("iron_plate", <item:create:iron_sheet> * 2, [
@@ -190,4 +207,102 @@ mods.extendedcrafting.TableCrafting.addShaped("basic_component2", <item:extended
 });
 
 // others
-#
+<recipetype:interactio:item_lightning>.addJSONRecipe("sand2oredust", {
+  "inputs": [
+    {
+      "item": "minecraft:sand",
+      "count": 1
+    }
+  ],
+  "output": {
+    "entries": [
+      {
+        "result": {
+          "item": "contenttweaker:sixcolonium",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:copper_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:gold_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:iron_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:lead_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:nickel_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:osmium_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:silver_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:tin_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:uranium_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "emendatusenigmatica:zinc_dust",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "contenttweaker:pebble",
+          "count": 1
+        },
+        "weight": 89
+      }
+    ],
+    "empty_weight": 0,
+    "rolls": 1
+  }
+});
+

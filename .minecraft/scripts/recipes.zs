@@ -34,17 +34,12 @@ var delitems as IItemStack[] = [
   <item:appliedenergistics2:energy_acceptor>,
   <item:appliedenergistics2:smooth_sky_stone_chest>,
   <item:appliedenergistics2:sky_stone_chest>,
-  // ceramics
-  <item:ceramics:unfired_porcelain>,
-  <item:ceramics:unfired_clay_plate>,
-  <item:ceramics:unfired_clay_bucket>,
   // others
   <item:mysticalagriculture:air_agglomeratio>,
   <item:advancementbook:advancement_book>,
   <item:extendedcrafting:handheld_table>,
   <item:ironchest:dirt_chest>,
   <item:create:andesite_alloy>,
-  <item:pipez:fluid_pipe>
 ];
 
 for i in delitems {
@@ -54,13 +49,6 @@ for i in delitems {
 // others
 <recipetype:minecraft:smelting>.removeRecipe(<item:mysticalagriculture:soulium_dust>);
 <recipetype:minecraft:smelting>.removeRecipe(<item:mysticalagriculture:soul_dust>);
-
-// ceramics
-craftingTable.removeByName("ceramics:clay_uncrafting_3");
-<recipetype:minecraft:smelting>.removeRecipe(<item:ceramics:clay_bucket>);
-<recipetype:minecraft:smelting>.removeRecipe(<item:ceramics:clay_plate>);
-<recipetype:ceramics:kiln>.removeRecipe(<item:ceramics:clay_bucket>);
-<recipetype:ceramics:kiln>.removeRecipe(<item:ceramics:clay_plate>);
 
 craftingTable.removeByName("advancementbook:advancement_bookstand_1");
 
@@ -87,18 +75,7 @@ craftingTable.addShapeless("leaves", <item:minecraft:oak_leaves> * 16 , [<item:m
 craftingTable.addShapeless("handheldcraftingtable", <item:extendedcrafting:handheld_table>, [<item:minecraft:crafting_table>]);
 craftingTable.addShapeless("handheldcraftingtable1", <item:minecraft:crafting_table>, [<item:extendedcrafting:handheld_table>]);
 craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium_nugget> * 9, [<item:contenttweaker:sixcolonium>]);
-craftingTable.addShapeless("porcelain", <item:ceramics:unfired_porcelain> , [<item:minecraft:clay_ball>, <item:minecraft:bone_meal>]);
 // shaped
-craftingTable.addShaped("fluid_pipe", <item:pipez:fluid_pipe> * 16, [
-    [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
-    [<item:ceramics:clay_bucket>, <item:minecraft:redstone>, <item:ceramics:clay_bucket>],
-    [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
-]);
-craftingTable.addShaped("wooden_bucket", <item:ceramics:clay_bucket>, [
-    [<tag:items:minecraft:planks>, <item:minecraft:air>, <tag:items:minecraft:planks>],
-    [<item:minecraft:air>, <tag:items:minecraft:wooden_slabs>, <item:minecraft:air>]
-]);
-
 craftingTable.addShaped("controller", <item:appliedenergistics2:controller>, [
     [<item:mekanism:steel_casing>, <item:appliedenergistics2:purified_fluix_crystal>, <item:mekanism:steel_casing>],
     [<item:appliedenergistics2:purified_fluix_crystal>, <item:appliedenergistics2:engineering_processor>, <item:appliedenergistics2:purified_fluix_crystal>],
@@ -329,14 +306,6 @@ mods.extendedcrafting.EnderCrafting.addShaped("infused_enderium", <item:extended
 	[<item:minecraft:netherite_block>, <item:thermal:upgrade_augment_3>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:gobber2_block_end>, <item:mekanism:alloy_atomic>, <item:gobber2:gobber2_block_end>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:dragon_star>, <item:minecraft:netherite_block>], 
 	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_ingot_block>, <item:torcherino:lanterino>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:torcherino:lanterino>, <item:mysticalagradditions:insanium_ingot_block>, <item:minecraft:netherite_block>], 
 	[<item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>]]);
-<recipetype:create:mechanical_crafting>.addRecipe("andesite_alloy2", <item:create:andesite_alloy>, [
-  [<tag:items:forge:nuggets/zinc>, <item:minecraft:andesite>],
-  [<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>]
-]);
-<recipetype:create:mechanical_crafting>.addRecipe("andesite_alloy3", <item:create:andesite_alloy>, [
-  [<tag:items:forge:nuggets/iron>, <item:minecraft:andesite>],
-  [<item:minecraft:andesite>, <tag:items:forge:nuggets/iron>]
-]);
 // pressing
 <recipetype:create:pressing>.addRecipe("sixcolonium_plate2", [<item:contenttweaker:sixcolonium_plate>], <item:contenttweaker:sixcolonium>);
 <recipetype:create:pressing>.addRecipe("steel", [<item:contenttweaker:steel_plate>], <tag:items:forge:ingots/steel>);

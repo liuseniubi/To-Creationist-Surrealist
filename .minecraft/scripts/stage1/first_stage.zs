@@ -3,8 +3,11 @@ import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.blocks.MCBlock;
 
+craftingTable.removeByModid("emendatusenigmatica");
+<recipetype:minecraft:stonecutting>.removeByModid("emendatusenigmatica");
+
 // Explosion-proof
-<block:minecraft:cobblestone>.setCanCollide(50);
+<block:minecraft:cobblestone>.setBlastResistance(50);
 
 // sixcolonium ingot
 craftingTable.addShaped("sixcolonium_ingot", <item:contenttweaker:sixcolonium>, [
@@ -27,50 +30,24 @@ craftingTable.addShaped("pebble2cobblestone", <item:minecraft:cobblestone>, [
 ]);
 
 // sky_blue_dye
-craftingTable.addShapeless("sky_blue_dye", <item:contenttweaker:sky_blue_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:blue_dye> * 2, <item:minecraft:green_dye> * 3]);
+craftingTable.addShapeless("sky_blue_dye", <item:contenttweaker:sky_blue_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:blue_dye>, <item:minecraft:blue_dye>, <item:minecraft:blue_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>]);
 
 // light_yellow_dye
-craftingTable.addShapeless("light_yellow_dye", <item:contenttweaker:light_yellow_dye> * 3, [<item:minecraft:red_dye>* 3, <item:minecraft:blue_dye>, <item:minecraft:green_dye> * 3]);
-
-// gold
-furnace.addRecipe("gold", <item:minecraft:gold_ingot>, <item:contenttweaker:ore_piece_gold>, 10.0, 200);
+craftingTable.addShapeless("light_yellow_dye", <item:contenttweaker:light_yellow_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:blue_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>]);
 
 // copper
-<recipetype:mekanism:combining>.removeRecipe(<item:contenttweaker:ore_piece_copper>);
-
-furnace.addRecipe("copper", <item:chemlib:ingot_copper>, <item:contenttweaker:ore_piece_copper>, 10.0, 200);
-
-// iron
-furnace.addRecipe("iron", <item:minecraft:iron_ingot>, <item:contenttweaker:ore_piece_iron>, 10.0, 200);
-
-// lead
-<recipetype:mekanism:combining>.removeRecipe(<item:contenttweaker:ore_piece_lead>);
-
-furnace.addRecipe("lead", <item:chemlib:ingot_lead>, <item:contenttweaker:ore_piece_lead>, 10.0, 200);
-
-// nickel
-furnace.addRecipe("nickel", <item:chemlib:ingot_nickel>, <item:contenttweaker:ore_piece_nickel>, 10.0, 200);
-
-// uranium
-<recipetype:mekanism:combining>.removeRecipe(<item:contenttweaker:ore_piece_uranium>);
-
-furnace.addRecipe("uranium", <item:chemlib:ingot_uranium>, <item:contenttweaker:ore_piece_uranium>, 10.0, 200);
-
-// osmium
-<recipetype:mekanism:combining>.removeRecipe(<item:contenttweaker:ore_piece_osmium>);
-
-furnace.addRecipe("osmium", <item:chemlib:ingot_osmium>, <item:contenttweaker:ore_piece_osmium>, 10.0, 200);
-
-// silver
-furnace.addRecipe("silver", <item:chemlib:ingot_silver>, <item:contenttweaker:ore_piece_silver>, 10.0, 200);
-
-// tin
-<recipetype:mekanism:combining>.removeRecipe(<item:contenttweaker:ore_piece_tin>);
-
-furnace.addRecipe("tin", <item:chemlib:ingot_tin>, <item:contenttweaker:ore_piece_tin>, 10.0, 200);
-
+<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:copper_chunk>);
+craftingTable.addShapeless("copper_nugget", <item:emendatusenigmatica:copper_nugget> * 9, [<tag:items:forge:ingots/copper>]);
 // zinc
-furnace.addRecipe("zinc", <item:chemlib:ingot_zinc>, <item:contenttweaker:ore_piece_zinc>, 10.0, 200);
+craftingTable.addShapeless("zinc_nugget", <item:emendatusenigmatica:zinc_nugget> * 9, [<tag:items:forge:ingots/zinc>]);
+// lead
+<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:lead_chunk>);
+// uranium
+<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:uranium_chunk>);
+// osmium
+<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:osmium_chunk>);
+// tin
+<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:tin_chunk>);
 
 // thunder_stick
 craftingTable.addShaped("thunder_stick", <item:contenttweaker:thunder_stick>, [
@@ -225,8 +202,8 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
   }
 });
 
-// explode: cobblestone * 1 = ore piece * 1 or gravel * 1
-<recipetype:interactio:item_explode>.addJSONRecipe("cobblestone2orepiece", {
+// explode: cobblestone * 1 = ore chunk * 1 or gravel * 1
+<recipetype:interactio:item_explode>.addJSONRecipe("cobblestone2orechunk", {
   "inputs": [
     {
       "item": "minecraft:cobblestone",
@@ -244,70 +221,70 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_copper",
+          "item": "emendatusenigmatica:copper_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_gold",
+          "item": "emendatusenigmatica:gold_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_iron",
+          "item": "emendatusenigmatica:iron_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_lead",
+          "item": "emendatusenigmatica:lead_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_nickel",
+          "item": "emendatusenigmatica:nickel_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_osmium",
+          "item": "emendatusenigmatica:osmium_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_silver",
+          "item": "emendatusenigmatica:silver_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_tin",
+          "item": "emendatusenigmatica:tin_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_uranium",
+          "item": "emendatusenigmatica:uranium_chunk",
           "count": 1
         },
         "weight": 2
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_zinc",
+          "item": "emendatusenigmatica:zinc_chunk",
           "count": 1
         },
         "weight": 2
@@ -337,7 +314,7 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
       },
       {
         "result": {
-          "item": "contenttweaker:ore_piece_gold",
+          "item": "emendatusenigmatica:gold_chunk",
           "count": 1
         },
         "weight": 70

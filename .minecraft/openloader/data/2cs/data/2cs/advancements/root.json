@@ -4,10 +4,10 @@
 			"item": "contenttweaker:graduate"
 		},
 		"title":{
-			"translate": "advancements.createch.root.title"
+			"translate": "advancements.2cs.root.title"
 		},
 		"description": {
-			"translate": "advancements.createch.root.description"
+			"translate": "advancements.2cs.root.description"
 		},
 		"background": "minecraft:textures/block/birch_planks.png"
 	},
@@ -17,6 +17,6 @@
 		}
 	},
 	"rewards": {
-        "function": "createch:createch"
+        "function": "2cs:2cs"
     }
 }

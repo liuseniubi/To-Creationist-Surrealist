@@ -1,5 +1,5 @@
 {
-    "parent": "createch:root",
+    "parent": "2cs:root",
     "display":
     {
         "icon":
@@ -7,10 +7,10 @@
             "item":"extendedcrafting:handheld_table"
         },
         "title":{
-            "translate":"advancements.createch.handheld_table.title"
+            "translate":"advancements.2cs.handheld_table.title"
         },
         "description":{
-            "translate":"advancements.createch.handheld_table.description"
+            "translate":"advancements.2cs.handheld_table.description"
         },
         "frame":"task",
         "show_toast":true,
