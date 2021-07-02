@@ -6,6 +6,10 @@ import crafttweaker.api.blocks.MCBlock;
 craftingTable.removeByModid("emendatusenigmatica");
 <recipetype:minecraft:stonecutting>.removeByModid("emendatusenigmatica");
 
+<item:contenttweaker:burnt_plank>.burnTime = 400;
+<item:contenttweaker:thunder_stick>.burnTime = 1200;
+<item:contenttweaker:explosive_stick>.burnTime = 2000;
+
 // Explosion-proof
 <block:minecraft:cobblestone>.setBlastResistance(50);
 
@@ -35,20 +39,6 @@ craftingTable.addShapeless("sky_blue_dye", <item:contenttweaker:sky_blue_dye> * 
 // light_yellow_dye
 craftingTable.addShapeless("light_yellow_dye", <item:contenttweaker:light_yellow_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:blue_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>]);
 
-// copper
-<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:copper_chunk>);
-craftingTable.addShapeless("copper_nugget", <item:emendatusenigmatica:copper_nugget> * 9, [<tag:items:forge:ingots/copper>]);
-// zinc
-craftingTable.addShapeless("zinc_nugget", <item:emendatusenigmatica:zinc_nugget> * 9, [<tag:items:forge:ingots/zinc>]);
-// lead
-<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:lead_chunk>);
-// uranium
-<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:uranium_chunk>);
-// osmium
-<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:osmium_chunk>);
-// tin
-<recipetype:mekanism:combining>.removeRecipe(<item:emendatusenigmatica:tin_chunk>);
-
 // thunder_stick
 craftingTable.addShaped("thunder_stick", <item:contenttweaker:thunder_stick>, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:stick>],
@@ -56,8 +46,37 @@ craftingTable.addShaped("thunder_stick", <item:contenttweaker:thunder_stick>, [
     [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+// explosive_stick
+craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>, [
+    [<item:minecraft:air>, <item:minecraft:flint>, <item:minecraft:air>],
+    [<item:minecraft:flint>, <item:minecraft:stick>, <item:minecraft:flint>],
+    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+]);
+
 // sixcolonium
 craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16, [<item:contenttweaker:sky_blue_dye>, <item:minecraft:gold_ingot>, <item:contenttweaker:light_yellow_dye>]);
+
+// log2burnt plank
+<recipetype:interactio:item_lightning>.addJSONRecipe("log2burntplank", {
+  "inputs": [
+    {
+      "tag": "minecraft:logs",
+      "count": 1
+    }
+  ],
+  "output": {
+    "entries": [
+      {
+        "result": {
+          "item": "contenttweaker:burnt_plank",
+          "count": 3
+        },
+        "weight": 100
+      }
+    ],
+    "empty_weight": 0
+  }
+});
 
 // andesite
 <recipetype:interactio:item_lightning>.addJSONRecipe("andesite", {
@@ -76,34 +95,12 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
       {
         "result": {
           "item": "minecraft:andesite",
-          "count": 1
+          "count": 2
         },
         "weight": 100
       }
     ],
     "empty_weight": 0
-  }
-});
-
-// thunder: log * 1 = 80% pebble * 3
-<recipetype:interactio:item_lightning>.addJSONRecipe("log2pebbel", {
-  "inputs": [
-    {
-      "tag": "minecraft:logs",
-      "count": 1
-    }
-  ],
-  "output": {
-    "entries": [
-      {
-        "result": {
-          "item": "contenttweaker:pebble",
-          "count": 3
-        },
-        "weight": 73
-      }
-    ],
-    "empty_weight": 27
   }
 });
 
@@ -155,7 +152,7 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
   }
 });
 
-// thunder: cobble_stone * 1 + leaves * 1 = grass_block * 1
+// flowers
 <recipetype:interactio:item_lightning>.addJSONRecipe("flowers", {
   "inputs": [
     {
@@ -174,36 +171,36 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
           "item": "minecraft:cornflower",
           "count": 1
         },
-        "weight": 33
+        "weight": 30
       },
       {
         "result": {
           "item": "minecraft:poppy",
           "count": 1
         },
-        "weight": 33
+        "weight": 30
       },
       {
         "result": {
           "item": "minecraft:cactus",
           "count": 1
         },
-        "weight": 33
+        "weight": 30
       },
       {
         "result": {
-          "item": "contenttweaker:thunder_stick",
+          "item": "minecraft:oak_sapling",
           "count": 1
         },
-        "weight": 1
+        "weight": 10
       }
     ],
     "empty_weight": 0
   }
 });
 
-// explode: cobblestone * 1 = ore chunk * 1 or gravel * 1
-<recipetype:interactio:item_explode>.addJSONRecipe("cobblestone2orechunk", {
+// lightning: cobblestone * 1 = ore chunk * 1 or gravel * 1
+<recipetype:interactio:item_lightning>.addJSONRecipe("cobblestone2orechunk", {
   "inputs": [
     {
       "item": "minecraft:cobblestone",
@@ -217,77 +214,77 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
           "item": "minecraft:gravel",
           "count": 1
         },
-        "weight": 80
+        "weight": 50
       },
       {
         "result": {
           "item": "emendatusenigmatica:copper_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
-          "item": "emendatusenigmatica:gold_chunk",
+          "item": "contenttweaker:sixcolonium",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:iron_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:lead_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:nickel_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:osmium_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:silver_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:tin_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
-          "item": "emendatusenigmatica:uranium_chunk",
-          "count": 1
+          "item": "minecraft:redstone",
+          "count": 5
         },
-        "weight": 2
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:zinc_chunk",
           "count": 1
         },
-        "weight": 2
+        "weight": 5
       }
     ],
     "empty_weight": 0,
@@ -350,27 +347,5 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
       }
     ],
     "empty_weight": 0
-  }
-});
-
-// explosive_stick
-<recipetype:interactio:item_lightning>.addJSONRecipe("explosive_stick", {
-  "inputs": [
-    {
-      "item": "contenttweaker:thunder_stick",
-      "count": 1
-    }
-  ],
-  "output": {
-    "entries": [
-      {
-        "result": {
-          "item": "contenttweaker:explosive_stick",
-          "count": 1
-        },
-        "weight": 80
-      }
-    ],
-    "empty_weight": 20
   }
 });

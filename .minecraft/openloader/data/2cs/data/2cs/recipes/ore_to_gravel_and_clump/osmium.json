@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "forge:ores/osmium"
+    },
+    "result": [
+      {
+        "item": "emendatusenigmatica:osmium_gravel"
+      },
+      {
+        "item": "mekanism:clump_osmium",
+        "chance": 0.75
+      }
+    ],
+    "experience": 0.15
+}

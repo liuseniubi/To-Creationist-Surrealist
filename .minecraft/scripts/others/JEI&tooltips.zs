@@ -7,6 +7,7 @@
 
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
+import mods.jei.JEI;
 
 var orepot1 = game.localize("2cs.jei.orepot1");
 var orepot2 = game.localize("2cs.jei.orepot2");
@@ -20,8 +21,8 @@ var cable_anchor2 = game.localize("2cs.jei.cable_anchor2");
 var graduate = game.localize("2cs.jei.graduate");
 
 // hide
-mods.jei.JEI.hideItem(<item:contenttweaker:mur>);
 mods.jei.JEI.hideRecipe("interactio:item_lightning", "crafttweaker:chargedcoconut");
+mods.jei.JEI.hideRecipe("minecraft:smoking", "crafttweaker:sixcolonium_base1");
 
 // tooltips
 # ofc
@@ -36,6 +37,7 @@ var ofcs as IIngredient[] = [
 for i in ofcs{
     i.addTooltip(ofc);
 }
+
 var cobblestonettp = game.localize("2cs.tooltip.cobblestone");
 <item:minecraft:cobblestone>.addTooltip(cobblestonettp);
 
@@ -51,6 +53,9 @@ var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
 
 var basic_componentttp = game.localize("2cs.tooltip.basic_component");
 <item:extendedcrafting:basic_component>.addTooltip(basic_componentttp);
+
+var wb = game.localize("2cs.tooltip.wb");
+<item:woodenbuckets:wooden_bucket>.addTooltip(wb);
 
 // orepot
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:gold_ore>, [orepot1, orepot2, orepot3]);

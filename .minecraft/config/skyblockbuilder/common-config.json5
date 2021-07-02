@@ -45,7 +45,7 @@
     // Height of the bottom layer from the structure.
     // This affects where exactly the island will be generated.
     // Range: 0 - 255
-    "height": 100,
+    "height": 64,
     
     // The radius to find a valid spawn if no given spawn is valid
     // Minimum: 0

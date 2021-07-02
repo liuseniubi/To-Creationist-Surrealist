@@ -1,0 +1,17 @@
+{
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "item": "mekanism:clump_copper",
+      "count": 1
+    }
+  ],
+  "fluid": {
+    "fluid": "contenttweaker:hak_base"
+  },
+  "output": {
+    "item": "mekanism:crystal_copper",
+    "count": 1
+  },
+  "consume_fluid": 0.1
+}

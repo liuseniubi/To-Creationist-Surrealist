@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "forge:ores/tin"
+    },
+    "result": [
+      {
+        "item": "emendatusenigmatica:tin_gravel"
+      },
+      {
+        "item": "mekanism:clump_tin",
+        "chance": 0.75
+      }
+    ],
+    "experience": 0.15
+}

@@ -16,6 +16,13 @@
     "block.create.andesite_funnel": "铯金漏斗",
     "block.create.andesite_tunnel": "铯金隧道",
 
+    "item.minecraft.red_dye": "红铯染料",
+    "item.minecraft.yellow_dye": "黄铯染料",
+    "item.minecraft.orange_dye": "橙铯染料",
+    "item.minecraft.green_dye": "绿铯染料",
+    "item.minecraft.blue_dye": "蓝铯染料",
+    "item.minecraft.purple_dye": "紫铯染料",
+
     "_1": "advancements",
     "advancements.2cs.root.title": "§e2CS！",
     "advancements.2cs.root.description": "欢迎您游玩 To: Creationist & Surrealist！",
@@ -39,9 +46,6 @@
     "2cs.tip.capacity_card": "你可以将容量卡放进压印器。",
     "2cs.tip.portal": "下界传送门与末地传送门均无法开启，因为本包不需要进入下界，进入末地请吃下末地蛋糕。",
     "2cs.tip.flux_dust": "在这个包只有末地有基岩，要获得通量粉尘的话要先进入末地哦。",
-    "2cs.tip.famous5000": "特别感谢 Famous5000 修复了其中的一些提示的英语翻译！",
-    "2cs.tip.hakzn_anox": "HakZn_Anox 曾经叫 YanDIOda，为什么改名字了呢？我也不知道！",
-    "2cs.tip.huyalance": "隐身怪也叫呆头，但这不是他最想要得到的 tips，但是我们还是做上去了。AwA",
 
     "_3": "jeis",
     "2cs.jei.orepot1": "友情提示：",
@@ -63,5 +67,14 @@
     "2cs.tooltip.explosive_stick": "爆炸会破坏方块，并且没有可用配方时会销毁物品！",
     "2cs.tooltip.leaves": "树叶可以通过手打或者自然掉落获得",
     "2cs.tooltip.basic_component": "除非特殊标注，否则不会在合成中消耗。",
-    "2cs.tooltip.onlyforcrafting": "仅用于合成"
+    "2cs.tooltip.onlyforcrafting": "仅用于合成",
+    "2cs.tooltip.wb": "只能用于装水、熔岩、牛奶。",
+
+    "_5": "specials",
+    "2cs.tip.famous5000": "特别感谢 Famous5000 修正了其中的一些提示的英语翻译！",
+    "2cs.tip.hakzn_anox": "HakZn_Anox 曾经叫 YanDIOda，为什么改名字了呢？我也不知道！",
+    "2cs.tip.huyalance": "隐身怪也叫呆头，但这不是他最想要得到的 tips，但是我们还是做上去了。AwA",
+
+    "_6": "quests.chapter",
+    "2cs.quests.chapter1": "第一章 - 开端"
 }

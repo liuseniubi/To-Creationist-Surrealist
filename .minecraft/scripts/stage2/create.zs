@@ -6,6 +6,7 @@ var air = <item:minecraft:air>;
 var sc = <item:contenttweaker:sixcolonium_casing>;
 var s = <item:contenttweaker:sixcolonium>;
 var scog = <item:create:cogwheel>;
+var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 
 // pressing recipes
 <recipetype:create:pressing>.addRecipe("iron_plate", [<item:emendatusenigmatica:iron_plate>], <item:minecraft:iron_ingot>);
@@ -17,7 +18,6 @@ var scog = <item:create:cogwheel>;
 <recipetype:create:pressing>.addRecipe("silver_plate", [<item:emendatusenigmatica:silver_plate>], <item:emendatusenigmatica:silver_plate>);
 <recipetype:create:pressing>.addRecipe("lead_plate", [<item:emendatusenigmatica:lead_plate>], <item:emendatusenigmatica:lead_plate>);
 <recipetype:create:pressing>.addRecipe("nickel_plate", [<item:emendatusenigmatica:nickel_plate>], <item:emendatusenigmatica:nickel_plate>);
-<recipetype:create:pressing>.addRecipe("uranium_plate", [<item:emendatusenigmatica:uranium_plate>], <item:emendatusenigmatica:uranium_plate>);
 <recipetype:create:pressing>.addRecipe("osmium_plate", [<item:emendatusenigmatica:osmium_plate>], <item:emendatusenigmatica:osmium_plate>);
 <recipetype:create:pressing>.addRecipe("tin_plate", [<item:emendatusenigmatica:tin_plate>], <item:emendatusenigmatica:tin_plate>);
 <recipetype:create:pressing>.addRecipe("zinc_plate", [<item:emendatusenigmatica:zinc_plate>], <item:emendatusenigmatica:zinc_plate>);
@@ -35,9 +35,24 @@ var scog = <item:create:cogwheel>;
 // deletes
 craftingTable.removeRecipe(<item:create:andesite_casing>);
 craftingTable.removeRecipe(<item:create:brass_casing>);
+craftingTable.removeRecipe(<item:create:brass_block>);
 craftingTable.removeRecipe(<item:create:copper_casing>);
+craftingTable.removeRecipe(<item:emendatusenigmatica:brass_block>);
+
+<recipetype:tconstruct:casting_basin>.removeRecipe(<item:create:brass_block>);
+<recipetype:tconstruct:alloying>.removeRecipe(<fluid:tconstruct:molten_brass>);
+<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/ingot_gold_cast");
+<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/ingot_sand_cast");
+<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:compat/create/andesite_alloy_zinc");
+<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:compat/create/andesite_alloy_iron");
+
 <recipetype:create:cutting>.removeRecipe(<item:create:shaft>);
+<recipetype:create:crushing>.removeRecipe(<item:create:crushed_brass>);
+<recipetype:create:mixing>.removeRecipe(<item:create:crushed_brass>);
+<recipetype:create:mixing>.removeRecipe(<item:create:brass_ingot>);
+
 <recipetype:thermal:smelter>.removeRecipe(<item:create:andesite_alloy>);
+<recipetype:thermal:smelter>.removeRecipe(<item:create:brass_ingot>);
 
 // tweaks
 # gearbox
@@ -286,9 +301,9 @@ craftingTable.addShaped("radial_chassis", <item:create:radial_chassis> * 3, [
 craftingTable.removeRecipe(<item:create:millstone>);
 
 craftingTable.addShaped("millstone", <item:create:millstone>, [
-    [air, <tag:items:minecraft:planks>, air],
-    [s, <item:create:cogwheel>, s],
-    [air, <tag:items:forge:stone>, air]
+    [wrench, <tag:items:minecraft:planks>, <item:extendedcrafting:basic_component>.reuse()],
+    [<item:create:cogwheel>, sc, <item:create:cogwheel>],
+    [<item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>]
 ]);
 
 # mechanical_plough
@@ -315,6 +330,14 @@ craftingTable.removeRecipe(<item:create:andesite_tunnel>);
 craftingTable.addShaped("andesite_tunnel", <item:create:andesite_tunnel> * 2, [
     [s, s],
     [<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>]
+]);
+
+# empty_blaze_burner
+craftingTable.removeRecipe(<item:create:empty_blaze_burner>);
+
+craftingTable.addShaped("empty_blaze_burner", <item:create:empty_blaze_burner>, [
+    [s, s],
+    [<item:minecraft:iron_bars>, <item:minecraft:iron_bars>]
 ]);
 
 # brass_tunnel
@@ -347,7 +370,7 @@ craftingTable.addShaped("propeller", <item:create:propeller>, [
 # ornate_iron_window
 craftingTable.removeRecipe(<item:create:ornate_iron_window>);
 
-craftingTable.addShaped("ornate_iron_window", <item:create:ornate_iron_window> * 2, [
+craftingTable.addShaped("new_ornate_iron_window", <item:create:ornate_iron_window> * 2, [
     [air, s, air],
     [s, <tag:items:forge:glass/colorless>, s]
 ]);
@@ -444,9 +467,9 @@ craftingTable.addShaped("clutch", <item:create:clutch>, [
 craftingTable.removeRecipe(<item:create:encased_fan>);
 
 craftingTable.addShaped("encased_fan", <item:create:encased_fan>, [
-    [air, <item:create:shaft>, air],
-    [<item:create:cogwheel>, sc, <item:create:cogwheel>],
-    [air, <item:create:propeller>, air]
+    [<item:extendedcrafting:basic_catalyst>, sc, <tag:items:minecraft:logs>],
+    [s, <item:create:propeller>, s],
+    [<tag:items:minecraft:logs>, wrench, <tag:items:minecraft:logs>]
 ]);
 
 # fluid_tank
@@ -495,9 +518,9 @@ craftingTable.addShaped("portable_storage_interface", <item:create:portable_stor
 craftingTable.removeRecipe(<item:create:mechanical_crafter>);
 
 craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> * 3, [
-    [air, <item:create:electron_tube>, air],
-    [<item:create:cogwheel>, sc, <item:create:cogwheel>],
-    [air, <item:minecraft:crafting_table>, air]
+    [wrench, <item:create:shaft>, <item:extendedcrafting:basic_catalyst>],
+    [<item:create:cogwheel>, sc, <tag:items:forge:chests/wooden>],
+    [<item:minecraft:redstone>, <item:minecraft:crafting_table>, <item:minecraft:redstone>]
 ]);
 
 # sequenced_gearshift
@@ -645,19 +668,4 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_nickel_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_tin_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_osmium_ore>);
-<recipetype:create:crushing>.removeRecipe(<item:create:crushed_uranium_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
-
-// add crushing recipes
-<recipetype:create:crushing>.addRecipe("gold", [<item:create:crushed_gold_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/gold>);
-<recipetype:create:crushing>.addRecipe("iron", [<item:create:crushed_iron_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/iron>);
-<recipetype:create:crushing>.addRecipe("copper", [<item:create:crushed_copper_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/copper>);
-<recipetype:create:crushing>.addRecipe("lead", [<item:create:crushed_lead_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/lead>);
-<recipetype:create:crushing>.addRecipe("silver", [<item:create:crushed_silver_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/silver>);
-<recipetype:create:crushing>.addRecipe("nickel", [<item:create:crushed_nickel_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/nickel>);
-<recipetype:create:crushing>.addRecipe("tin", [<item:create:crushed_tin_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/tin>);
-<recipetype:create:crushing>.addRecipe("osmium", [<item:create:crushed_osmium_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/osmium>);
-<recipetype:create:crushing>.addRecipe("uranium", [<item:create:crushed_uranium_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/uranium>);
-<recipetype:create:crushing>.addRecipe("zinc", [<item:create:crushed_zinc_ore>, <item:minecraft:gravel>], <tag:items:forge:ores/zinc>);
-
-// add mixing recipes

@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "forge:ores/iron"
+    },
+    "result": [
+      {
+        "item": "contenttweaker:iron_gravel"
+      },
+      {
+        "item": "mekanism:clump_iron",
+        "chance": 0.75
+      }
+    ],
+    "experience": 0.15
+}

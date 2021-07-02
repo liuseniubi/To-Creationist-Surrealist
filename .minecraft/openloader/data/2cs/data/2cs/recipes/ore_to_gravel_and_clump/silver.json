@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "forge:ores/silver"
+    },
+    "result": [
+      {
+        "item": "emendatusenigmatica:silver_gravel"
+      },
+      {
+        "item": "emendatusenigmatica:silver_clump",
+        "chance": 0.75
+      }
+    ],
+    "experience": 0.15
+}

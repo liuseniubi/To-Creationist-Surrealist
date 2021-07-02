@@ -35,7 +35,6 @@ var delitems as IItemStack[] = [
   <item:appliedenergistics2:smooth_sky_stone_chest>,
   <item:appliedenergistics2:sky_stone_chest>,
   // others
-  <item:mysticalagriculture:air_agglomeratio>,
   <item:advancementbook:advancement_book>,
   <item:extendedcrafting:handheld_table>,
   <item:ironchest:dirt_chest>,
@@ -45,10 +44,6 @@ var delitems as IItemStack[] = [
 for i in delitems {
     craftingTable.removeRecipe(i);
 }
-
-// others
-<recipetype:minecraft:smelting>.removeRecipe(<item:mysticalagriculture:soulium_dust>);
-<recipetype:minecraft:smelting>.removeRecipe(<item:mysticalagriculture:soul_dust>);
 
 craftingTable.removeByName("advancementbook:advancement_bookstand_1");
 
@@ -71,10 +66,9 @@ craftingTable.removeByName("advancementbook:advancement_bookstand_1");
 // crafting_table
 // shapeless
 craftingTable.addShapeless("advancement_book", <item:advancementbook:advancement_book>, [<item:minecraft:dirt>]);
-craftingTable.addShapeless("leaves", <item:minecraft:oak_leaves> * 16 , [<item:mysticalagriculture:wood_essence>, <item:mysticalagriculture:nature_essence>]);
 craftingTable.addShapeless("handheldcraftingtable", <item:extendedcrafting:handheld_table>, [<item:minecraft:crafting_table>]);
 craftingTable.addShapeless("handheldcraftingtable1", <item:minecraft:crafting_table>, [<item:extendedcrafting:handheld_table>]);
-craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium_nugget> * 9, [<item:contenttweaker:sixcolonium>]);
+craftingTable.addShapeless("sixcolonium_from_nugget", <item:contenttweaker:sixcolonium_nugget> * 9, [<item:contenttweaker:sixcolonium>]);
 // shaped
 craftingTable.addShaped("controller", <item:appliedenergistics2:controller>, [
     [<item:mekanism:steel_casing>, <item:appliedenergistics2:purified_fluix_crystal>, <item:mekanism:steel_casing>],
@@ -106,24 +100,6 @@ craftingTable.addShaped("bell", <item:minecraft:bell>, [
   [<tag:items:minecraft:planks>, <item:minecraft:air>, <tag:items:minecraft:planks>]
 ]);
 
-// extended crafting
-mods.extendedcrafting.TableCrafting.addShaped("graduate", 0, <item:contenttweaker:graduate>, [
-	[<item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_ingot_block>, <item:torcherino:lantern>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:torcherino:lantern>, <item:mysticalagradditions:insanium_ingot_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:extendedcrafting:the_ultimate_ingot>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:gobber2_block_end>, <item:mekanism:alloy_atomic>, <item:gobber2:gobber2_block_end>, <item:mekanism:ultimate_control_circuit>, <item:ae2extras:16m_storage_cell>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mekanism:pellet_antimatter>, <item:gobber2:gobber2_block_end>, <item:minecraft:totem_of_undying>, <item:mysticalagradditions:nether_star_crux>, <item:minecraft:totem_of_undying>, <item:gobber2:gobber2_block_end>, <item:extendedcrafting:ultimate_singularity>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:extendedcrafting:singularity>.withTag({Id: "extendedcrafting:infused_enderium" as string}), <item:mekanism:alloy_atomic>, <item:mysticalagradditions:nether_star_crux>, <item:thermal:rf_potato>, <item:mysticalagradditions:nether_star_crux>, <item:mekanism:alloy_atomic>, <item:mekanism:pellet_polonium>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_coal_block>, <item:gobber2:gobber2_block_end>, <item:minecraft:totem_of_undying>, <item:mysticalagradditions:nether_star_crux>, <item:minecraft:totem_of_undying>, <item:gobber2:gobber2_block_end>, <item:torcherino:torcherino>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:thermal:upgrade_augment_3>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:gobber2_block_end>, <item:mekanism:alloy_atomic>, <item:gobber2:gobber2_block_end>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:dragon_star>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_ingot_block>, <item:torcherino:lanterino>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:torcherino:lanterino>, <item:mysticalagradditions:insanium_ingot_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>]]);
-mods.extendedcrafting.TableCrafting.addShapeless("tun", 3, <item:extendedcrafting:the_ultimate_nugget>, [
-	<item:contenttweaker:sixcolonium_nugget>, <item:thermal:constantan_nugget>, <item:mekanism:nugget_tin>, <item:thermal:invar_nugget>, <item:thermal:electrum_nugget>, <item:mekanism:nugget_lead>, <item:create:brass_nugget>, <item:create:zinc_nugget>, <tag:items:forge:nuggets/copper>, <item:mekanism:nugget_refined_obsidian>, <item:minecraft:gold_nugget>, <item:mekanism:nugget_uranium>, <item:thermal:lumium_nugget>, <item:thermal:nickel_nugget>, <item:thermal:silver_nugget>, <item:minecraft:iron_nugget>, <item:mekanism:nugget_steel>, <tag:items:forge:nuggets/bronze>, <item:mekanism:nugget_refined_glowstone>, <item:thermal:enderium_nugget>, <item:minecraft:prismarine_crystals>, <item:mekanism:nugget_osmium>, <item:thermal:signalum_nugget>, <item:extendedcrafting:black_iron_nugget>, <item:extendedcrafting:enhanced_ender_nugget>, <item:extendedcrafting:redstone_nugget>, <item:extendedcrafting:crystaltine_nugget>, <item:minecraft:nether_star>
-]);
-mods.extendedcrafting.TableCrafting.addShapeless("tui", 3, <item:extendedcrafting:the_ultimate_ingot>, [
-	<item:contenttweaker:sixcolonium>, <item:thermal:constantan_ingot>, <item:minecraft:gold_ingot>, <item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:ender_ingot>, <item:extendedcrafting:enhanced_ender_ingot>, <item:extendedcrafting:crystaltine_ingot>, <tag:items:forge:ingots/bronze>, <item:mekanism:ingot_refined_obsidian>, <item:thermal:nickel_ingot>, <item:thermal:silver_ingot>, <item:create:brass_ingot>, <item:create:zinc_ingot>, <tag:items:forge:ingots/copper>, <item:mekanism:ingot_uranium>, <item:mekanism:ingot_osmium>, <tag:items:forge:ingots/steel>, <item:mekanism:ingot_refined_glowstone>, <item:thermal:electrum_ingot>, <item:thermal:invar_ingot>, <item:mekanism:ingot_tin>, <item:thermal:signalum_ingot>, <item:thermal:lumium_ingot>, <item:minecraft:sea_lantern>, <item:minecraft:iron_ingot>, <item:thermal:enderium_ingot>, <item:extendedcrafting:nether_star_block>
-]);
-mods.extendedcrafting.EnderCrafting.addShaped("infused_enderium", <item:extendedcrafting:singularity>.withTag({Id: "extendedcrafting:infused_enderium" as string}), [[<item:thermal:enderium_block>, <item:extendedcrafting:ender_star>, <item:thermal:enderium_block>], [<item:extendedcrafting:ender_star>, <item:extendedcrafting:singularity>.withTag({Id: "extendedcrafting:enderium" as string}), <item:extendedcrafting:ender_star>], [<item:thermal:enderium_block>, <item:extendedcrafting:ender_star>, <item:thermal:enderium_block>]], 5);
 // recipetypes
 <recipetype:minecraft:smithing>.addJSONRecipe("helmet_dragon", {
   "base": {
@@ -175,7 +151,7 @@ mods.extendedcrafting.EnderCrafting.addShaped("infused_enderium", <item:extended
   },
   "result": [
     {
-      "item": "contenttweaker:steel_plate"
+      "item": "emendatusenigmatica:steel_plate"
     }
   ]
 });
@@ -294,32 +270,9 @@ mods.extendedcrafting.EnderCrafting.addShaped("infused_enderium", <item:extended
     "rolls": 1
   }
 });
-// create
-// mechanical crafting
-<recipetype:create:mechanical_crafting>.addRecipe("graduate", <item:contenttweaker:graduate>, [
-	[<item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_ingot_block>, <item:torcherino:lantern>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:torcherino:lantern>, <item:mysticalagradditions:insanium_ingot_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:extendedcrafting:the_ultimate_ingot>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:gobber2_block_end>, <item:mekanism:alloy_atomic>, <item:gobber2:gobber2_block_end>, <item:mekanism:ultimate_control_circuit>, <item:ae2extras:16m_storage_cell>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mekanism:pellet_antimatter>, <item:gobber2:gobber2_block_end>, <item:minecraft:totem_of_undying>, <item:mysticalagradditions:nether_star_crux>, <item:minecraft:totem_of_undying>, <item:gobber2:gobber2_block_end>, <item:extendedcrafting:ultimate_singularity>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:extendedcrafting:singularity>.withTag({Id: "extendedcrafting:infused_enderium" as string}), <item:mekanism:alloy_atomic>, <item:mysticalagradditions:nether_star_crux>, <item:thermal:rf_potato>, <item:mysticalagradditions:nether_star_crux>, <item:mekanism:alloy_atomic>, <item:mekanism:pellet_polonium>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_coal_block>, <item:gobber2:gobber2_block_end>, <item:minecraft:totem_of_undying>, <item:mysticalagradditions:nether_star_crux>, <item:minecraft:totem_of_undying>, <item:gobber2:gobber2_block_end>, <item:torcherino:torcherino>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:thermal:upgrade_augment_3>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:gobber2_block_end>, <item:mekanism:alloy_atomic>, <item:gobber2:gobber2_block_end>, <item:mekanism:ultimate_control_circuit>, <item:gobber2:dragon_star>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:mysticalagradditions:insanium_ingot_block>, <item:torcherino:lanterino>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:minecraft:wither_skeleton_skull>, <item:torcherino:lanterino>, <item:mysticalagradditions:insanium_ingot_block>, <item:minecraft:netherite_block>], 
-	[<item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>, <item:minecraft:netherite_block>]]);
 // pressing
 <recipetype:create:pressing>.addRecipe("sixcolonium_plate2", [<item:contenttweaker:sixcolonium_plate>], <item:contenttweaker:sixcolonium>);
-<recipetype:create:pressing>.addRecipe("steel", [<item:contenttweaker:steel_plate>], <tag:items:forge:ingots/steel>);
-<recipetype:create:pressing>.addRecipe("enderium_plate", [<item:thermal:enderium_plate>], <item:thermal:enderium_ingot>);
-<recipetype:create:pressing>.addRecipe("lumium_plate", [<item:thermal:lumium_plate>], <item:thermal:lumium_ingot>);
-<recipetype:create:pressing>.addRecipe("signalum_plate", [<item:thermal:signalum_plate>], <item:thermal:signalum_ingot>);
-<recipetype:create:pressing>.addRecipe("constantan_plate", [<item:thermal:constantan_plate>], <item:thermal:constantan_ingot>);
-<recipetype:create:pressing>.addRecipe("invar_plate", [<item:thermal:invar_plate>], <item:thermal:invar_ingot>);
-<recipetype:create:pressing>.addRecipe("electrum_plate", [<item:thermal:electrum_plate>], <item:thermal:electrum_ingot>);
-<recipetype:create:pressing>.addRecipe("bronze_plate", [<item:thermal:bronze_plate>], <item:thermal:bronze_ingot>);
-<recipetype:create:pressing>.addRecipe("nickel_plate", [<item:thermal:nickel_plate>], <item:thermal:nickel_ingot>);
-<recipetype:create:pressing>.addRecipe("silver_plate", [<item:thermal:silver_plate>], <item:thermal:silver_ingot>);
-<recipetype:create:pressing>.addRecipe("lead_plate", [<item:thermal:lead_plate>], <tag:items:forge:ingots/lead>);
-<recipetype:create:pressing>.addRecipe("tin_plate", [<item:thermal:tin_plate>], <tag:items:forge:ingots/tin>);
+<recipetype:create:pressing>.addRecipe("steel", [<item:emendatusenigmatica:steel_plate>], <tag:items:forge:ingots/steel>);
 
 //   _____ _                     __          
 //  / ___/(_)  __    _________  / /___  _____

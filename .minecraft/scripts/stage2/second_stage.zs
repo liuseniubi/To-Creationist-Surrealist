@@ -2,28 +2,18 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.tag.MCTag;
 
-val air = <item:minecraft:air>;
+var air = <item:minecraft:air>;
+var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 
-// furnace
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:gold_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
+// adds
+#botany_pot
+<recipetype:create:compacting>.addRecipe("botany_pot", "none", <item:botanypots:hopper_botany_pot>, [<item:minecraft:terracotta> * 4, <item:contenttweaker:sixcolonium>]);
 
-// crafting tables
+#sixcolonium_base
+<recipetype:create:compacting>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 3, [<tag:items:forge:plates/copper>, <item:contenttweaker:sixcolonium_plate>]);
+
 #iron plate
-craftingTable.addShaped("iron_plate", <item:create:iron_sheet> * 2, [
+craftingTable.addShaped("iron_plate", <item:emendatusenigmatica:iron_plate> * 2, [
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
 
@@ -42,7 +32,7 @@ craftingTable.removeRecipe(<item:create:water_wheel>);
 craftingTable.addShaped("water_wheel", <item:create:water_wheel>, [
     [<item:extendedcrafting:basic_component>.reuse(), <tag:items:minecraft:wooden_slabs>, <tag:items:minecraft:wooden_stairs>],
     [<tag:items:minecraft:wooden_slabs>, <item:create:shaft>, <tag:items:minecraft:wooden_slabs>],
-    [<tag:items:minecraft:wooden_stairs>, <tag:items:minecraft:wooden_slabs>, <item:contenttweaker:wrench>.anyDamage().transformDamage()]
+    [<tag:items:minecraft:wooden_stairs>, <tag:items:minecraft:wooden_slabs>, wrench]
 ]);
 
 # mechanical_press
@@ -51,7 +41,7 @@ craftingTable.removeRecipe(<item:create:mechanical_press>);
 craftingTable.addShaped("mechanical_press", <item:create:mechanical_press>, [
     [<item:extendedcrafting:basic_component>, <item:create:shaft>, <tag:items:minecraft:logs>],
     [<item:create:shaft>, <item:create:cogwheel>, <item:create:shaft>],
-    [<item:contenttweaker:wrench>.anyDamage().transformDamage(), <item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>]
+    [wrench, <item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>]
 ]);
 
 # crushing_wheel
@@ -60,20 +50,17 @@ craftingTable.addShaped("mechanical_press", <item:create:mechanical_press>, [
 craftingTable.addShaped("crushing_wheel", <item:create:crushing_wheel>, [
     [<item:extendedcrafting:basic_catalyst>, <item:contenttweaker:sixcolonium>, <item:minecraft:stone_brick_stairs>],
     [<item:contenttweaker:sixcolonium>, <item:create:shaft>, <item:contenttweaker:sixcolonium>],
-    [<item:minecraft:stone_brick_stairs>, <item:contenttweaker:sixcolonium>, <item:contenttweaker:wrench>.anyDamage().transformDamage()]
+    [<item:minecraft:stone_brick_stairs>, <item:contenttweaker:sixcolonium>, wrench]
 ]);
 
 # botanypots
 craftingTable.removeRecipe(<tag:items:botanypots:botany_pots>.asIIngredient());
 
-craftingTable.addShaped("botany_pot", <item:botanypots:hopper_botany_pot>, [
-    [<item:minecraft:terracotta>, air, <item:minecraft:terracotta>],
-    [<item:minecraft:terracotta>, <item:minecraft:terracotta>, <item:minecraft:terracotta>]
-]);
+<recipetype:create:pressing>.addRecipe("botany_pot", [<item:botanypots:hopper_botany_pot>], <item:minecraft:terracotta> * 5);
 
 # sixcolonium_casing
 craftingTable.addShaped("sixcolonium_casing", <item:contenttweaker:sixcolonium_casing>, [
-    [<item:contenttweaker:wrench>.anyDamage().transformDamage(), <item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>],
+    [wrench, <item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>],
     [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>],
     [<item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>]
 ]);
@@ -84,42 +71,152 @@ craftingTable.removeRecipe(<item:create:mechanical_mixer>);
 craftingTable.addShaped("mechanical_mixer", <item:create:mechanical_mixer>, [
     [<item:contenttweaker:sixcolonium>, <item:create:shaft>, <item:contenttweaker:sixcolonium>],
     [<tag:items:minecraft:logs>, <item:create:large_cogwheel>, <tag:items:minecraft:logs>],
-    [<item:contenttweaker:wrench>.anyDamage().transformDamage(), <item:create:whisk>, <item:extendedcrafting:basic_catalyst>.reuse()]
+    [wrench, <item:create:whisk>, <item:extendedcrafting:basic_catalyst>.reuse()]
 ]);
 
 # water_gen
 craftingTable.removeRecipe(<item:thermal:device_water_gen>);
 
 craftingTable.addShapedMirrored("water_gen", <item:thermal:device_water_gen>, [
-    [<item:contenttweaker:wrench>.anyDamage().transformDamage(), <item:minecraft:ice>, <item:minecraft:ice>],
+    [wrench, <item:minecraft:ice>, <item:minecraft:ice>],
     [<item:minecraft:ice>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:ice>],
     [<item:minecraft:ice>, <item:minecraft:ice>, <item:extendedcrafting:basic_component>.reuse()]
 ]);
 
-// Extended Crafting
 # wrench
-mods.extendedcrafting.TableCrafting.addShaped("wrench", <item:contenttweaker:wrench>, [
-    [<tag:items:forge:ingots>, air, <tag:items:forge:ingots>],
-    [<tag:items:forge:ingots>, <tag:items:forge:ingots>, <tag:items:forge:ingots>],
-    [air, <tag:items:forge:ingots>, air]
+craftingTable.addShaped("wrench", <item:contenttweaker:wrench>, [
+    [<item:contenttweaker:sixcolonium>, air, <item:contenttweaker:sixcolonium>],
+    [<item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>, <item:contenttweaker:sixcolonium>],
+    [air, <item:contenttweaker:sixcolonium>, air]
 ]);
 
 #basic_component
 craftingTable.removeRecipe(<item:extendedcrafting:basic_component>);
 
-mods.extendedcrafting.TableCrafting.addShaped("basic_component1", <item:extendedcrafting:basic_component>, [
+craftingTable.addShapedMirrored("basic_component", <item:extendedcrafting:basic_component>, [
     [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>],
     [<tag:items:forge:ingots/copper>, <item:minecraft:iron_ingot>, <tag:items:forge:ingots/zinc>],
     [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>]
 ]);
 
-mods.extendedcrafting.TableCrafting.addShaped("basic_component2", <item:extendedcrafting:basic_component>, [
-    [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>],
-    [<tag:items:forge:ingots/zinc>, <item:minecraft:iron_ingot>, <tag:items:forge:ingots/copper>],
-    [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>]
+#thunder_processor
+craftingTable.addShaped("thunder_processor", <item:custommachinery:custom_machine_item>.withTag({id: "custommachinery:thunder_processor" as string}), [
+    [wrench, <item:contenttweaker:thunder_stick>, <item:extendedcrafting:basic_component>],
+    [<item:minecraft:chest>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:chest>],
+    [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
-// interactioes
+#explosion_processor
+craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_machine_item>.withTag({id: "custommachinery:explosion_processor" as string}), [
+    [wrench, <item:contenttweaker:explosive_stick>, <item:extendedcrafting:basic_component>],
+    [<item:minecraft:chest>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:chest>],
+    [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
+]);
+
+#black dye to 
+craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:minecraft:black_dye>]);
+
+#sixcolonium base
+<recipetype:create:mixing>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 3, [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, <tag:items:forge:plates/copper>]);
+
+smoker.addRecipe("sixcolonium_base1", <item:contenttweaker:sixcolonium_base> * 2, <item:contenttweaker:sixcolonium>, 0.0, 100);
+
+#black dye
+<recipetype:interactio:item_explode>.addJSONRecipe("black_dye", {
+  "inputs": [
+    {
+      "item": "minecraft:charcoal",
+      "count": 1
+    },
+    {
+      "item": "contenttweaker:pebble",
+      "count": 1
+    }
+  ],
+  "output": {
+    "entries": [
+      {
+        "result": {
+           "item": "minecraft:black_dye",
+           "count": 2
+        },
+        "weight": 100
+      }
+    ],
+    "empty_weight": 0
+  }
+});
+
+#Hak base
+<recipetype:interactio:fluid_fluid_transform>.addJSONRecipe("hak_base", {
+  "items": [
+    {
+      "item": "minecraft:red_dye",
+      "count": 1
+    },
+    {
+      "item": "minecraft:yellow_dye",
+      "count": 1
+    },
+    {
+      "item": "minecraft:orange_dye",
+      "count": 1
+    },
+    {
+      "item": "minecraft:blue_dye",
+      "count": 1
+    },
+    {
+      "item": "minecraft:green_dye",
+      "count": 1
+    },
+    {
+      "item": "minecraft:purple_dye",
+      "count": 1
+    }
+  ],
+  "input":
+  {
+    "fluid": "water"
+  },
+  "output":
+  {"entries":[
+    {
+    "result": {
+      "fluid": "contenttweaker:hak_base"
+      },
+    "weight": 1
+    }
+  ]},
+  "consume_items": true
+});
+
+<recipetype:create:mixing>.addJSONRecipe("weakened_hak_base", {
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "contenttweaker:sixcolonium",
+    },
+    {
+      "item": "contenttweaker:sixcolonium",
+    },
+    {
+      "item": "contenttweaker:sixcolonium",
+    },
+    {
+      "fluid": "contenttweaker:hak_base",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "contenttweaker:weakened_hak_base",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "none"
+});
+
 #leaves to ice
 <recipetype:interactio:item_lightning>.addJSONRecipe("leaves2ice", {
   "inputs": [
@@ -143,7 +240,7 @@ mods.extendedcrafting.TableCrafting.addShaped("basic_component2", <item:extended
 });
 
 # gravel2sand
-<recipetype:interactio:item_lightning>.addJSONRecipe("gravel2sand", {
+<recipetype:interactio:item_explode>.addJSONRecipe("gravel2sand", {
   "inputs": [
     {
       "item": "minecraft:gravel",
@@ -221,84 +318,84 @@ mods.extendedcrafting.TableCrafting.addShaped("basic_component2", <item:extended
           "item": "contenttweaker:sixcolonium",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:copper_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
-          "item": "emendatusenigmatica:gold_dust",
+          "item": "minecraft:redstone",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:iron_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:lead_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:nickel_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:osmium_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:silver_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:tin_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
-          "item": "emendatusenigmatica:uranium_dust",
-          "count": 1
+          "item": "minecraft:redstone",
+          "count": 5
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "emendatusenigmatica:zinc_dust",
           "count": 1
         },
-        "weight": 1
+        "weight": 5
       },
       {
         "result": {
           "item": "contenttweaker:pebble",
           "count": 1
         },
-        "weight": 89
+        "weight": 50
       }
     ],
     "empty_weight": 0,

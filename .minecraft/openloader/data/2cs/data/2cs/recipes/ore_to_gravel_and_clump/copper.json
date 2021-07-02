@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "forge:ores/copper"
+    },
+    "result": [
+      {
+        "item": "emendatusenigmatica:copper_gravel"
+      },
+      {
+        "item": "mekanism:clump_copper",
+        "chance": 0.75
+      }
+    ],
+    "experience": 0.15
+}

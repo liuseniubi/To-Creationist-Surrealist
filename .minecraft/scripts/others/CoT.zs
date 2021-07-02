@@ -1,3 +1,5 @@
+#priority 114514
+
 #loader contenttweaker
 
 import mods.contenttweaker.block.BlockBuilder;
@@ -8,52 +10,24 @@ import mods.contenttweaker.item.basic.ItemBuilderBasic;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 
-var stackable as string[] = [
-    "steel_plate",
+var newitems as string[] = [
     "sixcolonium",
+    "sixcolonium_base",
     "sixcolonium_plate",
     "sixcolonium_nugget",
     "explosive_stick",
     "thunder_stick",
     "pebble",
     "sky_blue_dye",
-    "light_yellow_dye"
+    "light_yellow_dye",
+    "iron_gravel",
+    "graduate"
 ];
 
-for i in stackable {
+for i in newitems {
     new ItemBuilder()
     .withMaxStackSize(64)
     .build(i);
-}
-
-var unstackable as string[] = [
-    "graduate",
-    "mur",
-    "certification_bronze_ingot",
-    "certification_black_iron_ingot",
-    "certification_constantan_ingot",
-    "certification_crystaltine_ingot",
-    "certification_electrum_ingot",
-    "certification_ender_ingot",
-    "certification_enderium_ingot",
-    "certification_enhanced_ender_ingot",
-    "certification_brass_ingot",
-    "certification_ingot_refined_glowstone",
-    "certification_ingot_refined_obsidian",
-    "certification_steel_ingot",
-    "certification_invar_ingot",
-    "certification_lumium_ingot",
-    "certification_nether_star_block",
-    "certification_sea_lantern",
-    "certification_redstone_ingot",
-    "certification_signalum_ingot",
-    "certification_sixcolonium"
-];
-
-for i in unstackable {
-    new ItemBuilder()
-        .withMaxStackSize(1)
-        .build(i);
 }
 
 new ItemBuilder()
@@ -67,6 +41,7 @@ new BlockBuilder()
     .withHarvestLevel(1)
     .withLightValue(15)
     .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f)
     .build("sixcolonium_block");
 
 new BlockBuilder()
@@ -74,16 +49,32 @@ new BlockBuilder()
     .withHarvestLevel(1)
     .withLightValue(15)
     .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f)
     .build("sixcolonium_casing");
 
-new FluidBuilder(true, 4620980)
+new BlockBuilder()
+    .withHarvestTool(<tooltype:pickaxe>)
+    .withHarvestLevel(1)
+    .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f)
+    .build("fake_digger");
+
+new BlockBuilder()
+    .withHarvestTool(<tooltype:axe>)
+    .withHarvestLevel(1)
+    .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f)
+    .build("burnt_plank");
+
+new FluidBuilder(false, 0xff4682b4, <resource:contenttweaker:fluids/hak_base>, <resource:contenttweaker:fluids/hak_base_flow>)
     .build("hak_base");
 
-new FluidBuilder(false, 11591910)
+new FluidBuilder(false, 0xffb0e0e6, <resource:contenttweaker:fluids/weakened_hak_base>, <resource:contenttweaker:fluids/weakened_hak_base_flow>)
     .build("weakened_hak_base");
-//   _____ _                     __          
-//  / ___/(_)  __    _________  / /___  _____
-//  \__ \/ / |/_/   / ___/ __ \/ / __ \/ ___/
-// ___/ / />  <    / /__/ /_/ / / /_/ / /    
-///____/_/_/|_|____\___/\____/_/\____/_/     
-//           /_____/                         
+    
+//    _____ _                     __          
+//   / ___/(_)  __    _________  / /___  _____
+//   \__ \/ / |/_/   / ___/ __ \/ / __ \/ ___/
+//  ___/ / />  <    / /__/ /_/ / / /_/ / /    
+// /____/_/_/|_|____\___/\____/_/\____/_/     
+//            /_____/                         

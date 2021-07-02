@@ -1,0 +1,17 @@
+{
+    "type": "interactio:item_fluid_transform",
+    "inputs": [
+      {
+        "item": "emendatusenigmatica:silver_clump",
+        "count": 1
+      }
+    ],
+    "fluid": {
+      "fluid": "contenttweaker:hak_base"
+    },
+    "output": {
+      "item": "emendatusenigmatica:silver_crystal",
+      "count": 1
+    },
+    "consume_fluid": 0.1
+}
