@@ -5,4 +5,4 @@ modPriority = ["minecraft","emendatusenigmatica"]
 #Item tags which won't be unified. Useful when specifying a folder in 'tagsToUnify' but not all tags from that folder should be unified.
 tagsToIgnore = []
 #Item tags which will be unified. When leaving a '/' at the end that means that all tags inside that folder will be unified.
-tagsToUnify = ["forge:dusts/", "forge:gems/", "forge:ingots/", "forge:nuggets/", "forge:rods/", "forge:storage_blocks/"]
+tagsToUnify = ["forge:dusts/", "forge:gems/", "forge:ingots/", "forge:nuggets/", "forge:rods/", "forge:storage_blocks/", "forge:ores/"]

@@ -104,6 +104,7 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
   }
 });
 
+/* wasted XD
 // thunder: pebble * 1 = 80% bonemeal * 1
 <recipetype:interactio:item_lightning>.addJSONRecipe("pebble2bonemeal", {
   "inputs": [
@@ -125,6 +126,7 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
     "empty_weight": 27
   }
 });
+*/
 
 // thunder: gravel * 1 + leaves * 3 = grass_block * 1
 <recipetype:interactio:item_lightning>.addJSONRecipe("grassblock", {
@@ -291,6 +293,7 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
     "rolls": 1
   }
 });
+
 
 // thunder: andesite to gravel and gold
 <recipetype:interactio:item_lightning>.addJSONRecipe("andesite2gravelorgold", {

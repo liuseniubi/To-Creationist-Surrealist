@@ -10,6 +10,28 @@ import crafttweaker.api.item.IItemStack;
 
 import crafttweaker.api.event.entity.player.interact.MCRightClickBlockEvent;
 
+<recipetype:interactio:item_explode>.addJSONRecipe("test",{
+  "inputs" : [
+    {
+	  "item" : "minecraft:grass" ,
+	  "count" : 1
+	}
+  ],
+  "output" : {
+    "entries" : [
+	  {
+         "result" : {
+           "item" : "minecraft:oak_log" ,
+		   "count" : 1
+		},
+        "weight" : 100
+	  }
+	] ,
+	"empty_weight" : 0,
+	"rolls" : 1
+   }
+});
+
 CTEventManager.register<crafttweaker.api.event.entity.player.interact.MCRightClickBlockEvent>((event) => {
 	var pos as BlockPos = event.getBlockPos();
 	var player as MCPlayerEntity = event.getPlayer();

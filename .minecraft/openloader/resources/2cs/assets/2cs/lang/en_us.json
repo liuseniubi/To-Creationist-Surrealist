@@ -13,9 +13,6 @@
 
     "gui.appliedenergistics2.inWorldCraftingPresses": "All the Processor Press can be crafted.",
 
-    "block.create.andesite_funnel": "Sixcolonium Funnel",
-    "block.create.andesite_tunnel": "Sixcolonium Tunnel",
-
     "item.minecraft.red_dye": "Red Dye",
     "item.minecraft.yellow_dye": "Tellow Dye",
     "item.minecraft.orange_dye": "Orange Dye",
@@ -52,7 +49,6 @@
     "2cs.jei.orepot2": "This ore can be grown in Botany pots.",
     "2cs.jei.orepot3": "You can search §l§4$growables &rfor all the things can be grown in Botany pots that I added.",
     "2cs.jei.tntseed": "This seed should not be planted on farmland, The result can only be obtained by Botany pots.",
-    "2cs.jei.dragon_star": "Explode one Nether Star, four End Gobber Ingots and four Dragon Eggs to get.",
     "2cs.jei.explosive": "It can participate in explosive crafting.",
     "2cs.jei.torcherino1": "Explode one Ultimate Ingot and one Torch to get.",
     "2cs.jei.torcherino2": "",
@@ -69,6 +65,7 @@
     "2cs.tooltip.basic_component": "It will not be consumed in crafting unless specifically marked.",
     "2cs.tooltip.onlyforcrafting": "Only for crafting.",
     "2cs.tooltip.wb": "It can only be used to hold Water, Lava, and Milk.",
+    "2cs.tooltip.pebble": "Can be obtained by breaking Burnt Planks.",
     
     "_5": "specials",
     "2cs.tip.famous5000": "Special thanks to Famous5000 for fixing some of these tips! If anything looks off in the English variation, please yell at him.",

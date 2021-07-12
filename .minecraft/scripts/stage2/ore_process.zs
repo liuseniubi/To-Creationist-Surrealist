@@ -64,6 +64,15 @@ blastFurnace.addRecipe("blastfurnace_shard_nickel", <item:emendatusenigmatica:ni
 blastFurnace.addRecipe("blastfurnace_shard_silver", <item:emendatusenigmatica:silver_nugget> * 3, <item:emendatusenigmatica:silver_shard>, 2.0, 100);
 blastFurnace.addRecipe("blastfurnace_shard_copper", <item:emendatusenigmatica:copper_nugget> * 3, <item:mekanism:shard_copper>, 2.0, 100);
 
+blastFurnace.addRecipe("blastfurnace_dust_iron", <item:minecraft:iron_ingot>, <tag:items:forge:dusts/iron>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_zinc", <item:emendatusenigmatica:zinc_ingot>, <tag:items:forge:dusts/zinc>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_copper", <item:emendatusenigmatica:copper_ingot>, <tag:items:forge:dusts/copper>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_lead", <item:emendatusenigmatica:lead_ingot>, <tag:items:forge:dusts/lead>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_nickel", <item:emendatusenigmatica:nickel_ingot>, <tag:items:forge:dusts/nickel>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_silver", <item:emendatusenigmatica:silver_ingot>, <tag:items:forge:dusts/silver>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_tin", <item:emendatusenigmatica:tin_ingot>, <tag:items:forge:dusts/tin>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_dust_osmium", <item:emendatusenigmatica:osmium_ingot>, <tag:items:forge:dusts/osmium>, 2.0, 100);
+
 // ore to ore chunk
 <recipetype:farmersdelight:cutting>.addJSONRecipe("iron2chunk", {
   "ingredients": [

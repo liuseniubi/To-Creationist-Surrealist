@@ -6,6 +6,9 @@ var air = <item:minecraft:air>;
 var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 
 // adds
+#wood dust
+<recipetype:create:milling>.addRecipe("wood_dust", [<item:emendatusenigmatica:wood_dust>], <tag:items:minecraft:planks>);
+
 #botany_pot
 <recipetype:create:compacting>.addRecipe("botany_pot", "none", <item:botanypots:hopper_botany_pot>, [<item:minecraft:terracotta> * 4, <item:contenttweaker:sixcolonium>]);
 
@@ -17,20 +20,11 @@ craftingTable.addShaped("iron_plate", <item:emendatusenigmatica:iron_plate> * 2,
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
 
-#basic workbench
-craftingTable.removeRecipe(<item:extendedcrafting:basic_table>);
-
-craftingTable.addShapedMirrored("basic_workbench", <item:extendedcrafting:basic_table>, [
-    [<item:contenttweaker:sixcolonium>, <item:minecraft:crafting_table>, <item:contenttweaker:sixcolonium>],
-    [<tag:items:forge:storage_blocks/copper>, <item:minecraft:gold_ingot>, <tag:items:forge:storage_blocks/zinc>],
-    [<tag:items:minecraft:wooden_slabs>, <tag:items:forge:plates/iron>, <tag:items:minecraft:wooden_slabs>]
-]);
-
 # water_wheel
 craftingTable.removeRecipe(<item:create:water_wheel>);
 
 craftingTable.addShaped("water_wheel", <item:create:water_wheel>, [
-    [<item:extendedcrafting:basic_component>.reuse(), <tag:items:minecraft:wooden_slabs>, <tag:items:minecraft:wooden_stairs>],
+    [<item:contenttweaker:primary_knowledge_fragment>.reuse(), <tag:items:minecraft:wooden_slabs>, <tag:items:minecraft:wooden_stairs>],
     [<tag:items:minecraft:wooden_slabs>, <item:create:shaft>, <tag:items:minecraft:wooden_slabs>],
     [<tag:items:minecraft:wooden_stairs>, <tag:items:minecraft:wooden_slabs>, wrench]
 ]);
@@ -39,7 +33,7 @@ craftingTable.addShaped("water_wheel", <item:create:water_wheel>, [
 craftingTable.removeRecipe(<item:create:mechanical_press>);
 
 craftingTable.addShaped("mechanical_press", <item:create:mechanical_press>, [
-    [<item:extendedcrafting:basic_component>, <item:create:shaft>, <tag:items:minecraft:logs>],
+    [<item:contenttweaker:primary_knowledge_fragment>, <item:create:shaft>, <tag:items:minecraft:logs>],
     [<item:create:shaft>, <item:create:cogwheel>, <item:create:shaft>],
     [wrench, <item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>]
 ]);
@@ -48,7 +42,7 @@ craftingTable.addShaped("mechanical_press", <item:create:mechanical_press>, [
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:crushing_wheel>);
 
 craftingTable.addShaped("crushing_wheel", <item:create:crushing_wheel>, [
-    [<item:extendedcrafting:basic_catalyst>, <item:contenttweaker:sixcolonium>, <item:minecraft:stone_brick_stairs>],
+    [<item:contenttweaker:primary_knowledge_catalog>.reuse(), <item:contenttweaker:sixcolonium>, <item:minecraft:stone_brick_stairs>],
     [<item:contenttweaker:sixcolonium>, <item:create:shaft>, <item:contenttweaker:sixcolonium>],
     [<item:minecraft:stone_brick_stairs>, <item:contenttweaker:sixcolonium>, wrench]
 ]);
@@ -71,7 +65,7 @@ craftingTable.removeRecipe(<item:create:mechanical_mixer>);
 craftingTable.addShaped("mechanical_mixer", <item:create:mechanical_mixer>, [
     [<item:contenttweaker:sixcolonium>, <item:create:shaft>, <item:contenttweaker:sixcolonium>],
     [<tag:items:minecraft:logs>, <item:create:large_cogwheel>, <tag:items:minecraft:logs>],
-    [wrench, <item:create:whisk>, <item:extendedcrafting:basic_catalyst>.reuse()]
+    [wrench, <item:create:whisk>, <item:contenttweaker:primary_knowledge_catalog>.reuse()]
 ]);
 
 # water_gen
@@ -80,7 +74,7 @@ craftingTable.removeRecipe(<item:thermal:device_water_gen>);
 craftingTable.addShapedMirrored("water_gen", <item:thermal:device_water_gen>, [
     [wrench, <item:minecraft:ice>, <item:minecraft:ice>],
     [<item:minecraft:ice>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:ice>],
-    [<item:minecraft:ice>, <item:minecraft:ice>, <item:extendedcrafting:basic_component>.reuse()]
+    [<item:minecraft:ice>, <item:minecraft:ice>, <item:contenttweaker:primary_knowledge_fragment>.reuse()]
 ]);
 
 # wrench
@@ -91,24 +85,24 @@ craftingTable.addShaped("wrench", <item:contenttweaker:wrench>, [
 ]);
 
 #basic_component
-craftingTable.removeRecipe(<item:extendedcrafting:basic_component>);
+craftingTable.removeRecipe(<item:contenttweaker:primary_knowledge_fragment>);
 
-craftingTable.addShapedMirrored("basic_component", <item:extendedcrafting:basic_component>, [
+craftingTable.addShapedMirrored("basic_component", <item:contenttweaker:primary_knowledge_fragment>, [
     [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>],
     [<tag:items:forge:ingots/copper>, <item:minecraft:iron_ingot>, <tag:items:forge:ingots/zinc>],
     [<item:contenttweaker:sixcolonium>, <tag:items:minecraft:logs>, <item:contenttweaker:sixcolonium>]
 ]);
 
 #thunder_processor
-craftingTable.addShaped("thunder_processor", <item:custommachinery:custom_machine_item>.withTag({id: "custommachinery:thunder_processor" as string}), [
-    [wrench, <item:contenttweaker:thunder_stick>, <item:extendedcrafting:basic_component>],
+craftingTable.addShaped("thunder_processor", <item:custommachinery:custom_machine_item>.withTag({id: "2cs:thunder_processor" as string}), [
+    [wrench, <item:contenttweaker:thunder_stick>, <item:contenttweaker:primary_knowledge_fragment>],
     [<item:minecraft:chest>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:chest>],
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
 #explosion_processor
-craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_machine_item>.withTag({id: "custommachinery:explosion_processor" as string}), [
-    [wrench, <item:contenttweaker:explosive_stick>, <item:extendedcrafting:basic_component>],
+craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_machine_item>.withTag({id: "2cs:explosion_processor" as string}), [
+    [wrench, <item:contenttweaker:explosive_stick>, <item:contenttweaker:primary_knowledge_fragment>],
     [<item:minecraft:chest>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:chest>],
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);

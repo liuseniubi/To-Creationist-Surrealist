@@ -12,7 +12,6 @@ import mods.jei.JEI;
 var orepot1 = game.localize("2cs.jei.orepot1");
 var orepot2 = game.localize("2cs.jei.orepot2");
 var orepot3 = game.localize("2cs.jei.orepot3");
-var dragon_star = game.localize("2cs.jei.dragon_star");
 var explosive = game.localize("2cs.jei.explosive");
 var torcherino1 = game.localize("2cs.jei.torcherino1");
 var torcherino2 = game.localize("2cs.jei.torcherino2");
@@ -31,7 +30,8 @@ var ofcs as IIngredient[] = [
     <item:contenttweaker:wrench>,
     <item:contenttweaker:sky_blue_dye>,
     <item:contenttweaker:light_yellow_dye>,
-    <item:extendedcrafting:basic_catalyst>
+    <item:contenttweaker:primary_knowledge_fragment>,
+    <item:contenttweaker:primary_knowledge_catalog>
 ];
 
 for i in ofcs{
@@ -51,11 +51,11 @@ var thunder_stickttp = game.localize("2cs.tooltip.thunder_stick");
 var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
 <item:contenttweaker:explosive_stick>.addTooltip(explosive_stickttp);
 
-var basic_componentttp = game.localize("2cs.tooltip.basic_component");
-<item:extendedcrafting:basic_component>.addTooltip(basic_componentttp);
+var wbttp = game.localize("2cs.tooltip.wb");
+<item:woodenbuckets:wooden_bucket>.addTooltip(wbttp);
 
-var wb = game.localize("2cs.tooltip.wb");
-<item:woodenbuckets:wooden_bucket>.addTooltip(wb);
+var pebblettp = game.localize("2cs.tooltip.pebble");
+<item:contenttweaker:pebble>.addTooltip(pebblettp);
 
 // orepot
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:gold_ore>, [orepot1, orepot2, orepot3]);
@@ -70,7 +70,6 @@ mods.jei.JEI.addInfo(<item:emendatusenigmatica:uranium_ore>, [orepot1, orepot2, 
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:zinc_ore>, [orepot1, orepot2, orepot3]);
 
 // mods.jei.JEI.addInfo(, [""]);
-mods.jei.JEI.addInfo(<item:gobber2:dragon_star>, [dragon_star]);
 mods.jei.JEI.addInfo(<item:thermal:explosive_grenade>, [explosive]);
 mods.jei.JEI.addInfo(<item:minecraft:tnt>, [explosive]);
 mods.jei.JEI.addInfo(<item:minecraft:tnt_minecart>, [explosive]);

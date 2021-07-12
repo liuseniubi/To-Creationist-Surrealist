@@ -98,15 +98,6 @@ craftingTable.addShaped("depot", <item:create:depot>, [
     [sc]
 ]);
 
-# handheld_blockzapper
-craftingTable.removeRecipe(<item:create:handheld_blockzapper>);
-
-craftingTable.addShaped("handheld_blockzapper", <item:create:handheld_blockzapper>, [
-    [air, air, <item:create:refined_radiance>],
-    [air, <item:minecraft:obsidian>, air],
-    [<item:minecraft:obsidian>, s, air]
-]);
-
 # chute
 craftingTable.removeRecipe(<item:create:chute>);
 
@@ -301,7 +292,7 @@ craftingTable.addShaped("radial_chassis", <item:create:radial_chassis> * 3, [
 craftingTable.removeRecipe(<item:create:millstone>);
 
 craftingTable.addShaped("millstone", <item:create:millstone>, [
-    [wrench, <tag:items:minecraft:planks>, <item:extendedcrafting:basic_component>.reuse()],
+    [wrench, <tag:items:minecraft:planks>, <item:contenttweaker:primary_knowledge_fragment>.reuse()],
     [<item:create:cogwheel>, sc, <item:create:cogwheel>],
     [<item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>]
 ]);
@@ -467,7 +458,7 @@ craftingTable.addShaped("clutch", <item:create:clutch>, [
 craftingTable.removeRecipe(<item:create:encased_fan>);
 
 craftingTable.addShaped("encased_fan", <item:create:encased_fan>, [
-    [<item:extendedcrafting:basic_catalyst>, sc, <tag:items:minecraft:logs>],
+    [<item:contenttweaker:primary_knowledge_catalog>, sc, <tag:items:minecraft:logs>],
     [s, <item:create:propeller>, s],
     [<tag:items:minecraft:logs>, wrench, <tag:items:minecraft:logs>]
 ]);
@@ -518,7 +509,7 @@ craftingTable.addShaped("portable_storage_interface", <item:create:portable_stor
 craftingTable.removeRecipe(<item:create:mechanical_crafter>);
 
 craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> * 3, [
-    [wrench, <item:create:shaft>, <item:extendedcrafting:basic_catalyst>],
+    [wrench, <item:create:shaft>, <item:contenttweaker:primary_knowledge_catalog>],
     [<item:create:cogwheel>, sc, <tag:items:forge:chests/wooden>],
     [<item:minecraft:redstone>, <item:minecraft:crafting_table>, <item:minecraft:redstone>]
 ]);
@@ -536,7 +527,7 @@ craftingTable.addShaped("sequenced_gearshift", <item:create:sequenced_gearshift>
 craftingTable.removeRecipe(<item:create:rotation_speed_controller>);
 
 craftingTable.addShaped("rotation_speed_controller", <item:create:rotation_speed_controller>, [
-    [air, <item:create:integrated_circuit>, air],
+    [air, <item:create:precision_mechanism>, air],
     [<item:create:shaft>, sc, <item:create:shaft>]
 ]);
 

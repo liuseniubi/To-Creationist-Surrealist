@@ -1,0 +1,182 @@
+{
+  "name": "Thunder Processor",
+  "appearance": {
+    "model": "2cs:machine/thunder_processor",
+    "lightmode": "running",
+    "lightlevel": 7
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "input1",
+      "x": 27,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input2",
+      "x": 47,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input3",
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output1",
+      "x": 129,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output2",
+      "x": 149,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output3",
+      "x": 169,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output4",
+      "x": 189,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output5",
+      "x": 209,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output6",
+      "x": 129,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output7",
+      "x": 149,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output8",
+      "x": 169,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output9",
+      "x": 189,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output10",
+      "x": 209,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 96,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Thunder Processor",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "mode": "input",
+      "id": "input1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input3",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output3",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output4",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output5",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output6",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output7",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output8",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output9",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output10",
+      "type": "custommachinery:item"
+    }
+  ]
+}

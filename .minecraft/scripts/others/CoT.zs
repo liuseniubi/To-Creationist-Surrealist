@@ -21,7 +21,20 @@ var newitems as string[] = [
     "sky_blue_dye",
     "light_yellow_dye",
     "iron_gravel",
-    "graduate"
+    "graduate",
+    "primary_knowledge_fragment",
+    "primary_knowledge_catalog",
+    "junior_knowledge_fragment",
+    "junior_knowledge_catalog",
+    "senior_knowledge_fragment",
+    "senior_knowledge_catalog",
+    "superior_knowledge_fragment",
+    "superior_knowledge_catalog",
+    "advanced_knowledge_fragment",
+    "advanced_knowledge_catalog",
+    "ultimate_knowledge_fragment",
+    "ultimate_knowledge_catalog",
+    "coin"
 ];
 
 for i in newitems {

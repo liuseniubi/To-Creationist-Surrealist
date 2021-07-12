@@ -13,9 +13,6 @@
 
     "gui.appliedenergistics2.inWorldCraftingPresses": "所有压印模板需要合成。",
 
-    "block.create.andesite_funnel": "铯金漏斗",
-    "block.create.andesite_tunnel": "铯金隧道",
-
     "item.minecraft.red_dye": "红铯染料",
     "item.minecraft.yellow_dye": "黄铯染料",
     "item.minecraft.orange_dye": "橙铯染料",
@@ -52,7 +49,6 @@
     "2cs.jei.orepot2": "此矿物可通过 Botany Pots 的植物盆栽种出来。",
     "2cs.jei.orepot3": "可种植的东西可在 JEI 搜索 §4$growables §r 查看。",
     "2cs.jei.tntseed": "此种子不可种植在耕地上，仅可通过 Botany Pots 获得产物。",
-    "2cs.jei.dragon_star": "使用一个下界之星，四个末影戈伯锭，四个龙蛋§l§4爆破§r合成。",
     "2cs.jei.explosive": "可参与§l§4爆破§r合成。",
     "2cs.jei.torcherino1": "由一个火把和一个终极锭§l§4爆破§r合成。",
     "2cs.jei.torcherino2": "§m（在？PY 又痒了？.jpg）",
@@ -69,6 +65,7 @@
     "2cs.tooltip.basic_component": "除非特殊标注，否则不会在合成中消耗。",
     "2cs.tooltip.onlyforcrafting": "仅用于合成",
     "2cs.tooltip.wb": "只能用于装水、熔岩、牛奶。",
+    "2cs.tooltip.pebble": "挖掉焦木获得。",
 
     "_5": "specials",
     "2cs.tip.famous5000": "特别感谢 Famous5000 修正了其中的一些提示的英语翻译！",
@@ -76,5 +73,36 @@
     "2cs.tip.huyalance": "隐身怪也叫呆头，但这不是他最想要得到的 tips，但是我们还是做上去了。AwA",
 
     "_6": "quests.chapter",
-    "2cs.quests.chapter1": "第一章 - 开端"
+    "2cs.quests.chapter.1": "第一章 - 开端",
+    "2cs.quests.chapter.2": "第二章 - 创造",
+
+    "_7": "quests.title",
+    "2cs.quests.coin.title": "六进制的货币",
+    "2cs.quests.quest1.title": "欢迎来到 2CS",
+    "2cs.quests.quest2.title": "万恶之源",
+    "2cs.quests.quest3.title": "独特的雷电工艺",
+    "2cs.quests.quest4.title": "随身携带工作台",
+    "2cs.quests.quest5.title": "讨厌的无中生有",
+    "2cs.quests.quest6.title": "前期获得矿物锭的唯一方式",
+    "2cs.quests.quest7.title": "杀手皇后 第三炸弹 输的吃土",
+    "2cs.quests.quest8.title": "创作时间到！",
+    "2cs.quests.quest9.title": "今天你就是高梵！",
+    "2cs.quests.quest10.title": "淘金咯！",
+    "2cs.quests.quest11.title": "真正的万恶之源！",
+    "2cs.quests.quest12.title": "草",
+
+    "_8": "quests.text",
+    "2cs.quests.coin.text": "铯币可以用来在商店购买各种各样的物品。",
+    "2cs.quests.quest1.text": "这是由 Six_color，Skyraah，HakZn_Anox 等人制作的大型空岛整合包，在这里你将能感受到魔改整合包独有的创造力，机械动力的蒸汽朋克感，热力膨胀和通用科技营造出的超现实科技感，所以本包的名字为 To: Creationist & Surrealist ——《致：创造主义者和超现实主义者》，希望各位能在游戏中获得乐趣哟！",
+    "2cs.quests.quest2.text": "很常规的开局，不是吗",
+    "2cs.quests.quest3.text": "在周围（范围 5x5）有物品时右键使用引雷棒，但请注意使用时，尽量让落雷点离自己远一点，不然你就不会得网瘾了（笑）",
+    "2cs.quests.quest4.text": "跑来跑去找工作台不觉得很烦么？干脆身上带一个吧！",
+    "2cs.quests.quest5.text": "谁也解释不了为什么焦木里会有石子。",
+    "2cs.quests.quest6.text": "熔炉的配方我们也没有修改，多么核邪铀疝的整合包啊。",
+    "2cs.quests.quest7.text": "右键使用引爆棒，但请注意使用时，尽量让引爆点离自己远一点，不然我推荐你还是去吃土吧（笑） P.S. 圆石为防爆方块",
+    "2cs.quests.quest8.text": "通过将树叶和圆石放在一起雷击来产出三原铯染料的基础产品。",
+    "2cs.quests.quest9.text": "",
+    "2cs.quests.quest10.text": "2CS 里的仙人掌竟然能释放出金元素，还不快来试试？",
+    "2cs.quests.quest11.text": "本包前期巨量使用的铯金，建议多做一点备用。",
+    "2cs.quests.quest12.text": "草"
 }
