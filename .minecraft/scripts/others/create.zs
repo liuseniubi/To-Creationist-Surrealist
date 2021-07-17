@@ -648,6 +648,14 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
     [air, <item:create:brass_hand>, air]
 ]);
 
+# potato_cannon
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:create:potato_cannon>);
+
+<recipetype:create:mechanical_crafting>.addRecipe("potato_cannon", <item:create:potato_cannon>, [
+    [s, <item:create:precision_mechanism>, <item:create:fluid_pipe>, <item:create:fluid_pipe>, <item:create:fluid_pipe>],
+    [<tag:items:forge:ingots/copper>, <tag:items:forge:ingots/copper>]
+]);
+
 // remove splashing recipes
 <recipetype:create:splashing>.removeRecipe(<item:minecraft:yellow_concrete>);
 // remove crushing recipes

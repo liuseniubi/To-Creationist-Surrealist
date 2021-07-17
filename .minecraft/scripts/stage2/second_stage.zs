@@ -107,13 +107,25 @@ craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_mach
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
-#black dye to 
+#primary_knowledge_catalog
+craftingTable.addShaped("primary_knowledge_catalog", <item:contenttweaker:primary_knowledge_catalog>, [
+    [<item:minecraft:paper>, <item:minecraft:paper>, <item:minecraft:paper>],
+    [<item:minecraft:paper>, <item:contenttweaker:primary_knowledge_fragment>, <item:minecraft:paper>],
+    [<item:minecraft:paper>, <item:minecraft:paper>, <item:minecraft:paper>]
+]);
+
+#black dye to inc sac
 craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:minecraft:black_dye>]);
 
 #sixcolonium base
 <recipetype:create:mixing>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 3, [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, <tag:items:forge:plates/copper>]);
 
 smoker.addRecipe("sixcolonium_base1", <item:contenttweaker:sixcolonium_base> * 2, <item:contenttweaker:sixcolonium>, 0.0, 100);
+
+#precision_mechanism
+<recipetype:create:sequenced_assembly>.removeRecipe(<item:create:precision_mechanism>);
+
+<recipetype:create:mixing>.addRecipe("precision_mechanism", "heated", <item:create:precision_mechanism> * 8, [<tag:items:forge:plates/iron> * 3, <tag:items:forge:ingots/zinc> * 6, <item:minecraft:ink_sac> * 3, <item:contenttweaker:sixcolonium_base>], [<fluid:contenttweaker:weakened_hak_base> * 100]);
 
 #black dye
 <recipetype:interactio:item_explode>.addJSONRecipe("black_dye", {
@@ -297,7 +309,7 @@ smoker.addRecipe("sixcolonium_base1", <item:contenttweaker:sixcolonium_base> * 2
   "consume_fluid": 1
 });
 
-// others
+// oredust
 <recipetype:interactio:item_lightning>.addJSONRecipe("sand2oredust", {
   "inputs": [
     {
