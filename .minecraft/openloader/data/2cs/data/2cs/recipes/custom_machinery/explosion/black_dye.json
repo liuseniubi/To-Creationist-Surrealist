@@ -1,0 +1,25 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:explosion_processor",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "contenttweaker:pebble",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:charcoal",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:black_dye",
+			"amount": 2,
+			"mode": "output"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:thunder_processor",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "contenttweaker:pebble",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:bone_meal",
+			"amount": 2,
+			"mode": "output",
+			"chance": 0.73
+		}
+	]
+}

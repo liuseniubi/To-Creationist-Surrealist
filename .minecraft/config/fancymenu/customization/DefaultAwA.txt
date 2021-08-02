@@ -1,0 +1,211 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/customguis/background.png
+  action = texturizebackground
+}
+
+customization {
+  path = config/fancymenu/customization/2CS - Main menu.wav
+  action = setopenaudio
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-centered
+  x = 5
+  action = movebutton
+  y = -25
+}
+
+customization {
+  identifier = %id=400322%
+  width = 62
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400322%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-centered
+  x = -70
+  action = movebutton
+  y = -25
+}
+
+customization {
+  identifier = %id=400298%
+  width = 62
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400298%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=604382%
+  orientation = mid-centered
+  x = 15
+  action = movebutton
+  y = 75
+}
+
+customization {
+  identifier = %id=604382%
+  width = 41
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=604382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = mid-centered
+  x = -70
+  action = movebutton
+  y = 15
+}
+
+customization {
+  identifier = %id=400382%
+  width = 60
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = mid-centered
+  x = 5
+  action = movebutton
+  y = 15
+}
+
+customization {
+  identifier = %id=502382%
+  width = 60
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = mid-centered
+  x = -50
+  action = movebutton
+  y = 75
+}
+
+customization {
+  identifier = %id=376382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = mid-centered
+  x = -52
+  action = movebutton
+  y = -5
+}
+
+customization {
+  identifier = %id=400346%
+  width = 100
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400346%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  backgroundnormal = config/fancymenu/customguis/button.png
+}
+
+customization {
+  orientation = bottom-left
+  shadow = false
+  x = 3
+  action = addtext
+  actionid = ec58aec0-c2ae-4c31-b106-a98d3ebfb7461627457514352
+  y = -21
+  scale = 1.0
+  alignment = left
+  value = Minecraft %mcversion% with %totalmods% Mods
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = openlink
+  x = -75
+  width = 150
+  actionid = 284a674b-e14c-4594-9e81-3f08b313c9631627460772385
+  action = addbutton
+  y = 55
+  backgroundhovered = config/fancymenu/customguis/buttonhover.png
+  label = Want a server? Try Bisect!
+  backgroundnormal = config/fancymenu/customguis/button.png
+  value = https://www.bisecthosting.com/six_color
+  height = 20
+}
+
+customization {
+  orientation = bottom-left
+  shadow = false
+  x = 3
+  action = addtext
+  actionid = a3ef66f7-0d3e-4c3f-8910-b42001ce22c01627458235553
+  y = -12
+  scale = 1.0
+  alignment = left
+  value = To: Creationist & Surrealist By WCDN Team
+}
+

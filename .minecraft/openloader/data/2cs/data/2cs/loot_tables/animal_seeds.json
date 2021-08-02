@@ -1,0 +1,49 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "animalcrops:seeds",
+            "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{entity: \"minecraft:chicken\"}"
+                }
+              ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "animalcrops:seeds",
+            "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{entity: \"minecraft:sheep\"}"
+                }
+              ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "animalcrops:seeds",
+            "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{entity: \"minecraft:cow\"}"
+                }
+              ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "animalcrops:seeds",
+            "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{entity: \"minecraft:pig\"}"
+                }
+              ]
+          }
+        ]
+      }
+    ]
+}

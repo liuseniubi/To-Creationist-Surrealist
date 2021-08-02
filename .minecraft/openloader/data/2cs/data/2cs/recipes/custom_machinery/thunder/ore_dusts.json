@@ -1,0 +1,90 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:thunder_processor",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:sand",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:iron_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:copper_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:osmium_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:tin_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:zinc_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:nickel_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:lead_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:silver_dust",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "contenttweaker:sixcolonium",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "contenttweaker:pebble",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.8
+		}
+	]
+}

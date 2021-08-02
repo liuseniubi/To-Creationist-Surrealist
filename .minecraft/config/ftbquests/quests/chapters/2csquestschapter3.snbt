@@ -1,0 +1,780 @@
+{
+	id: "75A693F920303725"
+	group: ""
+	order_index: 2
+	filename: "2csquestschapter3"
+	title: "{\"2cs.quests.chapter.food\"}"
+	icon: "minecraft:apple"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "{2cs.quests.quest29.title}"
+			x: 0.0d
+			y: 0.0d
+			description: ["{2cs.quests.quest29.text}"]
+			id: "7DAA1DD1F99845B4"
+			tasks: [{
+				id: "7172AE70A73810C0"
+				type: "checkmark"
+				title: "\"2cs.quests.quest29.title\""
+			}]
+			rewards: [
+				{
+					id: "1540C0C065A250D4"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+				{
+					id: "3CD7A60128D17C81"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+			]
+		}
+		{
+			title: "{2cs.quests.quest30.title}"
+			x: 0.0d
+			y: 3.0d
+			description: ["{2cs.quests.quest30.text}"]
+			dependencies: ["7DAA1DD1F99845B4"]
+			id: "15C866865D5ABF80"
+			tasks: [
+				{
+					id: "5C7E16EF7D56CBBD"
+					type: "item"
+					item: "farmersdelight:rice"
+				}
+				{
+					id: "01577FAC9C7F297D"
+					type: "item"
+					item: "farmersdelight:cabbage_seeds"
+				}
+				{
+					id: "10D0BE8A9CCCDF6D"
+					type: "item"
+					item: "farmersdelight:tomato_seeds"
+				}
+				{
+					id: "3533340058927D62"
+					type: "item"
+					item: "minecraft:potato"
+				}
+				{
+					id: "6ECD9E5113E6998C"
+					type: "item"
+					item: "minecraft:carrot"
+				}
+				{
+					id: "27E851F472FEE3D0"
+					type: "item"
+					item: "minecraft:beetroot_seeds"
+				}
+				{
+					id: "4D1F3CA0761AF567"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "775DEC791CE00FBE"
+					type: "item"
+					item: "minecraft:pumpkin_seeds"
+				}
+				{
+					id: "3F474BCB39110036"
+					type: "item"
+					item: "minecraft:melon_seeds"
+				}
+				{
+					id: "7B0FD0D20E9B1525"
+					type: "item"
+					item: "farmersdelight:onion"
+				}
+				{
+					id: "4FB06695BFC8137A"
+					type: "item"
+					item: "minecraft:sweet_berries"
+				}
+			]
+			rewards: [
+				{
+					id: "58F37B52253934D3"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+				{
+					id: "743EBCF0ADA4543E"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+			]
+		}
+		{
+			title: "{2cs.quests.quest36.title}"
+			x: 3.0d
+			y: 0.0d
+			description: ["{2cs.quests.quest36.text}"]
+			dependencies: ["7DAA1DD1F99845B4"]
+			id: "07CD04474C27D76D"
+			tasks: [{
+				id: "15B07B2E13F0CC9B"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "6CFB83A7E35E2E80"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest31.title}"
+			x: 3.0d
+			y: 3.0d
+			description: ["{2cs.quests.quest31.text}"]
+			dependencies: ["15C866865D5ABF80"]
+			id: "00F53564632DC19E"
+			tasks: [
+				{
+					id: "7BAB5B5DBF49B1C9"
+					type: "item"
+					item: "minecraft:pumpkin"
+					count: 4L
+				}
+				{
+					id: "3352F0D1FAB947BE"
+					type: "item"
+					item: "minecraft:apple"
+					count: 16L
+				}
+				{
+					id: "3926D2C892F1F8FE"
+					type: "item"
+					item: "minecraft:melon_slice"
+					count: 16L
+				}
+				{
+					id: "0549223ADD66EDC1"
+					type: "item"
+					item: "minecraft:carrot"
+					count: 16L
+				}
+				{
+					id: "27A2EFB69FE9B24C"
+					type: "item"
+					item: "minecraft:potato"
+					count: 16L
+				}
+				{
+					id: "5C504636FC4BAADE"
+					type: "item"
+					item: "minecraft:beetroot"
+					count: 16L
+				}
+				{
+					id: "0DE3A43EAFB6CDB9"
+					type: "item"
+					item: "minecraft:sweet_berries"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "206EFB46F6820342"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+				{
+					id: "12FC7C04F8DC47E8"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+			]
+		}
+		{
+			title: "{2cs.quests.quest32.title}"
+			x: 3.0d
+			y: 6.0d
+			description: ["{2cs.quests.quest32.text}"]
+			dependencies: ["00F53564632DC19E"]
+			id: "12F33B9299D16DCC"
+			tasks: [
+				{
+					id: "66FF34CCB44D87F5"
+					type: "item"
+					item: "farmersdelight:cabbage"
+					count: 16L
+				}
+				{
+					id: "2E14F3F02B22CCE5"
+					type: "item"
+					item: "farmersdelight:tomato"
+					count: 16L
+				}
+				{
+					id: "6131FBFEA3347810"
+					type: "item"
+					item: "farmersdelight:onion"
+					count: 16L
+				}
+				{
+					id: "5D9917EB81E36542"
+					type: "item"
+					item: "farmersdelight:rice_panicle"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "4801F418E4219C0A"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest33.title}"
+			x: 6.0d
+			y: 4.5d
+			description: ["{2cs.quests.quest33.text}"]
+			dependencies: [
+				"12F33B9299D16DCC"
+				"124837AECDC05E2B"
+			]
+			id: "7F677CF71DCEFB4A"
+			tasks: [{
+				id: "342F2B0B25BA0249"
+				type: "item"
+				item: "farmersdelight:tomato_sauce"
+				count: 4L
+			}]
+			rewards: [{
+				id: "12330A31C50817C9"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest34.title}"
+			x: 6.0d
+			y: 7.5d
+			description: ["{2cs.quests.quest34.text}"]
+			dependencies: [
+				"12F33B9299D16DCC"
+				"36BD4348D984A82D"
+			]
+			id: "68D73EA580AAC49D"
+			tasks: [
+				{
+					id: "16AF6067B31C1FDE"
+					type: "item"
+					item: "farmersdelight:cabbage_leaf"
+					count: 4L
+				}
+				{
+					id: "175D13DD5B71454B"
+					type: "item"
+					item: "farmersdelight:pumpkin_slice"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "290D8F37EC90DA80"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest35.title}"
+			x: 9.0d
+			y: 7.5d
+			description: ["{2cs.quests.quest35.text}"]
+			dependencies: [
+				"68D73EA580AAC49D"
+				"36BD4348D984A82D"
+			]
+			id: "621A5F1B369A33B1"
+			tasks: [
+				{
+					id: "53547A8E17CD67FE"
+					type: "item"
+					item: "farmersdelight:chicken_cuts"
+					count: 4L
+				}
+				{
+					id: "1CC240064A3E7A51"
+					type: "item"
+					item: "farmersdelight:minced_beef"
+					count: 4L
+				}
+				{
+					id: "01EDB1BE6304718A"
+					type: "item"
+					item: "farmersdelight:bacon"
+					count: 4L
+				}
+				{
+					id: "2ECB49D3E598932C"
+					type: "item"
+					item: "farmersdelight:cod_slice"
+					count: 4L
+				}
+				{
+					id: "530D8B756ADA5650"
+					type: "item"
+					item: "farmersdelight:salmon_slice"
+					count: 4L
+				}
+				{
+					id: "1CE7F0C1ADFBC59C"
+					type: "item"
+					item: "farmersdelight:mutton_chops"
+					count: 4L
+				}
+				{
+					id: "17612D066C53F965"
+					type: "item"
+					item: "farmersdelight:ham"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "3EF03F8952B5192A"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest38.title}"
+			x: 6.0d
+			y: 0.0d
+			description: ["{2cs.quests.quest38.text}"]
+			dependencies: ["07CD04474C27D76D"]
+			id: "36BD4348D984A82D"
+			tasks: [
+				{
+					id: "6FA3957DB54AD2D6"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "69EE250C3FC664C3"
+					type: "item"
+					title: "Any #farmersdelight:tools/knives"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "farmersdelight:tools/knives"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7FDE2D94055ED99C"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest37.title}"
+			x: 6.0d
+			y: -1.5d
+			description: ["{2cs.quests.quest37.text}"]
+			dependencies: ["07CD04474C27D76D"]
+			id: "1C59400E895C2567"
+			tasks: [{
+				id: "3B1250027CFE14DA"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+			rewards: [{
+				id: "5C15DB31C46B27F3"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest39.title}"
+			x: 6.0d
+			y: 1.5d
+			description: ["{2cs.quests.quest39.text}"]
+			dependencies: ["07CD04474C27D76D"]
+			id: "124837AECDC05E2B"
+			tasks: [{
+				id: "3F0870DEFDCC1D5B"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+			rewards: [{
+				id: "0B4EC60DBEA2A2C1"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest41.title}"
+			x: 15.0d
+			y: 0.0d
+			description: ["{2cs.quests.quest41.text}"]
+			dependencies: ["36BD4348D984A82D"]
+			id: "52A6FD3A52276F01"
+			tasks: [{
+				id: "34B522F9DCCEB508"
+				type: "item"
+				item: "minecraft:bowl"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2A927BAA20081587"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest40.title}"
+			x: 9.0d
+			y: 1.5d
+			description: ["{2cs.quests.quest40.text}"]
+			dependencies: [
+				"124837AECDC05E2B"
+				"68D73EA580AAC49D"
+			]
+			id: "02D4A7D88BCE495E"
+			tasks: [
+				{
+					id: "2D760A9BFB929778"
+					type: "item"
+					item: "farmersdelight:cooked_rice"
+					count: 4L
+				}
+				{
+					id: "4646489840F1CC64"
+					type: "item"
+					item: "farmersdelight:pumpkin_soup"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "7BA1EB4BC722923C"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest42.title}"
+			x: 0.0d
+			y: -3.0d
+			description: ["{2cs.quests.quest42.text}"]
+			dependencies: ["7DAA1DD1F99845B4"]
+			id: "54B3C12C96B5400E"
+			tasks: [{
+				id: "565BC41D79D847C4"
+				type: "item"
+				item: "create:builders_tea"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "5FEE1711F24386BA"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+				{
+					id: "556B4B50FC053E01"
+					type: "item"
+					item: "contenttweaker:coin"
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: -6.0d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "4070BBF260714AAA"
+			tasks: [{
+				id: "28758EDEAC0A0F93"
+				type: "item"
+				item: "farmersdelight:fish_stew"
+			}]
+			rewards: [{
+				id: "3B2E5015E1C51ECB"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -5.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "1F75705C4407DD6C"
+			tasks: [{
+				id: "209E35A779ABA6D6"
+				type: "item"
+				item: "farmersdelight:pasta_with_mutton_chop"
+			}]
+			rewards: [{
+				id: "49901686A948B856"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "2CEE5B0A75D08A7A"
+			tasks: [{
+				id: "3E1DE5F055F65F41"
+				type: "item"
+				item: "farmersdelight:fried_rice"
+			}]
+			rewards: [{
+				id: "79920F6042D04905"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.0d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "04B6C90BF9BA27E1"
+			tasks: [{
+				id: "4ED35186EB6A9451"
+				type: "item"
+				item: "farmersdelight:beef_stew"
+			}]
+			rewards: [{
+				id: "4770AD7512637A57"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -5.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "5D871B40FF58BFF1"
+			tasks: [{
+				id: "5A2C7D9D4806F040"
+				type: "item"
+				item: "farmersdelight:noodle_soup"
+			}]
+			rewards: [{
+				id: "1263049709489842"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -4.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "712EFC3CBE4A2FF9"
+			tasks: [{
+				id: "55EC39B0419140C8"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+			rewards: [{
+				id: "42CC6104837AB576"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -3.0d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "1A8655EFA5F2D46C"
+			tasks: [{
+				id: "0C11711907626868"
+				type: "item"
+				item: "farmersdelight:ratatouille"
+			}]
+			rewards: [{
+				id: "42D17A12EF868424"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 5.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "6352545A2548EEF9"
+			tasks: [{
+				id: "355893E86338D79F"
+				type: "item"
+				item: "farmersdelight:pasta_with_meatballs"
+			}]
+			rewards: [{
+				id: "67C344ECB72D6670"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "0AFF6130AE62DC55"
+			tasks: [{
+				id: "4A11C07FBCE3CB13"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+			rewards: [{
+				id: "2324D8649D12B566"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 19.5d
+			y: -1.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "0D778B73CAE43705"
+			tasks: [{
+				id: "640B0B234F7DD140"
+				type: "item"
+				item: "farmersdelight:vegetable_soup"
+			}]
+			rewards: [{
+				id: "29DAB75B976A32E6"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 5.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "4C35E7F914B90EBA"
+			tasks: [{
+				id: "7689CD04865C50C1"
+				type: "item"
+				item: "farmersdelight:vegetable_noodles"
+			}]
+			rewards: [{
+				id: "0F69DDDCC40C1F3B"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "20F2F6AD91C2E97D"
+			tasks: [{
+				id: "154ACE5D2850DA0C"
+				type: "item"
+				item: "farmersdelight:pumpkin_soup"
+			}]
+			rewards: [{
+				id: "09EF7850881EE069"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 4.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "120A4295624EDF61"
+			tasks: [{
+				id: "2D2AC7C1B66F3645"
+				type: "item"
+				item: "farmersdelight:dog_food"
+			}]
+			rewards: [{
+				id: "4D197CA0A8A50F6F"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.0d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "54262E0BB9EE7B4C"
+			tasks: [{
+				id: "232E49581CBE3345"
+				type: "item"
+				item: "farmersdelight:baked_cod_stew"
+			}]
+			rewards: [{
+				id: "043AF52DDD9A6A37"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 3.0d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "0EF6ED7B0EBACA3F"
+			tasks: [{
+				id: "34F97DB73F2CC01D"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+			rewards: [{
+				id: "3BFE92E628E95953"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "76428DDB00A0B3C8"
+			tasks: [{
+				id: "064E4C87F82A0EF3"
+				type: "item"
+				item: "farmersdelight:chicken_soup"
+			}]
+			rewards: [{
+				id: "2DAEF54ABE2D7C65"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 1.5d
+			dependencies: ["52A6FD3A52276F01"]
+			id: "38DA479E6302BC26"
+			tasks: [{
+				id: "1C1A84107FC2DD9E"
+				type: "item"
+				item: "farmersdelight:squid_ink_pasta"
+			}]
+			rewards: [{
+				id: "458E55F06DAE7FBE"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest43.title}"
+			x: 9.0d
+			y: 4.5d
+			description: ["{2cs.quests.quest43.text}"]
+			dependencies: ["621A5F1B369A33B1"]
+			id: "1ACC5019D631193C"
+			tasks: [{
+				id: "6204F5D3EE61E413"
+				type: "item"
+				item: "farmersdelight:hamburger"
+				count: 16L
+			}]
+			rewards: [{
+				id: "118DECB2549089FE"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+	]
+}

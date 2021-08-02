@@ -1,0 +1,98 @@
+{
+    "scripts": {
+        "id": "2cs:animal_seeds",
+        "swing": true,
+        "drop_rule": "block",
+        "properties": [
+            {
+                "property": "scavenge_player:is_hand_empty"
+            },
+            {
+                "property": "scavenge_player:is_hand"
+            },
+            {
+                "property": "scavenge_utils:conditional_effect",
+                "test": {
+                    "property": "scavenge_player:limit_action",
+                    "id": "soundlimit",
+                    "delay": 10,
+                    "limit": [
+                        {
+                            "condition": "scavenge:smaller",
+                            "value": 1
+                        }
+                    ],
+                    "change": {
+                        "operation": "scavenge:add",
+                        "value": 1
+                    }
+                },
+                "true": {
+                    "property": "scavenge_utils:array_effect",
+                    "effects": [
+                        {
+                            "property": "scavenge_world:play_sound",
+                            "category": "block",
+                            "sound": "minecraft:block.grass.step",
+                            "pitch": {
+                               "operation": "scavenge:const",
+                                "value": 100
+                            }
+                        },
+                        {
+                            "property": "scavenge_player:limit_action",
+                            "id": "soundlimit",
+                            "delay": 10,
+                            "limit": [
+                                {
+                                    "condition": "scavenge:smaller",
+                                    "value": 1
+                                }
+                            ],
+                            "change": {
+                                "operation": "scavenge:add",
+                                "value": 1
+                            }
+                        }
+                    ]
+                },
+                "false": {
+                    "property": "scavenge_utils:default_effect"
+                }
+            },
+            {
+                "property": "scavenge_world:spawn_particles",
+                "particle": "minecraft:heart",
+                "count": {
+		    "operation": "scavenge:const",
+		    "value": 3
+	       }
+            }
+        ],
+        "loot": [
+            {
+                "lootPool": "2cs:animal_seeds",
+                "conditions": [
+                    {
+                        "property": "scavenge_utils:random",
+                        "chance": 10
+                    }
+                ]
+            }
+        ],
+        "type": {
+            "type": "right_click",
+            "consume": false,
+            "show": true
+        },
+        "targets": [
+            {
+                "type": "blocks",
+                "id": [
+                    "minecraft:grass_block",
+                    "minecraft:dirt"
+                ]
+            }
+        ]
+    }
+}

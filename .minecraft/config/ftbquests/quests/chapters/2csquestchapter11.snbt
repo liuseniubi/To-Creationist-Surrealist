@@ -1,0 +1,299 @@
+{
+	id: "62DDB8F0EBCCF566"
+	group: ""
+	order_index: 0
+	filename: "2csquestchapter11"
+	title: "{2cs.quests.chapter.1}"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "{2cs.quests.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["{2cs.quests.quest1.text}"]
+			size: 2.0d
+			id: "4D6187D9D1D91E85"
+			tasks: [{
+				id: "5E5F1DCBC4FF3134"
+				type: "checkmark"
+				title: "{2cs.quests.chapter1.1.1}"
+				icon: "contenttweaker:graduate"
+			}]
+			rewards: [{
+				id: "68FCB772DE5BBD58"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest2.title}"
+			x: 3.0d
+			y: 0.0d
+			shape: "square"
+			description: ["{2cs.quests.quest2.text}"]
+			dependencies: ["4D6187D9D1D91E85"]
+			dependency_requirement: "all_started"
+			id: "33F9AE0123AA1B5B"
+			tasks: [{
+				id: "41B79FB001477D9F"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "64781BA418D6137F"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest3.title}"
+			x: 5.5d
+			y: 0.0d
+			shape: "square"
+			description: ["{2cs.quests.quest3.text}"]
+			dependencies: ["33F9AE0123AA1B5B"]
+			id: "7F18A72EEEC49FD1"
+			tasks: [{
+				id: "0C8B636019401BDE"
+				type: "item"
+				item: "contenttweaker:thunder_stick"
+			}]
+			rewards: [{
+				id: "488DC1B2C617CB3E"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest4.title}"
+			x: 3.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["{2cs.quests.quest4.text}"]
+			dependencies: ["33F9AE0123AA1B5B"]
+			optional: true
+			id: "7FEDCA77E15CD9A4"
+			tasks: [{
+				id: "0B0E9200C70DFE19"
+				type: "item"
+				icon: "portablecraftingtable:portable_crafting_table"
+				item: "portablecraftingtable:portable_crafting_table"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest5.title}"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			description: ["{2cs.quests.quest5.text}"]
+			dependencies: ["7F18A72EEEC49FD1"]
+			id: "003E800875F9B242"
+			tasks: [
+				{
+					id: "545AFCE2FC557FCC"
+					type: "item"
+					item: "contenttweaker:burnt_plank"
+					count: 16L
+				}
+				{
+					id: "02FB70D3D4AED03C"
+					type: "item"
+					item: "contenttweaker:pebble"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "1F7A5943DB772A2A"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.coin.title}"
+			x: 0.0d
+			y: -2.0d
+			shape: "octagon"
+			description: ["{2cs.quests.coin.text}"]
+			dependencies: ["4D6187D9D1D91E85"]
+			id: "291AB8758113D150"
+			tasks: [{
+				id: "53CCBBBB77CE4DD7"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest6.title}"
+			x: 8.0d
+			y: -1.9999999999999996d
+			shape: "square"
+			description: ["{2cs.quests.quest6.text}"]
+			dependencies: ["003E800875F9B242"]
+			id: "46C10A2B94D4868B"
+			tasks: [{
+				id: "3684C3E2D193CBB3"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [{
+				id: "0495E18A8AED2F03"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest7.title}"
+			x: 10.5d
+			y: 0.0d
+			shape: "square"
+			description: ["{2cs.quests.quest7.text}"]
+			dependencies: ["003E800875F9B242"]
+			id: "1C8BD4A1C4F8DF2F"
+			tasks: [{
+				id: "5C935350EB1D44CD"
+				type: "item"
+				item: "contenttweaker:explosive_stick"
+			}]
+			rewards: [{
+				id: "77FAA0CCE7CED7E1"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest8.title}"
+			x: 8.0d
+			y: 2.5d
+			shape: "square"
+			description: ["{2cs.quests.quest8.text}"]
+			dependencies: ["003E800875F9B242"]
+			id: "55D3E412CF392DB0"
+			tasks: [
+				{
+					id: "2ECB361EF403FE2B"
+					type: "item"
+					item: "minecraft:cornflower"
+				}
+				{
+					id: "6BBE1FE6D3987C17"
+					type: "item"
+					item: "minecraft:cactus"
+				}
+				{
+					id: "16828219D1D6EE8A"
+					type: "item"
+					item: "minecraft:poppy"
+				}
+			]
+			rewards: [{
+				id: "11485C1FED7548ED"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest9.title}"
+			x: 5.5d
+			y: 5.0d
+			shape: "square"
+			description: ["{2cs.quests.quest9.text}"]
+			dependencies: ["55D3E412CF392DB0"]
+			id: "579856C6D58AF99B"
+			tasks: [
+				{
+					id: "5506D381D34090C1"
+					type: "item"
+					item: "contenttweaker:sky_blue_dye"
+					count: 16L
+				}
+				{
+					id: "6E8922BD37923B43"
+					type: "item"
+					item: "contenttweaker:light_yellow_dye"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "1679B3F51B407A94"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest10.title}"
+			x: 10.5d
+			y: 5.0d
+			shape: "square"
+			description: ["{2cs.quests.quest10.text}"]
+			dependencies: ["55D3E412CF392DB0"]
+			id: "2DC4D38A1B837999"
+			tasks: [{
+				id: "14DEEFC801D4063C"
+				type: "item"
+				item: "emendatusenigmatica:gold_chunk"
+			}]
+			rewards: [{
+				id: "40B804AC0E18E46B"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest11.title}"
+			x: 8.0d
+			y: 7.5d
+			description: ["{2cs.quests.quest11.text}"]
+			dependencies: [
+				"579856C6D58AF99B"
+				"2DC4D38A1B837999"
+			]
+			size: 2.0d
+			id: "25A3C1E3028C2062"
+			tasks: [{
+				id: "09F44D77D773373F"
+				type: "item"
+				item: "contenttweaker:sixcolonium"
+				count: 64L
+			}]
+			rewards: [{
+				id: "38A1D779CFB321E2"
+				type: "item"
+				item: "contenttweaker:coin"
+			}]
+		}
+		{
+			title: "{2cs.quests.quest12.title}"
+			x: 5.5d
+			y: 2.5d
+			description: ["{2cs.quests.quest12.text}"]
+			dependencies: ["7F18A72EEEC49FD1"]
+			id: "47B27B12DE737303"
+			tasks: [{
+				id: "6D2A9B61805A35F1"
+				type: "item"
+				item: "minecraft:grass_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			shape: "octagon"
+			description: [
+				"\"2cs.tutorial.jei.text1\""
+				"\"2cs.tutorial.jei.text2\""
+				"\"2cs.tutorial.jei.text3\""
+				"\"2cs.tutorial.jei.text4\""
+			]
+			dependencies: ["4D6187D9D1D91E85"]
+			id: "28D44E7417099D36"
+			tasks: [{
+				id: "7F5DF55D4AA4B67A"
+				type: "checkmark"
+				title: "\"2cs.tutorial.jei.title\""
+			}]
+		}
+	]
+}

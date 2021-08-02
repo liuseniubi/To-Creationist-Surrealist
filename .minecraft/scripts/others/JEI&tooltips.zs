@@ -51,11 +51,14 @@ var thunder_stickttp = game.localize("2cs.tooltip.thunder_stick");
 var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
 <item:contenttweaker:explosive_stick>.addTooltip(explosive_stickttp);
 
-var wbttp = game.localize("2cs.tooltip.wb");
-<item:woodenbuckets:wooden_bucket>.addTooltip(wbttp);
-
 var pebblettp = game.localize("2cs.tooltip.pebble");
 <item:contenttweaker:pebble>.addTooltip(pebblettp);
+
+var chicken_seed_ttp = game.localize("2cs.tooltip.chicken_seed");
+<item:animalcrops:seeds>.withTag({entity: "minecraft:chicken" as string}).addTooltip(chicken_seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:cow" as string}).addTooltip(chicken_seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:sheep" as string}).addTooltip(chicken_seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:pig" as string}).addTooltip(chicken_seed_ttp);
 
 // orepot
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:gold_ore>, [orepot1, orepot2, orepot3]);

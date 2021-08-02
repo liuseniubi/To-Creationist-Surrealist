@@ -1,0 +1,19 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:thunder_processor",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "#minecraft:leaves",
+			"amount": 10,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:ice",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

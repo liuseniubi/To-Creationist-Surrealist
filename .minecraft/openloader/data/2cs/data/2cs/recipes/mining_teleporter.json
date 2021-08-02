@@ -1,0 +1,78 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 3,
+    "layers": [
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+              ["D", "A", "E"],
+              ["A", "B", "A"],
+              ["E", "A", "D"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+              ["A", "F", "A"],
+              ["G", "C", "G"],
+              ["A", "F", "A"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+              ["H", "A", "I"],
+              ["A", "B", "A"],
+              ["I", "A", "H"]
+            ]
+          }
+      ],
+    "catalyst": {
+        "id": "minecraft:iron_pickaxe",
+        "Count": 1
+      },
+    "components": {
+      "A":{
+              "type": "compactcrafting:block",
+              "block": "contenttweaker:sixcolonium_casing"
+          },
+      "B":{
+              "type": "compactcrafting:block",
+              "block": "minecraft:chest"
+          },   
+      "C":{
+              "type": "compactcrafting:block",
+              "block": "contenttweaker:fake_digger"
+          }, 
+      "D":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:silver_ore"
+          }, 
+      "E":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:copper_ore"
+          },
+      "F":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:nickel_ore"
+          }, 
+      "G":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:osmium_ore"
+          },
+      "H":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:tin_ore"
+          }, 
+      "I":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:gold_ore"
+          }
+    },
+    "outputs": [
+          {
+              "id": "mining_dimension:teleporter",
+              "Count": 1
+          }
+    ]
+}

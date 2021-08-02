@@ -6,9 +6,12 @@ import crafttweaker.api.blocks.MCBlock;
 craftingTable.removeByModid("emendatusenigmatica");
 <recipetype:minecraft:stonecutting>.removeByModid("emendatusenigmatica");
 
+var leaves = <tag:items:minecraft:leaves>.asIIngredient();
+
 <item:contenttweaker:burnt_plank>.burnTime = 400;
 <item:contenttweaker:thunder_stick>.burnTime = 1200;
 <item:contenttweaker:explosive_stick>.burnTime = 2000;
+leaves.burnTime = 400;
 
 // Explosion-proof
 <block:minecraft:cobblestone>.setBlastResistance(50);
@@ -104,7 +107,6 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
   }
 });
 
-/* wasted XD
 // thunder: pebble * 1 = 80% bonemeal * 1
 <recipetype:interactio:item_lightning>.addJSONRecipe("pebble2bonemeal", {
   "inputs": [
@@ -126,7 +128,6 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
     "empty_weight": 27
   }
 });
-*/
 
 // thunder: gravel * 1 + leaves * 3 = grass_block * 1
 <recipetype:interactio:item_lightning>.addJSONRecipe("grassblock", {

@@ -19,6 +19,7 @@ craftingTable.addShaped("machine_pyrolyzer", <item:thermal:machine_pyrolyzer>, [
 
 // remove furnace recipes
 furnace.removeRecipe(<item:minecraft:iron_ingot>);
+furnace.removeRecipe(<item:minecraft:gold_ingot>);
 furnace.removeRecipe(<item:emendatusenigmatica:zinc_ingot>);
 furnace.removeRecipe(<item:emendatusenigmatica:tin_ingot>);
 furnace.removeRecipe(<item:emendatusenigmatica:osmium_ingot>);
@@ -29,6 +30,7 @@ furnace.removeRecipe(<item:emendatusenigmatica:copper_ingot>);
 
 // blast furnace recipes
 blastFurnace.addRecipe("blastfurnace_chunk_iron", <item:minecraft:iron_nugget> * 6, <tag:items:forge:chunks/iron>, 2.0, 100);
+blastFurnace.addRecipe("blastfurnace_chunk_gold", <item:minecraft:gold_nugget> * 6, <tag:items:forge:chunks/gold>, 2.0, 100);
 blastFurnace.addRecipe("blastfurnace_chunk_zinc", <item:emendatusenigmatica:zinc_nugget> * 6, <tag:items:forge:chunks/zinc>, 2.0, 100);
 blastFurnace.addRecipe("blastfurnace_chunk_tin", <item:emendatusenigmatica:tin_nugget> * 6, <tag:items:forge:chunks/tin>, 2.0, 100);
 blastFurnace.addRecipe("blastfurnace_chunk_osmium", <item:emendatusenigmatica:osmium_nugget> * 6, <tag:items:forge:chunks/osmium>, 2.0, 100);

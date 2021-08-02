@@ -33,6 +33,9 @@ var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 
 # crafting tables
 // deletes
+recipes.removeByName("create:sequenced_assembly/cogwheel");
+recipes.removeByName("create:sequenced_assembly/large_cogwheel");
+
 craftingTable.removeRecipe(<item:create:andesite_casing>);
 craftingTable.removeRecipe(<item:create:brass_casing>);
 craftingTable.removeRecipe(<item:create:brass_block>);
@@ -55,6 +58,14 @@ craftingTable.removeRecipe(<item:emendatusenigmatica:brass_block>);
 <recipetype:thermal:smelter>.removeRecipe(<item:create:brass_ingot>);
 
 // tweaks
+craftingTable.addShapeless("andesite_casing", <item:create:andesite_casing>, [<item:contenttweaker:sixcolonium_casing>]);
+
+craftingTable.addShapeless("brass_casing", <item:create:brass_casing>, [<item:create:andesite_casing>]);
+
+craftingTable.addShapeless("copper_casing", <item:create:copper_casing>, [<item:create:brass_casing>]);
+
+craftingTable.addShapeless("re_csixcolonium_casing", <item:contenttweaker:sixcolonium_casing>, [<item:create:copper_casing>]);
+
 # gearbox
 craftingTable.removeRecipe(<item:create:gearbox>);
 
@@ -292,7 +303,7 @@ craftingTable.addShaped("radial_chassis", <item:create:radial_chassis> * 3, [
 craftingTable.removeRecipe(<item:create:millstone>);
 
 craftingTable.addShaped("millstone", <item:create:millstone>, [
-    [wrench, <tag:items:minecraft:planks>, <item:contenttweaker:primary_knowledge_fragment>.reuse()],
+    [wrench, <tag:items:minecraft:planks>, <item:contenttweaker:primary_knowledge_fragment>],
     [<item:create:cogwheel>, sc, <item:create:cogwheel>],
     [<item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>]
 ]);
@@ -458,7 +469,7 @@ craftingTable.addShaped("clutch", <item:create:clutch>, [
 craftingTable.removeRecipe(<item:create:encased_fan>);
 
 craftingTable.addShaped("encased_fan", <item:create:encased_fan>, [
-    [<item:contenttweaker:primary_knowledge_catalog>, sc, <tag:items:minecraft:logs>],
+    [<item:contenttweaker:primary_knowledge_catalog>.reuse(), sc, <tag:items:minecraft:logs>],
     [s, <item:create:propeller>, s],
     [<tag:items:minecraft:logs>, wrench, <tag:items:minecraft:logs>]
 ]);
@@ -509,7 +520,7 @@ craftingTable.addShaped("portable_storage_interface", <item:create:portable_stor
 craftingTable.removeRecipe(<item:create:mechanical_crafter>);
 
 craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> * 3, [
-    [wrench, <item:create:shaft>, <item:contenttweaker:primary_knowledge_catalog>],
+    [wrench, <item:create:shaft>, <item:contenttweaker:primary_knowledge_catalog>.reuse()],
     [<item:create:cogwheel>, sc, <tag:items:forge:chests/wooden>],
     [<item:minecraft:redstone>, <item:minecraft:crafting_table>, <item:minecraft:redstone>]
 ]);
@@ -653,7 +664,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
 
 <recipetype:create:mechanical_crafting>.addRecipe("potato_cannon", <item:create:potato_cannon>, [
     [s, <item:create:precision_mechanism>, <item:create:fluid_pipe>, <item:create:fluid_pipe>, <item:create:fluid_pipe>],
-    [<tag:items:forge:ingots/copper>, <tag:items:forge:ingots/copper>]
+    [<tag:items:forge:ingots/copper>, <tag:items:forge:ingots/copper>, air, air, air]
 ]);
 
 // remove splashing recipes

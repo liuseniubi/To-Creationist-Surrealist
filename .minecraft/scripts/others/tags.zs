@@ -30,7 +30,8 @@ import crafttweaker.api.tag.MCTag;
     <item:emendatusenigmatica:nickel_chunk>,
     <item:emendatusenigmatica:tin_chunk>,
     <item:emendatusenigmatica:lead_chunk>,
-    <item:emendatusenigmatica:silver_chunk>
+    <item:emendatusenigmatica:silver_chunk>,
+    <item:emendatusenigmatica:gold_chunk>
 );
 
 <tag:items:forge:ores/zinc>.remove(<item:emendatusenigmatica:zinc_chunk>);
@@ -41,6 +42,7 @@ import crafttweaker.api.tag.MCTag;
 <tag:items:forge:ores/tin>.remove(<item:emendatusenigmatica:tin_chunk>);
 <tag:items:forge:ores/lead>.remove(<item:emendatusenigmatica:lead_chunk>);
 <tag:items:forge:ores/silver>.remove(<item:emendatusenigmatica:silver_chunk>);
+<tag:items:forge:ores/gold>.remove(<item:emendatusenigmatica:gold_chunk>);
 
 <tag:items:2cs:orechunks>.add(
     <item:emendatusenigmatica:zinc_chunk>,
@@ -50,5 +52,6 @@ import crafttweaker.api.tag.MCTag;
     <item:emendatusenigmatica:nickel_chunk>,
     <item:emendatusenigmatica:tin_chunk>,
     <item:emendatusenigmatica:lead_chunk>,
-    <item:emendatusenigmatica:silver_chunk>
+    <item:emendatusenigmatica:silver_chunk>,
+    <item:emendatusenigmatica:gold_chunk>
 );
