@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 2
 	filename: "2csquestschapter3"
-	title: "{\"2cs.quests.chapter.food\"}"
+	title: "{2cs.quests.chapter.food}"
 	icon: "minecraft:apple"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
