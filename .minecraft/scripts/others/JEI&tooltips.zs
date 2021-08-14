@@ -1,9 +1,8 @@
-//   _____ _                     __          
-//  / ___/(_)  __    _________  / /___  _____
-//  \__ \/ / |/_/   / ___/ __ \/ / __ \/ ___/
-// ___/ / />  <    / /__/ /_/ / / /_/ / /    
-///____/_/_/|_|____\___/\____/_/\____/_/     
-//           /_____/                         
+/*
+    Author: Six_color
+    Script: jei&tooltips.zs
+    Made For 2CS
+*/                       
 
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
@@ -21,7 +20,6 @@ var graduate = game.localize("2cs.jei.graduate");
 
 // hide
 mods.jei.JEI.hideRecipe("interactio:item_lightning", "crafttweaker:chargedcoconut");
-mods.jei.JEI.hideRecipe("minecraft:smoking", "crafttweaker:sixcolonium_base1");
 
 // tooltips
 # ofc

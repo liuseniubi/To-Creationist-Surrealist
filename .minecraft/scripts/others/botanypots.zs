@@ -1,7 +1,7 @@
 /*
     Author: Six_color
-    Script: botanypots
-    For 2CS
+    Script: botanypots.zs
+    Made For 2CS
 */
 
 import mods.botanypots.ZenCrop;

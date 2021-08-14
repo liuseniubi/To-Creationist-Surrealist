@@ -1,8 +1,9 @@
 /*
     Author: Six_color
-    Name: event
-    For 2CS
+    Script: events.zs
+    Made For 2CS
 */
+
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCPlayerEvent;
 import crafttweaker.api.event.entity.player.interact.MCPlayerInteractEvent;

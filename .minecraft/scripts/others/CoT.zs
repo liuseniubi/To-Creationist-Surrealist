@@ -3,6 +3,7 @@
 #loader contenttweaker
 
 import mods.contenttweaker.block.BlockBuilder;
+import mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable;
 import mods.contenttweaker.fluid.FluidBuilder;
 import mods.contenttweaker.item.ItemBuilder;
 import mods.contenttweaker.item.ItemTypeBuilder;
@@ -34,7 +35,9 @@ var newitems as string[] = [
     "advanced_knowledge_catalog",
     "ultimate_knowledge_fragment",
     "ultimate_knowledge_catalog",
-    "coin"
+    "coin",
+    "crude_steel_ingot",
+    "poor_quality_conductive_coil"
 ];
 
 for i in newitems {
@@ -48,6 +51,34 @@ new ItemBuilder()
     .build("wrench");
 
 new mods.contenttweaker.item.MCToolType("wrench");
+
+var newblocks as string[] = [
+    "fake_digger",
+    "burnt_plank",
+    "redstone_reaction_processing_board",
+    "circuit_processing_core_board",
+    "primary_energe_transfer_block",
+    "invar_plate_metal_block",
+    "invar_casing",
+    "copper_poor_quality_coil"
+];
+
+for i in newblocks {
+    new BlockBuilder()
+    .withHarvestTool(<tooltype:pickaxe>)
+    .withHarvestLevel(1)
+    .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f).notSolid()
+    .build(i);
+}
+
+new BlockBuilder()
+    .withHarvestTool(<tooltype:pickaxe>)
+    .withHarvestLevel(1)
+    .notSolid()
+    .withMaxStackSize(64)
+    .withHardnessAndResistance(0.5f, 0.5f)
+    .build("copper_poor_quality_cable");
 
 new BlockBuilder()
     .withHarvestTool(<tooltype:pickaxe>)
@@ -65,29 +96,14 @@ new BlockBuilder()
     .withHardnessAndResistance(0.5f, 0.5f)
     .build("sixcolonium_casing");
 
-new BlockBuilder()
-    .withHarvestTool(<tooltype:pickaxe>)
-    .withHarvestLevel(1)
-    .withMaxStackSize(64)
-    .withHardnessAndResistance(0.5f, 0.5f)
-    .build("fake_digger");
-
-new BlockBuilder()
-    .withHarvestTool(<tooltype:axe>)
-    .withHarvestLevel(1)
-    .withMaxStackSize(64)
-    .withHardnessAndResistance(0.5f, 0.5f)
-    .build("burnt_plank");
-
 new FluidBuilder(false, 0xff4682b4, <resource:contenttweaker:fluids/hak_base>, <resource:contenttweaker:fluids/hak_base_flow>)
     .build("hak_base");
 
 new FluidBuilder(false, 0xffb0e0e6, <resource:contenttweaker:fluids/weakened_hak_base>, <resource:contenttweaker:fluids/weakened_hak_base_flow>)
     .build("weakened_hak_base");
-    
-//    _____ _                     __          
-//   / ___/(_)  __    _________  / /___  _____
-//   \__ \/ / |/_/   / ___/ __ \/ / __ \/ ___/
-//  ___/ / />  <    / /__/ /_/ / / /_/ / /    
-// /____/_/_/|_|____\___/\____/_/\____/_/     
-//            /_____/                         
+
+/*
+    Author: Six_color
+    Script: cot.zs
+    Made For 2CS
+*/

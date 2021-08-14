@@ -16,13 +16,16 @@
     "gui.appliedenergistics2.inWorldCraftingPresses": "All the Processor Press can be crafted.",
 
     "item.minecraft.red_dye": "Red Dye",
-    "item.minecraft.yellow_dye": "Tellow Dye",
+    "item.minecraft.yellow_dye": "Yellow Dye",
     "item.minecraft.orange_dye": "Orange Dye",
     "item.minecraft.green_dye": "Green Dye",
     "item.minecraft.blue_dye": "Blue Dye",
     "item.minecraft.purple_dye": "Purple Dye",
-    "Thunder Processor": "Thunder Processor",
-    "Explosion Processor": "Explosion Processor",
+    "2cs.block.thunder_processor": "Thunder Processor",
+    "2cs.block.explosion_processor": "Explosion Processor",
+    "2cs.block.automatic_cutter": "Automatic Cutter",
+    "2cs.block.food_energe_generator": "Jin Yang™ Food Generator",
+
 
     "_1": "advancements",
     "advancements.2cs.root.title": "2CS!",

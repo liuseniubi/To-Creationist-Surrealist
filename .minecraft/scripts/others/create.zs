@@ -1,3 +1,9 @@
+/*
+    Author: Six_color
+    Script: create.zs
+    Made For 2CS
+*/
+
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.tag.MCTag;
@@ -9,27 +15,21 @@ var scog = <item:create:cogwheel>;
 var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 
 // pressing recipes
-<recipetype:create:pressing>.addRecipe("iron_plate", [<item:emendatusenigmatica:iron_plate>], <item:minecraft:iron_ingot>);
-<recipetype:create:pressing>.addRecipe("gold_plate", [<item:emendatusenigmatica:gold_plate>], <item:minecraft:gold_ingot>);
-<recipetype:create:pressing>.addRecipe("diamond_plate", [<item:emendatusenigmatica:diamond_plate>], <item:minecraft:diamond>);
-<recipetype:create:pressing>.addRecipe("emerald_plate", [<item:emendatusenigmatica:emerald_plate>], <item:minecraft:emerald>);
-<recipetype:create:pressing>.addRecipe("lapis_plate", [<item:emendatusenigmatica:lapis_plate>], <item:minecraft:lapis_lazuli>);
-<recipetype:create:pressing>.addRecipe("copper_plate", [<item:emendatusenigmatica:copper_plate>], <item:emendatusenigmatica:copper_plate>);
-<recipetype:create:pressing>.addRecipe("silver_plate", [<item:emendatusenigmatica:silver_plate>], <item:emendatusenigmatica:silver_plate>);
-<recipetype:create:pressing>.addRecipe("lead_plate", [<item:emendatusenigmatica:lead_plate>], <item:emendatusenigmatica:lead_plate>);
-<recipetype:create:pressing>.addRecipe("nickel_plate", [<item:emendatusenigmatica:nickel_plate>], <item:emendatusenigmatica:nickel_plate>);
-<recipetype:create:pressing>.addRecipe("osmium_plate", [<item:emendatusenigmatica:osmium_plate>], <item:emendatusenigmatica:osmium_plate>);
-<recipetype:create:pressing>.addRecipe("tin_plate", [<item:emendatusenigmatica:tin_plate>], <item:emendatusenigmatica:tin_plate>);
-<recipetype:create:pressing>.addRecipe("zinc_plate", [<item:emendatusenigmatica:zinc_plate>], <item:emendatusenigmatica:zinc_plate>);
-<recipetype:create:pressing>.addRecipe("bronze_plate", [<item:emendatusenigmatica:bronze_plate>], <item:emendatusenigmatica:bronze_plate>);
-<recipetype:create:pressing>.addRecipe("brass_plate", [<item:emendatusenigmatica:brass_plate>], <item:emendatusenigmatica:brass_plate>);
-<recipetype:create:pressing>.addRecipe("constantan_plate", [<item:emendatusenigmatica:constantan_plate>], <item:emendatusenigmatica:constantan_plate>);
-<recipetype:create:pressing>.addRecipe("electrum_plate", [<item:emendatusenigmatica:electrum_plate>], <item:emendatusenigmatica:electrum_plate>);
-<recipetype:create:pressing>.addRecipe("steel_plate", [<item:emendatusenigmatica:steel_plate>], <item:emendatusenigmatica:steel_plate>);
-<recipetype:create:pressing>.addRecipe("invar_plate", [<item:emendatusenigmatica:invar_plate>], <item:emendatusenigmatica:invar_plate>);
-<recipetype:create:pressing>.addRecipe("signalum_plate", [<item:emendatusenigmatica:signalum_plate>], <item:emendatusenigmatica:signalum_plate>);
-<recipetype:create:pressing>.addRecipe("lumium_plate", [<item:emendatusenigmatica:lumium_plate>], <item:emendatusenigmatica:lumium_plate>);
-<recipetype:create:pressing>.addRecipe("enderium_plate", [<item:emendatusenigmatica:enderium_plate>], <item:emendatusenigmatica:enderium_plate>);
+<recipetype:create:pressing>.addRecipe("create_iron_plate", [<item:emendatusenigmatica:iron_plate>], <item:minecraft:iron_ingot>);
+<recipetype:create:pressing>.addRecipe("create_gold_plate", [<item:emendatusenigmatica:gold_plate>], <item:minecraft:gold_ingot>);
+<recipetype:create:pressing>.addRecipe("create_diamond_plate", [<item:emendatusenigmatica:diamond_plate>], <item:minecraft:diamond>);
+<recipetype:create:pressing>.addRecipe("create_emerald_plate", [<item:emendatusenigmatica:emerald_plate>], <item:minecraft:emerald>);
+<recipetype:create:pressing>.addRecipe("create_lapis_plate", [<item:emendatusenigmatica:lapis_plate>], <item:minecraft:lapis_lazuli>);
+<recipetype:create:pressing>.addRecipe("create_copper_plate", [<item:emendatusenigmatica:copper_plate>], <tag:items:forge:ingots/copper>);
+<recipetype:create:pressing>.addRecipe("create_silver_plate", [<item:emendatusenigmatica:silver_plate>], <tag:items:forge:ingots/silver>);
+<recipetype:create:pressing>.addRecipe("create_lead_plate", [<item:emendatusenigmatica:lead_plate>], <tag:items:forge:ingots/lead>);
+<recipetype:create:pressing>.addRecipe("create_tin_plate", [<item:emendatusenigmatica:tin_plate>], <tag:items:forge:ingots/tin>);
+<recipetype:create:pressing>.addRecipe("create_zinc_plate", [<item:emendatusenigmatica:zinc_plate>], <tag:items:forge:ingots/zinc>);
+<recipetype:create:pressing>.addRecipe("create_bronze_plate", [<item:emendatusenigmatica:bronze_plate>], <tag:items:forge:ingots/bronze>);
+<recipetype:create:pressing>.addRecipe("create_invar_plate", [<item:emendatusenigmatica:invar_plate>], <tag:items:forge:ingots/invar>);
+<recipetype:create:pressing>.addRecipe("create_sixcolonium_plate", [<item:contenttweaker:sixcolonium_plate>], <item:contenttweaker:sixcolonium>);                   
+<recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");
+<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");
 
 # crafting tables
 // deletes

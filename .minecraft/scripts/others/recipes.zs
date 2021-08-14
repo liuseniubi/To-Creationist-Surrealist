@@ -1,3 +1,9 @@
+/*
+    Author: Six_color
+    Script: recipe.zs
+    Made For 2CS
+*/
+
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.tag.MCTag;
@@ -19,6 +25,7 @@ var delitems as IItemStack[] = [
   <item:appliedenergistics2:energy_acceptor>,
   <item:appliedenergistics2:smooth_sky_stone_chest>,
   <item:appliedenergistics2:sky_stone_chest>,
+  <item:appliedenergistics2:wireless_booster>,
   // others
   <item:advancementbook:advancement_book>,
   <item:portablecraftingtable:portable_crafting_table>,
@@ -143,7 +150,9 @@ craftingTable.addShaped("nugget_to_ingot_silver", <item:emendatusenigmatica:silv
   [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>]
 ]);
 
-craftingTable.addShaped("wireless_booster", <item:appliedenergistics2:wireless_booster>, [
+// others
+
+craftingTable.addShaped("wireless_booster", <item:appliedenergistics2:wireless_booster> * 2, [
     [<item:appliedenergistics2:fluix_dust>, <tag:items:appliedenergistics2:crystals/certus>, <tag:items:forge:dusts/ender_pearl>],
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
@@ -167,8 +176,7 @@ craftingTable.addShaped("instantstick", <item:minecraft:stick> * 16, [
 
 craftingTable.addShaped("shulker", <item:minecraft:shulker_shell>, [
    [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
-   [<item:minecraft:iron_ingot>, <tag:items:forge:dyes/purple>, <item:minecraft:iron_ingot>],
-   [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+   [<item:minecraft:iron_ingot>, <tag:items:forge:dyes/purple>, <item:minecraft:iron_ingot>]
 ]);
 
 craftingTable.addShaped("bell", <item:minecraft:bell>, [
@@ -178,19 +186,5 @@ craftingTable.addShaped("bell", <item:minecraft:bell>, [
 ]);
 
 // recipetypes
-<recipetype:thermal:press>.addJSONRecipe("sixcolonium_plate", {
-  "ingredient": {
-    "item": "contenttweaker:sixcolonium"
-  },
-  "result": [
-    {
-      "item": "contenttweaker:sixcolonium_plate"
-    }
-  ]
-});
+<recipetype:thermal:press>.addRecipe("sixcolonium_plate", [<item:contenttweaker:sixcolonium_plate>], <fluid:minecraft:empty>, [<item:contenttweaker:sixcolonium>], 500);
 <recipetype:mekanism:crushing>.addJSONRecipe("quartz_dust", {"input":{"ingredient":{"item":"minecraft:quartz"}},"output":{"item":"appliedenergistics2:nether_quartz_dust","count":1}});
-
-// pressing
-<recipetype:create:pressing>.addRecipe("sixcolonium_plate2", [<item:contenttweaker:sixcolonium_plate>], <item:contenttweaker:sixcolonium>);
-<recipetype:create:pressing>.addRecipe("steel", [<item:emendatusenigmatica:steel_plate>], <tag:items:forge:ingots/steel>);
-                   

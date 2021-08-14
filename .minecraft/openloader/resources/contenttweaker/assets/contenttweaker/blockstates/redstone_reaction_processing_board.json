@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model" : "contenttweaker:block/redstone_reaction_processing_board"
+    }
+  }
+}

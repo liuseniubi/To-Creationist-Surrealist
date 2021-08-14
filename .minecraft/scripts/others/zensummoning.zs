@@ -1,3 +1,9 @@
+/*
+    Author: Six_color
+    Script: zensummoning.zs
+    Made For 2CS
+*/
+
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import mods.zensummoning.SummoningDirector;

@@ -1,4 +1,10 @@
 /*
+    Author: Six_color
+    Script: mek.zs
+    Made For 2CS
+*/
+// Waiting Mek update o(╥﹏╥)o
+/*
 #loader mekanismcontent
 
 import mods.mekanism.content.builder.InfuseTypeBuilder;

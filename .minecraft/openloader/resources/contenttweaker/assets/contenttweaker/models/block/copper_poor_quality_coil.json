@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "contenttweaker:block/copper_poor_quality_coil",
+    "north": "contenttweaker:block/copper_poor_quality_coil",
+    "south": "contenttweaker:block/copper_poor_quality_coil",
+    "east": "contenttweaker:block/copper_poor_quality_coil",
+    "west": "contenttweaker:block/copper_poor_quality_coil",
+    "up": "contenttweaker:block/copper_poor_quality_coil_top",
+    "down": "contenttweaker:block/copper_poor_quality_coil_top"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "Automatic Cutter",
+  "name": "2cs.block.automatic_cutter",
   "appearance": {
     "model": "2cs:machine/automatic_cutter"
   },
@@ -62,7 +62,7 @@
       "type": "custommachinery:status"
     },
     {
-      "text": "Explosion Processor",
+      "text": "2cs.block.automatic_cutter",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

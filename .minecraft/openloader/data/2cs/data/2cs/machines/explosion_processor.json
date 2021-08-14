@@ -1,5 +1,5 @@
 {
-  "name": "Explosion Processor",
+  "name": "2cs.block.explosion_processor",
   "appearance": {
     "model": "2cs:machine/explosion_processor",
     "lightmode": "running",
@@ -64,7 +64,7 @@
       "type": "custommachinery:status"
     },
     {
-      "text": "Explosion Processor",
+      "text": "2cs.block.explosion_processor",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

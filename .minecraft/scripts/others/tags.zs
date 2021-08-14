@@ -1,3 +1,9 @@
+/*
+    Author: Six_color
+    Script: tags.zs
+    Made For 2CS
+*/
+
 #priority 114513
 
 import crafttweaker.api.item.IItemStack;

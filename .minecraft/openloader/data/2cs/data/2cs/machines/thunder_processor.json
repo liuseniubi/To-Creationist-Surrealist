@@ -1,5 +1,5 @@
 {
-  "name": "Thunder Processor",
+  "name": "2cs.block.thunder_processor",
   "appearance": {
     "model": "2cs:machine/thunder_processor",
     "lightmode": "running",
@@ -106,7 +106,7 @@
       "type": "custommachinery:status"
     },
     {
-      "text": "Thunder Processor",
+      "text": "2cs.block.thunder_processor",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

@@ -67,7 +67,7 @@ craftingTable.removeRecipe(<tag:items:botanypots:botany_pots>.asIIngredient());
 <recipetype:create:compacting>.addRecipe("botany_pot", "none", <item:botanypots:hopper_botany_pot>, [<item:minecraft:terracotta> * 4, <item:contenttweaker:sixcolonium>]);
 
 //sixcolonium_base
-<recipetype:create:compacting>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 3, [<tag:items:forge:plates/copper>, <item:contenttweaker:sixcolonium_plate>]);
+<recipetype:create:compacting>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 2, [<item:minecraft:redstone>, <item:contenttweaker:sixcolonium_plate>]);
 
 //iron plate
 craftingTable.addShaped("iron_plate", <item:emendatusenigmatica:iron_plate> * 2, [
@@ -165,11 +165,6 @@ craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_mach
 
 //black dye to inc sac
 craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:minecraft:black_dye>]);
-
-//sixcolonium base
-<recipetype:create:mixing>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 3, [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, <tag:items:forge:plates/copper>]);
-
-smoker.addRecipe("sixcolonium_base1", <item:contenttweaker:sixcolonium_base> * 2, <item:contenttweaker:sixcolonium>, 0.0, 100);
 
 //precision_mechanism
 <recipetype:create:sequenced_assembly>.removeRecipe(<item:create:precision_mechanism>);

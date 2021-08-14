@@ -1,0 +1,104 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 5,
+    "layers": [
+          {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                ["A", "B", "A", "B", "A"],
+                ["B", "B", "B", "B", "B"],
+                ["A", "B", "A", "B", "A"],
+                ["B", "B", "B", "B", "B"],
+                ["A", "B", "A", "B", "A"]
+            ]
+          },
+          {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                ["A", "B", "B", "B", "A"],
+                ["B", "C", "D", "C", "B"],
+                ["B", "D", "E", "D", "B"],
+                ["B", "C", "D", "C", "B"],
+                ["A", "B", "B", "B", "A"]
+            ]
+          },
+          {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                ["A", "B", "D", "B", "A"],
+                ["B", "C", "G", "C", "B"],
+                ["B", "F", "H", "F", "B"],
+                ["B", "C", "G", "C", "B"],
+                ["A", "B", "D", "B", "A"]
+            ]
+          },
+          {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                ["A", "B", "I", "B", "A"],
+                ["B", "C", "D", "C", "B"],
+                ["B", "D", "F", "D", "B"],
+                ["B", "C", "D", "C", "B"],
+                ["A", "B", "I", "B", "A"]
+            ]
+          },
+          {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                ["A", "B", "A", "B", "A"],
+                ["B", "B", "B", "B", "B"],
+                ["A", "B", "A", "B", "A"],
+                ["B", "B", "B", "B", "B"],
+                ["A", "B", "A", "B", "A"]
+          ]
+        }
+      ],
+    "catalyst": {
+        "id": "contenttweaker:junior_knowledge_fragment",
+        "Count": 1
+      },
+    "components": {
+         "A":{
+            "type": "compactcrafting:block",
+            "block": "emendatusenigmatica:osmium_block"
+        },
+        "B":{
+            "type": "compactcrafting:block",
+            "block": "contenttweaker:invar_plate_metal_block"
+        },
+        "C":{
+            "type": "compactcrafting:block",
+            "block": "minecraft:magma_block"
+        },
+        "D":{
+            "type": "compactcrafting:block",
+            "block": "immersiveengineering:sheetmetal_copper"
+        },
+        "E":{
+            "type": "compactcrafting:block",
+            "block": "thermal:machine_frame"
+        },
+        "F":{
+            "type": "compactcrafting:block",
+            "block": "contenttweaker:copper_poor_quality_cable"
+        },
+        "G":{
+            "type": "compactcrafting:block",
+            "block": "contenttweaker:redstone_reaction_processing_board"
+        },
+        "H":{
+            "type": "compactcrafting:block",
+            "block": "contenttweaker:circuit_processing_core_board"
+        },
+        "I":{
+            "type": "compactcrafting:block",
+            "block": "tconstruct:seared_chute"
+        }
+    },
+    "outputs": [
+          {
+              "id": "thermal:machine_furnace",
+              "Count": 1
+          }
+    ]
+}
