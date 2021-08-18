@@ -1,0 +1,65 @@
+
+# 
+[machines]
+
+	# 
+	[machines.stress]
+
+		#
+		# [in Stress Units]
+		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives
+		[machines.stress.impact]
+			ore_extractor = 64.0
+
+	# 
+	[machines.extractor]
+		# 
+		#The durability of the default drill head
+		#Range: > 0
+		drillDurability = 64
+		# 
+		#The speed requirement for the extractor. The exact number has to be configured in Create's config
+		#Allowed Values: NONE, MEDIUM, FAST
+		requiredSpeed = "FAST"
+		# 
+		#How ore pieces can be extracted
+		#Hoppers and arms allows mechanical arms and any block of the hopper sort (funnel, chute, etc), hoppers only allows only blocks of the hopper sort, none allows none
+		#Allowed Values: HOPPERS_AND_ARMS, HOPPERS_ONLY, NONE
+		extractionAbility = "HOPPERS_AND_ARMS"
+		# 
+		#If enabled, nodes drop themselves, otherwise they drop nothing
+		nodesDrop = false
+		# 
+		#How drills can be inserted
+		#Hoppers and arms allows mechanical arms and any block of the hopper sort (funnel, chute, etc), hoppers only allows only blocks of the hopper sort, none allows none
+		#Deployers will always be able to insert drills no matter what :)
+		#Allowed Values: HOPPERS_AND_ARMS, HOPPERS_ONLY, NONE
+		insertionAbility = "HOPPERS_AND_ARMS"
+		# 
+		#Whether or not the extractor can be toggled with redstone
+		allowTogglingWithRedstone = true
+		# 
+		#Configure how node blocks can be moved by contraptions
+		#Allowed Values: MOVABLE, NO_PICKUP, UNMOVABLE
+		nodeMovement = "UNMOVABLE"
+		# 
+		#Makes drill heads not loose durability
+		#(why would you use this??)
+		unbreakableDrills = false
+		# 
+		#What types of blocks the extractor can mine. NONE if you want it to only be able to break blocks, ORES for ores only, and ANY for any block
+		#Allowed Values: NONE, ORES, ANY
+		miningAbility = "NONE"
+
+	# 
+	[machines.picker]
+		# 
+		#How many items you can pick before the picker breaks
+		#Range: > 0
+		durability = 32
+		# 
+		#[in ticks]
+		#How long it takes to pick
+		#Range: > 0
+		useTime = 16
+

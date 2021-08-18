@@ -36,12 +36,6 @@ craftingTable.addShaped("pebble2cobblestone", <item:minecraft:cobblestone>, [
     [<item:contenttweaker:pebble>, <item:contenttweaker:pebble>]
 ]);
 
-// sky_blue_dye
-craftingTable.addShapeless("sky_blue_dye", <item:contenttweaker:sky_blue_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:blue_dye>, <item:minecraft:blue_dye>, <item:minecraft:blue_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>]);
-
-// light_yellow_dye
-craftingTable.addShapeless("light_yellow_dye", <item:contenttweaker:light_yellow_dye> * 3, [<item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:red_dye>, <item:minecraft:blue_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>, <item:minecraft:green_dye>]);
-
 // thunder_stick
 craftingTable.addShaped("thunder_stick", <item:contenttweaker:thunder_stick>, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:stick>],
@@ -55,9 +49,6 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
     [<item:minecraft:flint>, <item:minecraft:stick>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
 ]);
-
-// sixcolonium
-craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16, [<item:contenttweaker:sky_blue_dye>, <item:minecraft:gold_ingot>, <item:contenttweaker:light_yellow_dye>]);
 
 // log2burnt plank
 <recipetype:interactio:item_lightning>.addJSONRecipe("log2burntplank", {
@@ -73,32 +64,6 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
         "result": {
           "item": "contenttweaker:burnt_plank",
           "count": 3
-        },
-        "weight": 100
-      }
-    ],
-    "empty_weight": 0
-  }
-});
-
-// andesite
-<recipetype:interactio:item_lightning>.addJSONRecipe("andesite", {
-  "inputs": [
-    {
-      "item": "minecraft:cobblestone",
-      "count": 1
-    },
-    {
-      "item": "minecraft:green_dye",
-      "count": 1
-    }
-  ],
-  "output": {
-    "entries": [
-      {
-        "result": {
-          "item": "minecraft:andesite",
-          "count": 2
         },
         "weight": 100
       }
@@ -351,5 +316,30 @@ craftingTable.addShapeless("sixcolonium", <item:contenttweaker:sixcolonium> * 16
       }
     ],
     "empty_weight": 0
+  }
+});
+
+// andesite
+<recipetype:interactio:block_explode>.addJSONRecipe("andesite", {
+  "input": {
+    "block": "stone"
+  },
+  "output": {
+    "type": "block",
+    "entries": [
+      {
+        "result": {
+          "block": "andesite"
+        },
+        "weight": 7
+      },
+      {
+        "result": {
+          "block": "cobblestone"
+        },
+        "weight": 2
+      }
+    ],
+    "empty_weight": 1
   }
 });

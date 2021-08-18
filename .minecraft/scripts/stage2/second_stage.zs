@@ -201,7 +201,7 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
 <recipetype:interactio:fluid_fluid_transform>.addJSONRecipe("lava", {
   "items": [
     {
-      "item": "minecraft:blaze_rod",
+      "item": "minecraft:blaze_powder",
       "count": 1
     }
   ],
@@ -375,7 +375,7 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
   "type": "interactio:item_fluid_transform",
   "inputs": [
     {
-      "item": "minecraft:kelp",
+      "tag": "minecraft:saplings",
       "count": 1,
     }
   ],
@@ -606,3 +606,30 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
   }
 });
 
+// feather
+<recipetype:interactio:item_fluid_transform>.addJSONRecipe("feather", {
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "item": "minecraft:paper",
+      "count": 1,
+    }
+  ],
+  "fluid": {
+    "fluid": "water"
+  },
+  "output": {
+    "entries": [
+      {
+        "result": {
+           "item": "minecraft:feather",
+           "count": 1
+        },
+        "weight": 80
+      }
+    ],
+    "empty_weight": 0,
+    "rolls": 1
+  },
+  "consume_fluid": 0
+});

@@ -1,3 +1,5 @@
+import mods.farmersdelight.CuttingBoard;
+
 // blase furnace
 craftingTable.removeRecipe(<item:minecraft:blast_furnace>);
 
@@ -18,234 +20,205 @@ craftingTable.addShaped("machine_pyrolyzer", <item:thermal:machine_pyrolyzer>, [
 
 
 // remove furnace recipes
-furnace.removeRecipe(<item:minecraft:iron_ingot>);
-furnace.removeRecipe(<item:minecraft:gold_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:zinc_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:tin_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:osmium_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:lead_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:nickel_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:silver_ingot>);
-furnace.removeRecipe(<item:emendatusenigmatica:copper_ingot>);
+var deletes = [
+  <item:minecraft:iron_ingot>,
+  <item:minecraft:gold_ingot>,
+  <item:emendatusenigmatica:zinc_ingot>,
+  <item:emendatusenigmatica:tin_ingot>,
+  <item:emendatusenigmatica:osmium_ingot>,
+  <item:emendatusenigmatica:lead_ingot>,
+  <item:emendatusenigmatica:nickel_ingot>,
+  <item:emendatusenigmatica:silver_ingot>,
+  <item:emendatusenigmatica:copper_ingot>
+];
+
+for i in deletes{
+  furnace.removeRecipe(i);
+}
 
 // blast furnace recipes
-blastFurnace.addRecipe("blastfurnace_chunk_iron", <item:minecraft:iron_nugget> * 6, <tag:items:forge:chunks/iron>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_gold", <item:minecraft:gold_nugget> * 6, <tag:items:forge:chunks/gold>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_zinc", <item:emendatusenigmatica:zinc_nugget> * 6, <tag:items:forge:chunks/zinc>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_tin", <item:emendatusenigmatica:tin_nugget> * 6, <tag:items:forge:chunks/tin>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_osmium", <item:emendatusenigmatica:osmium_nugget> * 6, <tag:items:forge:chunks/osmium>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_lead", <item:emendatusenigmatica:lead_nugget> * 6, <tag:items:forge:chunks/lead>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_nickel", <item:emendatusenigmatica:nickel_nugget> * 6, <tag:items:forge:chunks/nickel>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_silver", <item:emendatusenigmatica:silver_nugget> * 6, <tag:items:forge:chunks/silver>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_chunk_copper", <item:emendatusenigmatica:copper_nugget> * 6, <tag:items:forge:chunks/copper>, 2.0, 100);
+var chunks = [
+  <tag:items:forge:chunks/iron>,
+  <tag:items:forge:chunks/gold>,
+  <tag:items:forge:chunks/zinc>,
+  <tag:items:forge:chunks/tin>,
+  <tag:items:forge:chunks/osmium>,
+  <tag:items:forge:chunks/lead>,
+  <tag:items:forge:chunks/nickel>,
+  <tag:items:forge:chunks/silver>,
+  <tag:items:forge:chunks/copper>
+];
 
-blastFurnace.addRecipe("blastfurnace_clump_iron", <item:minecraft:iron_nugget> * 8, <item:mekanism:clump_iron>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_zinc", <item:emendatusenigmatica:zinc_nugget> * 8, <item:emendatusenigmatica:zinc_clump>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_tin", <item:emendatusenigmatica:tin_nugget> * 8, <item:mekanism:clump_tin>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_osmium", <item:emendatusenigmatica:osmium_nugget> * 8, <item:mekanism:clump_osmium>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_lead", <item:emendatusenigmatica:lead_nugget> * 8, <item:mekanism:clump_lead>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_nickel", <item:emendatusenigmatica:nickel_nugget> * 8, <item:emendatusenigmatica:nickel_clump>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_silver", <item:emendatusenigmatica:silver_nugget> * 8, <item:emendatusenigmatica:silver_clump>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_clump_copper", <item:emendatusenigmatica:copper_nugget> * 8, <item:mekanism:clump_copper>, 2.0, 100);
+var clumps = [
+  <tag:items:mekanism:clumps/iron>,
+  <tag:items:mekanism:clumps/gold>,
+  <tag:items:mekanism:clumps/zinc>,
+  <tag:items:mekanism:clumps/tin>,
+  <tag:items:mekanism:clumps/osmium>,
+  <tag:items:mekanism:clumps/lead>,
+  <tag:items:mekanism:clumps/nickel>,
+  <tag:items:mekanism:clumps/silver>,
+  <tag:items:mekanism:clumps/copper>
+];
 
-blastFurnace.addRecipe("blastfurnace_crystal_iron", <item:minecraft:iron_ingot>, <item:mekanism:crystal_iron>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_zinc", <item:emendatusenigmatica:zinc_ingot>, <item:emendatusenigmatica:zinc_crystal>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_tin", <item:emendatusenigmatica:tin_ingot>, <item:mekanism:crystal_tin>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_osmium", <item:emendatusenigmatica:osmium_ingot>, <item:mekanism:crystal_osmium>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_lead", <item:emendatusenigmatica:lead_ingot>, <item:mekanism:crystal_lead>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_nickel", <item:emendatusenigmatica:nickel_ingot>, <item:emendatusenigmatica:nickel_crystal>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_silver", <item:emendatusenigmatica:silver_ingot>, <item:emendatusenigmatica:silver_crystal>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_crystal_copper", <item:emendatusenigmatica:copper_ingot>, <item:mekanism:crystal_copper>, 2.0, 100);
+var crystals = [
+  <tag:items:mekanism:crystals/iron>,
+  <tag:items:mekanism:crystals/gold>,
+  <tag:items:mekanism:crystals/zinc>,
+  <tag:items:mekanism:crystals/tin>,
+  <tag:items:mekanism:crystals/osmium>,
+  <tag:items:mekanism:crystals/lead>,
+  <tag:items:mekanism:crystals/nickel>,
+  <tag:items:mekanism:crystals/silver>,
+  <tag:items:mekanism:crystals/copper>
+];
 
-blastFurnace.addRecipe("blastfurnace_shard_iron", <item:minecraft:iron_nugget> * 3, <item:mekanism:shard_iron>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_zinc", <item:emendatusenigmatica:zinc_nugget> * 3, <item:emendatusenigmatica:zinc_shard>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_tin", <item:emendatusenigmatica:tin_nugget> * 3, <item:mekanism:shard_tin>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_osmium", <item:emendatusenigmatica:osmium_nugget> * 3, <item:mekanism:shard_osmium>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_lead", <item:emendatusenigmatica:lead_nugget> * 3, <item:mekanism:shard_lead>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_nickel", <item:emendatusenigmatica:nickel_nugget> * 3, <item:emendatusenigmatica:nickel_shard>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_silver", <item:emendatusenigmatica:silver_nugget> * 3, <item:emendatusenigmatica:silver_shard>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_shard_copper", <item:emendatusenigmatica:copper_nugget> * 3, <item:mekanism:shard_copper>, 2.0, 100);
+var shards = [
+  <tag:items:mekanism:shards/iron>,
+  <tag:items:mekanism:shards/gold>,
+  <tag:items:mekanism:shards/zinc>,
+  <tag:items:mekanism:shards/tin>,
+  <tag:items:mekanism:shards/osmium>,
+  <tag:items:mekanism:shards/lead>,
+  <tag:items:mekanism:shards/nickel>,
+  <tag:items:mekanism:shards/silver>,
+  <tag:items:mekanism:shards/copper>
+];
 
-blastFurnace.addRecipe("blastfurnace_dust_iron", <item:minecraft:iron_ingot>, <tag:items:forge:dusts/iron>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_zinc", <item:emendatusenigmatica:zinc_ingot>, <tag:items:forge:dusts/zinc>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_copper", <item:emendatusenigmatica:copper_ingot>, <tag:items:forge:dusts/copper>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_lead", <item:emendatusenigmatica:lead_ingot>, <tag:items:forge:dusts/lead>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_nickel", <item:emendatusenigmatica:nickel_ingot>, <tag:items:forge:dusts/nickel>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_silver", <item:emendatusenigmatica:silver_ingot>, <tag:items:forge:dusts/silver>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_tin", <item:emendatusenigmatica:tin_ingot>, <tag:items:forge:dusts/tin>, 2.0, 100);
-blastFurnace.addRecipe("blastfurnace_dust_osmium", <item:emendatusenigmatica:osmium_ingot>, <tag:items:forge:dusts/osmium>, 2.0, 100);
+var dusts = [
+  <tag:items:forge:dusts/iron>,
+  <tag:items:forge:dusts/gold>,
+  <tag:items:forge:dusts/zinc>,
+  <tag:items:forge:dusts/tin>,
+  <tag:items:forge:dusts/osmium>,
+  <tag:items:forge:dusts/lead>,
+  <tag:items:forge:dusts/nickel>,
+  <tag:items:forge:dusts/silver>,
+  <tag:items:forge:dusts/copper>
+];
+
+var nuggets = [
+  <item:minecraft:iron_nugget>,
+  <item:minecraft:gold_nugget>,
+  <item:emendatusenigmatica:zinc_nugget>,
+  <item:emendatusenigmatica:tin_nugget>,
+  <item:emendatusenigmatica:osmium_nugget>,
+  <item:emendatusenigmatica:lead_nugget>,
+  <item:emendatusenigmatica:nickel_nugget>,
+  <item:emendatusenigmatica:silver_nugget>,
+  <item:emendatusenigmatica:copper_nugget>
+];
+
+var ingots = [
+  <item:minecraft:iron_ingot>,
+  <item:minecraft:gold_ingot>,
+  <item:emendatusenigmatica:zinc_ingot>,
+  <item:emendatusenigmatica:tin_ingot>,
+  <item:emendatusenigmatica:osmium_ingot>,
+  <item:emendatusenigmatica:lead_ingot>,
+  <item:emendatusenigmatica:nickel_ingot>,
+  <item:emendatusenigmatica:silver_ingot>,
+  <item:emendatusenigmatica:copper_ingot>
+];
+
+for i, chunk in chunks{
+  var nugget = nuggets[i];
+  blastFurnace.addRecipe("blastfurnace_chunk_" + i, nugget * 6, chunk, 2.0, 100);
+}
+
+for i, clump in clumps{
+  var nugget1 = nuggets[i];
+  blastFurnace.addRecipe("blastfurnace_clump_" + i, nugget1 * 8, clump, 2.0, 100);
+}
+
+for i, shard in shards{
+  var nugget2 = nuggets[i];
+  blastFurnace.addRecipe("blastfurnace_shard_" + i, nugget2 * 3, shard, 2.0, 100);
+}
+
+for i, crystal in crystals{
+  var ingot = ingots[i];
+  blastFurnace.addRecipe("blastfurnace_crystal_" + i, ingot, crystal, 2.0, 100);
+}
+
+for i, dust in dusts{
+  var ingot1 = ingots[i];
+  blastFurnace.addRecipe("blastfurnace_dust_" + i, ingot1, dust, 2.0, 100);
+}
 
 // ore to ore chunk
-<recipetype:farmersdelight:cutting>.addJSONRecipe("iron2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/iron"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:iron_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+var ores = [
+  <tag:items:forge:ores/iron>,
+  <tag:items:forge:ores/zinc>,
+  <tag:items:forge:ores/tin>,
+  <tag:items:forge:ores/osmium>,
+  <tag:items:forge:ores/lead>,
+  <tag:items:forge:ores/nickel>,
+  <tag:items:forge:ores/silver>,
+  <tag:items:forge:ores/copper>
+];
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("zinc2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/zinc"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:zinc_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+var oreChunks = [
+  <item:emendatusenigmatica:iron_chunk>,
+  <item:emendatusenigmatica:zinc_chunk>,
+  <item:emendatusenigmatica:tin_chunk>,
+  <item:emendatusenigmatica:osmium_chunk>,
+  <item:emendatusenigmatica:lead_chunk>,
+  <item:emendatusenigmatica:nickel_chunk>,
+  <item:emendatusenigmatica:silver_chunk>,
+  <item:emendatusenigmatica:copper_chunk>
+];
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("tin2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/tin"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:tin_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+for i, ore in ores{
+  var oreChunk = oreChunks[i];
+  var hammers = <tag:items:forge:tools/hammers>.asIIngredient();
+  <recipetype:farmersdelight:cutting>.addRecipe("fd_ore_to_chunk_" + i, ore, [oreChunk], hammers, "minecraft:block.stone.break");
+}
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("osmium2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/osmium"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:osmium_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+var gravels = [
+  <item:contenttweaker:iron_gravel>,
+  <item:emendatusenigmatica:zinc_gravel>,
+  <item:emendatusenigmatica:tin_gravel>,
+  <item:emendatusenigmatica:osmium_gravel>,
+  <item:emendatusenigmatica:lead_gravel>,
+  <item:emendatusenigmatica:nickel_gravel>,
+  <item:emendatusenigmatica:silver_gravel>,
+  <item:emendatusenigmatica:copper_gravel>
+];
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("nickel2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/nickel"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:nickel_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+var oreClumps = [
+  <item:mekanism:clump_iron>,
+  <item:emendatusenigmatica:zinc_clump>,
+  <item:mekanism:clump_tin>,
+  <item:mekanism:clump_osmium>,
+  <item:mekanism:clump_lead>,
+  <item:emendatusenigmatica:nickel_clump>,
+  <item:emendatusenigmatica:silver_clump>,
+  <item:mekanism:clump_copper>,
+];
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("lead2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/lead"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:lead_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+var oreShards = [
+  <item:mekanism:shard_iron>,
+  <item:emendatusenigmatica:zinc_shard>,
+  <item:mekanism:shard_tin>,
+  <item:mekanism:shard_osmium>,
+  <item:mekanism:shard_lead>,
+  <item:emendatusenigmatica:nickel_shard>,
+  <item:emendatusenigmatica:silver_shard>,
+  <item:mekanism:shard_copper>,
+];
+for i, oreChunk1 in oreChunks{
+  var gravel = gravels[i];
+  <recipetype:create:sandpaper_polishing>.addRecipe("sandpaper_chunk_to_gravel_" + i, gravel, oreChunk1);
+}
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("silver2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/silver"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:silver_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
+for i, gravel1 in gravels{
+  var clump = oreClumps[i];
+  <recipetype:create:splashing>.addRecipe("splashing_gravel_to_clump_" + i, [clump % 80, <item:minecraft:gravel> % 20], gravel1);
+}
 
-<recipetype:farmersdelight:cutting>.addJSONRecipe("copper2chunk", {
-  "ingredients": [
-    {
-      "tag": "forge:ores/copper"
-    }
-  ],
-  "tool": {
-    "tag": "forge:tools/hammers"
-  },
-  "result": [
-    {
-      "item": "emendatusenigmatica:copper_chunk",
-      "count": 2
-    }
-  ],
-  "sound": "minecraft:block.stone.break"
-});
-
-// ore chunk to ore gravel
-<recipetype:create:sandpaper_polishing>.addRecipe("zinc_chunk_2_gravel", <item:emendatusenigmatica:zinc_gravel>, <tag:items:forge:chunks/zinc>);
-<recipetype:create:sandpaper_polishing>.addRecipe("iron_chunk_2_gravel", <item:contenttweaker:iron_gravel>, <tag:items:forge:chunks/iron>);
-<recipetype:create:sandpaper_polishing>.addRecipe("osmium_chunk_2_gravel", <item:emendatusenigmatica:osmium_gravel>, <tag:items:forge:chunks/osmium>);
-<recipetype:create:sandpaper_polishing>.addRecipe("tin_chunk_2_gravel", <item:emendatusenigmatica:tin_gravel>, <tag:items:forge:chunks/tin>);
-<recipetype:create:sandpaper_polishing>.addRecipe("nickel_chunk_2_gravel", <item:emendatusenigmatica:nickel_gravel>, <tag:items:forge:chunks/nickel>);
-<recipetype:create:sandpaper_polishing>.addRecipe("lead_chunk_2_gravel", <item:emendatusenigmatica:lead_gravel>, <tag:items:forge:chunks/lead>);
-<recipetype:create:sandpaper_polishing>.addRecipe("silver_chunk_2_gravel", <item:emendatusenigmatica:silver_gravel>, <tag:items:forge:chunks/silver>);
-<recipetype:create:sandpaper_polishing>.addRecipe("copper_chunk_2_gravel", <item:emendatusenigmatica:copper_gravel>, <tag:items:forge:chunks/copper>);
-
-// ore gravel to ore clump
-<recipetype:create:splashing>.addRecipe("zinc_gravel_2_clump", [<item:emendatusenigmatica:zinc_clump> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:zinc_gravel>);
-<recipetype:create:splashing>.addRecipe("iron_gravel_2_clump", [<item:mekanism:clump_iron> % 80, <item:minecraft:gravel> % 20], <item:contenttweaker:iron_gravel>);
-<recipetype:create:splashing>.addRecipe("copper_gravel_2_clump", [<item:mekanism:clump_copper> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:copper_gravel>);
-<recipetype:create:splashing>.addRecipe("osmium_gravel_2_clump", [<item:mekanism:clump_osmium> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:osmium_gravel>);
-<recipetype:create:splashing>.addRecipe("tin_gravel_2_clump", [<item:mekanism:clump_tin> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:tin_gravel>);
-<recipetype:create:splashing>.addRecipe("silver_gravel_2_clump", [<item:emendatusenigmatica:silver_clump> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:silver_gravel>);
-<recipetype:create:splashing>.addRecipe("nickel_gravel_2_clump", [<item:emendatusenigmatica:nickel_clump> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:nickel_gravel>);
-<recipetype:create:splashing>.addRecipe("lead_gravel_2_clump", [<item:mekanism:clump_lead> % 80, <item:minecraft:gravel> % 20], <item:emendatusenigmatica:lead_gravel>);
-
-// ore to ore chunk & shard
-<recipetype:create:milling>.addRecipe("zinc_ore_2_chunk_shard", [<item:emendatusenigmatica:zinc_chunk> * 2, <item:emendatusenigmatica:zinc_shard> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/zinc>);
-<recipetype:create:milling>.addRecipe("nickel_ore_2_chunk_shard", [<item:emendatusenigmatica:nickel_chunk> * 2, <item:emendatusenigmatica:nickel_shard> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/nickel>);
-<recipetype:create:milling>.addRecipe("silver_ore_2_chunk_shard", [<item:emendatusenigmatica:silver_chunk> * 2, <item:emendatusenigmatica:silver_shard> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/silver>);
-<recipetype:create:milling>.addRecipe("iron_ore_2_chunk_shard", [<item:emendatusenigmatica:iron_chunk> * 2, <item:mekanism:shard_iron> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/iron>);
-<recipetype:create:milling>.addRecipe("lead_ore_2_chunk_shard", [<item:emendatusenigmatica:lead_chunk> * 2, <item:mekanism:shard_lead> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/lead>);
-<recipetype:create:milling>.addRecipe("tin_ore_2_chunk_shard", [<item:emendatusenigmatica:tin_chunk> * 2, <item:mekanism:shard_tin> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/tin>);
-<recipetype:create:milling>.addRecipe("copper_ore_2_chunk_shard", [<item:emendatusenigmatica:copper_chunk> * 2, <item:mekanism:shard_copper> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/copper>);
-<recipetype:create:milling>.addRecipe("osmium_ore_2_chunk_shard", [<item:emendatusenigmatica:osmium_chunk> * 2, <item:mekanism:shard_osmium> % 30, <item:contenttweaker:sixcolonium> % 10], <tag:items:forge:ores/osmium>);
+for i, ore in ores{
+  var chunk1 = oreChunks[i];
+  var shard1 = oreShards[i];
+  <recipetype:create:milling>.addRecipe("milling_ore_to_chunk_shard_" + i, [chunk1 * 2, shard1 % 30], ore);
+}

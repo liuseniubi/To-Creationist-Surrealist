@@ -7,6 +7,9 @@
 var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 var air = <item:minecraft:air>;
 
+recipes.removeByRegex("thermal:machine/pyrolyzer/.*");
+recipes.removeByRegex("createautomated:extracting/.*");
+
 // delete before using CC recipes
 var deleteitem = [
     <item:mining_dimension:teleporter>,
@@ -99,8 +102,8 @@ craftingTable.addShaped("redstone_servo", <item:thermal:redstone_servo>,[
 craftingTable.removeRecipe(<item:create:blaze_cake>);
 
 craftingTable.addShaped("blaze_cake", <item:create:blaze_cake>,[
-    [<item:minecraft:blaze_rod>, <item:minecraft:blaze_rod>, <item:minecraft:blaze_rod>],
-    [<item:minecraft:blaze_rod>, <item:createaddition:cake_base>, <item:minecraft:blaze_rod>],
+    [<item:minecraft:blaze_powder>, <item:minecraft:blaze_powder>, <item:minecraft:blaze_powder>],
+    [<item:minecraft:blaze_powder>, <item:createaddition:cake_base>, <item:minecraft:blaze_powder>],
     [<tag:items:minecraft:coals>, <item:minecraft:lava_bucket>, <tag:items:minecraft:coals>]
 ]);
 

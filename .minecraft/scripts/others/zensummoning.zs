@@ -13,7 +13,7 @@ import mods.zensummoning.MobInfo;
 
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
-        .setCatalyst(<item:contenttweaker:primary_knowledge_catalog>)
+        .setCatalyst(<item:contenttweaker:primary_knowledge_fragment>)
         .setReagents([<tag:items:forge:nuggets/iron>, <item:minecraft:flint>, <item:contenttweaker:sixcolonium>, <item:minecraft:feather>])
         .addMob(MobInfo.create()
             .setMob(<entityType:minecraft:blaze>)

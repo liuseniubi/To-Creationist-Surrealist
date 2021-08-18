@@ -26,10 +26,18 @@ mods.jei.JEI.hideRecipe("interactio:item_lightning", "crafttweaker:chargedcoconu
 var ofc = game.localize("2cs.tooltip.onlyforcrafting");
 var ofcs as IIngredient[] = [
     <item:contenttweaker:wrench>,
-    <item:contenttweaker:sky_blue_dye>,
-    <item:contenttweaker:light_yellow_dye>,
     <item:contenttweaker:primary_knowledge_fragment>,
-    <item:contenttweaker:primary_knowledge_catalog>
+    <item:contenttweaker:primary_knowledge_catalog>,
+    <item:contenttweaker:junior_knowledge_fragment>,
+    <item:contenttweaker:junior_knowledge_catalog>,
+    <item:contenttweaker:senior_knowledge_fragment>,
+    <item:contenttweaker:senior_knowledge_catalog>,
+    <item:contenttweaker:superior_knowledge_fragment>,
+    <item:contenttweaker:superior_knowledge_catalog>,
+    <item:contenttweaker:advanced_knowledge_fragment>,
+    <item:contenttweaker:advanced_knowledge_catalog>,
+    <item:contenttweaker:ultimate_knowledge_fragment>,
+    <item:contenttweaker:ultimate_knowledge_catalog>
 ];
 
 for i in ofcs{
@@ -52,11 +60,11 @@ var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
 var pebblettp = game.localize("2cs.tooltip.pebble");
 <item:contenttweaker:pebble>.addTooltip(pebblettp);
 
-var chicken_seed_ttp = game.localize("2cs.tooltip.chicken_seed");
-<item:animalcrops:seeds>.withTag({entity: "minecraft:chicken" as string}).addTooltip(chicken_seed_ttp);
-<item:animalcrops:seeds>.withTag({entity: "minecraft:cow" as string}).addTooltip(chicken_seed_ttp);
-<item:animalcrops:seeds>.withTag({entity: "minecraft:sheep" as string}).addTooltip(chicken_seed_ttp);
-<item:animalcrops:seeds>.withTag({entity: "minecraft:pig" as string}).addTooltip(chicken_seed_ttp);
+var seed_ttp = game.localize("2cs.tooltip.animal_seed");
+<item:animalcrops:seeds>.withTag({entity: "minecraft:chicken" as string}).addTooltip(seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:cow" as string}).addTooltip(seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:sheep" as string}).addTooltip(seed_ttp);
+<item:animalcrops:seeds>.withTag({entity: "minecraft:pig" as string}).addTooltip(seed_ttp);
 
 // orepot
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:gold_ore>, [orepot1, orepot2, orepot3]);

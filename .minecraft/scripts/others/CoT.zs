@@ -19,8 +19,6 @@ var newitems as string[] = [
     "explosive_stick",
     "thunder_stick",
     "pebble",
-    "sky_blue_dye",
-    "light_yellow_dye",
     "iron_gravel",
     "graduate",
     "primary_knowledge_fragment",

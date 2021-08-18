@@ -53,103 +53,73 @@ craftingTable.addShapeless("handheldcraftingtable1", <item:minecraft:crafting_ta
 craftingTable.addShapeless("sixcolonium_from_nugget", <item:contenttweaker:sixcolonium_nugget> * 9, [<item:contenttweaker:sixcolonium>]);
 
 // shaped
-// ingots
-craftingTable.addShaped("nugget_to_ingot_cobalt", <item:tconstruct:cobalt_ingot>,[
-  [<tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>],
-  [<tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>],
-  [<tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>, <tag:items:forge:nuggets/cobalt>]
-]);
+// Fix IE Ingot recipes
+var oreNuggets = [
+  <tag:items:forge:nuggets/enderium>,
+  <tag:items:forge:nuggets/lumium>,
+  <tag:items:forge:nuggets/signalum>,
+  <tag:items:forge:nuggets/invar>,
+  <tag:items:forge:nuggets/steel>,
+  <tag:items:forge:nuggets/electrum>,
+  <tag:items:forge:nuggets/constantan>,
+  <tag:items:forge:nuggets/bronze>,
+  <tag:items:forge:nuggets/tin>,
+  <tag:items:forge:nuggets/osmium>,
+  <tag:items:forge:nuggets/uranium>,
+  <tag:items:forge:nuggets/nickel>,
+  <tag:items:forge:nuggets/lead>,
+  <tag:items:forge:nuggets/silver>
+];
+var oreIngots as IItemStack[] = [
+  <item:emendatusenigmatica:enderium_ingot>,
+  <item:emendatusenigmatica:lumium_ingot>,
+  <item:emendatusenigmatica:signalum_ingot>,
+  <item:emendatusenigmatica:invar_ingot>,
+  <item:emendatusenigmatica:steel_ingot>,
+  <item:emendatusenigmatica:electrum_ingot>,
+  <item:emendatusenigmatica:constantan_ingot>,
+  <item:emendatusenigmatica:bronze_ingot>,
+  <item:emendatusenigmatica:tin_ingot>,
+  <item:emendatusenigmatica:osmium_ingot>,
+  <item:emendatusenigmatica:uranium_ingot>,
+  <item:emendatusenigmatica:nickel_ingot>,
+  <item:emendatusenigmatica:lead_ingot>,
+  <item:emendatusenigmatica:silver_ingot>
+];
+var oreBlocks as IItemStack[] = [
+  <item:emendatusenigmatica:enderium_block>,
+  <item:emendatusenigmatica:lumium_block>,
+  <item:emendatusenigmatica:signalum_block>,
+  <item:emendatusenigmatica:invar_block>,
+  <item:emendatusenigmatica:steel_block>,
+  <item:emendatusenigmatica:electrum_block>,
+  <item:emendatusenigmatica:constantan_block>,
+  <item:emendatusenigmatica:bronze_block>,
+  <item:emendatusenigmatica:tin_block>,
+  <item:emendatusenigmatica:osmium_block>,
+  <item:emendatusenigmatica:uranium_block>,
+  <item:emendatusenigmatica:nickel_block>,
+  <item:emendatusenigmatica:lead_block>,
+  <item:emendatusenigmatica:silver_block>
+];
 
-craftingTable.addShaped("nugget_to_ingot_aluminum", <item:immersiveengineering:ingot_aluminum>,[
-  [<tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>],
-  [<tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>],
-  [<tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>, <tag:items:forge:nuggets/aluminum>]
-]);
+for i, oreNugget in oreNuggets{
+  var oreIngot = oreIngots[i];
+  craftingTable.addShaped("nugget_to_ingot_" + i, oreIngot,[
+    [oreNugget, oreNugget, oreNugget],
+    [oreNugget, oreNugget, oreNugget],
+    [oreNugget, oreNugget, oreNugget]
+  ]);
+}
 
-craftingTable.addShaped("nugget_to_ingot_enderium", <item:emendatusenigmatica:enderium_ingot>,[
-  [<tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>],
-  [<tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>],
-  [<tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>, <tag:items:forge:nuggets/enderium>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_lumium", <item:emendatusenigmatica:lumium_ingot>,[
-  [<tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>],
-  [<tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>],
-  [<tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>, <tag:items:forge:nuggets/lumium>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_signalum", <item:emendatusenigmatica:signalum_ingot>,[
-  [<tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>],
-  [<tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>],
-  [<tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>, <tag:items:forge:nuggets/signalum>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_invar", <item:emendatusenigmatica:invar_ingot>,[
-  [<tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>],
-  [<tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>],
-  [<tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>, <tag:items:forge:nuggets/invar>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_steel", <item:emendatusenigmatica:steel_ingot>,[
-  [<tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>],
-  [<tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>],
-  [<tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>, <tag:items:forge:nuggets/steel>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_electrum", <item:emendatusenigmatica:electrum_ingot>,[
-  [<tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>],
-  [<tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>],
-  [<tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>, <tag:items:forge:nuggets/electrum>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_constantan", <item:emendatusenigmatica:constantan_ingot>,[
-  [<tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>],
-  [<tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>],
-  [<tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>, <tag:items:forge:nuggets/constantan>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_bronze", <item:emendatusenigmatica:bronze_ingot>,[
-  [<tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>],
-  [<tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>],
-  [<tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>, <tag:items:forge:nuggets/bronze>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_tin", <item:emendatusenigmatica:tin_ingot>,[
-  [<tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>],
-  [<tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>],
-  [<tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>, <tag:items:forge:nuggets/tin>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_osmium", <item:emendatusenigmatica:osmium_ingot>,[
-  [<tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>],
-  [<tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>],
-  [<tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>, <tag:items:forge:nuggets/osmium>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_uranium", <item:emendatusenigmatica:uranium_ingot>,[
-  [<tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>],
-  [<tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>],
-  [<tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>, <tag:items:forge:nuggets/uranium>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_nickel", <item:emendatusenigmatica:nickel_ingot>,[
-  [<tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>],
-  [<tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>],
-  [<tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>, <tag:items:forge:nuggets/nickel>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_lead", <item:emendatusenigmatica:lead_ingot>,[
-  [<tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>],
-  [<tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>],
-  [<tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>, <tag:items:forge:nuggets/lead>]
-]);
-
-craftingTable.addShaped("nugget_to_ingot_silver", <item:emendatusenigmatica:silver_ingot>,[
-  [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
-  [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
-  [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>]
-]);
-
+for i, ore_ingot in oreIngots{
+  var oreBlock = oreBlocks[i];
+  craftingTable.addShaped("ingot_to_block_" + i, oreBlock,[
+    [ore_ingot, ore_ingot, ore_ingot],
+    [ore_ingot, ore_ingot, ore_ingot],
+    [ore_ingot, ore_ingot, ore_ingot]
+  ]);
+}
 // others
 
 craftingTable.addShaped("wireless_booster", <item:appliedenergistics2:wireless_booster> * 2, [
@@ -185,6 +155,41 @@ craftingTable.addShaped("bell", <item:minecraft:bell>, [
   [<tag:items:minecraft:planks>, <item:minecraft:air>, <tag:items:minecraft:planks>]
 ]);
 
+var slabs as IItemStack[]= [
+  <item:minecraft:oak_slab>,
+  <item:minecraft:spruce_slab>,
+  <item:minecraft:birch_slab>,
+  <item:minecraft:jungle_slab>,
+  <item:minecraft:acacia_slab>,
+  <item:minecraft:dark_oak_slab>,
+  <item:minecraft:crimson_slab>,
+  <item:minecraft:warped_slab>,
+  <item:minecraft:stone_slab>,
+  <item:minecraft:cobblestone_slab>,
+  <item:minecraft:smooth_stone_slab>
+];
+
+var blocks as IItemStack[]= [
+  <item:minecraft:oak_planks>,
+  <item:minecraft:spruce_planks>,
+  <item:minecraft:birch_planks>,
+  <item:minecraft:jungle_planks>,
+  <item:minecraft:acacia_planks>,
+  <item:minecraft:dark_oak_planks>,
+  <item:minecraft:crimson_planks>,
+  <item:minecraft:warped_planks>,
+  <item:minecraft:stone>,
+  <item:minecraft:cobblestone>,
+  <item:minecraft:smooth_stone>
+];
+
+for i, slab in slabs{
+  var block = blocks[i];
+    craftingTable.addShaped("slab_to_block_" + i, block, [
+    [slab],
+    [slab]
+  ]);
+}
 // recipetypes
 <recipetype:thermal:press>.addRecipe("sixcolonium_plate", [<item:contenttweaker:sixcolonium_plate>], <fluid:minecraft:empty>, [<item:contenttweaker:sixcolonium>], 500);
 <recipetype:mekanism:crushing>.addJSONRecipe("quartz_dust", {"input":{"ingredient":{"item":"minecraft:quartz"}},"output":{"item":"appliedenergistics2:nether_quartz_dust","count":1}});
