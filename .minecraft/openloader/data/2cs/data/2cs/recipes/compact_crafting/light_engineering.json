@@ -1,0 +1,54 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 3,
+    "layers": [
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["B", "C", "B"],
+                ["C", "B", "C"],
+                ["B", "C", "B"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["C", "B", "C"],
+                ["B", "A", "B"],
+                ["C", "B", "C"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["B", "C", "B"],
+                ["C", "B", "C"],
+                ["B", "C", "B"]
+            ]
+          }
+      ],
+    "catalyst": {
+        "id": "create:precision_mechanism",
+        "Count": 1
+      },
+    "components": {
+      "A":{
+              "type": "compactcrafting:block",
+              "block": "emendatusenigmatica:copper_block"
+          },
+      "B":{
+              "type": "compactcrafting:block",
+              "block": "immersiveengineering:sheetmetal_iron"
+          },
+      "C":{
+              "type": "compactcrafting:block",
+              "block": "immersiveengineering:sheetmetal_silver"
+          }
+    },
+    "outputs": [
+          {
+              "id": "immersiveengineering:light_engineering",
+              "Count": 4
+          }
+    ]
+}

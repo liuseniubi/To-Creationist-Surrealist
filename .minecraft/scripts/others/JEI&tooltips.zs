@@ -12,7 +12,6 @@ var orepot1 = game.localize("2cs.jei.orepot1");
 var orepot2 = game.localize("2cs.jei.orepot2");
 var orepot3 = game.localize("2cs.jei.orepot3");
 var explosive = game.localize("2cs.jei.explosive");
-var torcherino1 = game.localize("2cs.jei.torcherino1");
 var torcherino2 = game.localize("2cs.jei.torcherino2");
 var cable_anchor1 = game.localize("2cs.jei.cable_anchor1");
 var cable_anchor2 = game.localize("2cs.jei.cable_anchor2");
@@ -58,7 +57,7 @@ var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
 <item:contenttweaker:explosive_stick>.addTooltip(explosive_stickttp);
 
 var pebblettp = game.localize("2cs.tooltip.pebble");
-<item:contenttweaker:pebble>.addTooltip(pebblettp);
+<item:botania:pebble>.addTooltip(pebblettp);
 
 var seed_ttp = game.localize("2cs.tooltip.animal_seed");
 <item:animalcrops:seeds>.withTag({entity: "minecraft:chicken" as string}).addTooltip(seed_ttp);
@@ -84,6 +83,6 @@ mods.jei.JEI.addInfo(<item:minecraft:tnt>, [explosive]);
 mods.jei.JEI.addInfo(<item:minecraft:tnt_minecart>, [explosive]);
 mods.jei.JEI.addInfo(<item:contenttweaker:explosive_stick>, [explosive]);
 mods.jei.JEI.addInfo(<item:appliedenergistics2:tiny_tnt>, [explosive]);
-mods.jei.JEI.addInfo(<item:torcherino:torcherino>, [torcherino1, " ", " ", " ", " ", " ", " ", torcherino2]);
+mods.jei.JEI.addInfo(<item:torcherino:torcherino>, [" ", " ", " ", " ", " ", " ", " ", torcherino2]);
 mods.jei.JEI.addInfo(<item:appliedenergistics2:cable_anchor>, [cable_anchor1, cable_anchor2]);
 mods.jei.JEI.addInfo(<item:contenttweaker:graduate>, [graduate]);

@@ -5,16 +5,23 @@
 	"requirements": [
 		{
 			"type": "custommachinery:item",
-			"item": "botania:pebble",
+			"item": "minecraft:cobblestone",
 			"amount": 1,
 			"mode": "input"
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:bone_meal",
-			"amount": 2,
+			"item": "minecraft:andesite",
+			"amount": 1,
 			"mode": "output",
-			"chance": 0.73
+			"chance": 0.8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:cobblestone",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.2
 		}
 	]
 }

@@ -4,6 +4,4 @@
     Made For 2CS
 */
 
-recipes.removeByModid("mekanism");
-recipes.removeByModid("immersiveengineering");
-recipes.removeByModid("mysticalagriculture");
+craftingTable.addShapeless("graduate_temp", <item:contenttweaker:graduate>, [<tag:items:minecraft:planks>]);

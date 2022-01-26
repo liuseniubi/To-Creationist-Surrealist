@@ -5,7 +5,7 @@
 	"requirements": [
 		{
 			"type": "custommachinery:item",
-			"item": "contenttweaker:pebble",
+			"item": "botania:pebble",
 			"amount": 1,
 			"mode": "input"
 		},

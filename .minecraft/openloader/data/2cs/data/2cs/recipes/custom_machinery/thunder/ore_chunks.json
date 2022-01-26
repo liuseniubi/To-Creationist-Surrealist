@@ -25,13 +25,6 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "emendatusenigmatica:osmium_chunk",
-			"amount": 1,
-			"mode": "output",
-			"chance": 0.5
-		},
-		{
-			"type": "custommachinery:item",
 			"item": "emendatusenigmatica:tin_chunk",
 			"amount": 1,
 			"mode": "output",

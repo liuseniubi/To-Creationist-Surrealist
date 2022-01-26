@@ -1,0 +1,50 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 3,
+    "layers": [
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["B", "B", "B"],
+                ["B", "B", "B"],
+                ["B", "B", "B"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["B", "B", "B"],
+                ["B", "A", "B"],
+                ["B", "B", "B"]
+            ]
+          },
+          {
+              "type": "compactcrafting:mixed",
+              "pattern": [
+                ["B", "B", "B"],
+                ["B", "B", "B"],
+                ["B", "B", "B"]
+            ]
+          }
+      ],
+    "catalyst": {
+        "id": "create:precision_mechanism",
+        "Count": 1
+      },
+    "components": {
+      "A":{
+              "type": "compactcrafting:block",
+              "block": "minecraft:redstone_block"
+          },
+      "B":{
+              "type": "compactcrafting:block",
+              "block": "immersiveengineering:sheetmetal_iron"
+          }
+    },
+    "outputs": [
+          {
+              "id": "immersiveengineering:rs_engineering",
+              "Count": 4
+          }
+    ]
+}

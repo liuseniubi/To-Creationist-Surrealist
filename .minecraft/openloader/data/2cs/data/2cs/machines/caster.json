@@ -1,0 +1,72 @@
+{
+  "name": "2cs.block.caster",
+  "appearance": {
+    "model": "2cs:machine/caster"
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "x": 86,
+      "y": 23,
+      "id": "fluids"
+    },
+    {
+      "id": "casts",
+      "x": 120,
+      "y": 49,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "outputs",
+      "x": 149,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "2cs.block.caster",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "maxOutput": 144,
+      "id": "fluids",
+      "capacity": 20000,
+      "maxInput": 144,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "casts",
+      "mode": "input",
+      "type": "custommachinery:item"
+    },
+    {
+      "id": "outputs",
+      "mode": "output",
+      "type": "custommachinery:item"
+    }
+  ]
+}

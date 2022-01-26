@@ -25,7 +25,6 @@ var deletes = [
   <item:minecraft:gold_ingot>,
   <item:emendatusenigmatica:zinc_ingot>,
   <item:emendatusenigmatica:tin_ingot>,
-  <item:emendatusenigmatica:osmium_ingot>,
   <item:emendatusenigmatica:lead_ingot>,
   <item:emendatusenigmatica:nickel_ingot>,
   <item:emendatusenigmatica:silver_ingot>,
@@ -42,7 +41,6 @@ var chunks = [
   <tag:items:forge:chunks/gold>,
   <tag:items:forge:chunks/zinc>,
   <tag:items:forge:chunks/tin>,
-  <tag:items:forge:chunks/osmium>,
   <tag:items:forge:chunks/lead>,
   <tag:items:forge:chunks/nickel>,
   <tag:items:forge:chunks/silver>,
@@ -54,7 +52,6 @@ var clumps = [
   <tag:items:mekanism:clumps/gold>,
   <tag:items:mekanism:clumps/zinc>,
   <tag:items:mekanism:clumps/tin>,
-  <tag:items:mekanism:clumps/osmium>,
   <tag:items:mekanism:clumps/lead>,
   <tag:items:mekanism:clumps/nickel>,
   <tag:items:mekanism:clumps/silver>,
@@ -66,7 +63,6 @@ var crystals = [
   <tag:items:mekanism:crystals/gold>,
   <tag:items:mekanism:crystals/zinc>,
   <tag:items:mekanism:crystals/tin>,
-  <tag:items:mekanism:crystals/osmium>,
   <tag:items:mekanism:crystals/lead>,
   <tag:items:mekanism:crystals/nickel>,
   <tag:items:mekanism:crystals/silver>,
@@ -78,7 +74,6 @@ var shards = [
   <tag:items:mekanism:shards/gold>,
   <tag:items:mekanism:shards/zinc>,
   <tag:items:mekanism:shards/tin>,
-  <tag:items:mekanism:shards/osmium>,
   <tag:items:mekanism:shards/lead>,
   <tag:items:mekanism:shards/nickel>,
   <tag:items:mekanism:shards/silver>,
@@ -90,7 +85,6 @@ var dusts = [
   <tag:items:forge:dusts/gold>,
   <tag:items:forge:dusts/zinc>,
   <tag:items:forge:dusts/tin>,
-  <tag:items:forge:dusts/osmium>,
   <tag:items:forge:dusts/lead>,
   <tag:items:forge:dusts/nickel>,
   <tag:items:forge:dusts/silver>,
@@ -102,7 +96,6 @@ var nuggets = [
   <item:minecraft:gold_nugget>,
   <item:emendatusenigmatica:zinc_nugget>,
   <item:emendatusenigmatica:tin_nugget>,
-  <item:emendatusenigmatica:osmium_nugget>,
   <item:emendatusenigmatica:lead_nugget>,
   <item:emendatusenigmatica:nickel_nugget>,
   <item:emendatusenigmatica:silver_nugget>,
@@ -114,7 +107,6 @@ var ingots = [
   <item:minecraft:gold_ingot>,
   <item:emendatusenigmatica:zinc_ingot>,
   <item:emendatusenigmatica:tin_ingot>,
-  <item:emendatusenigmatica:osmium_ingot>,
   <item:emendatusenigmatica:lead_ingot>,
   <item:emendatusenigmatica:nickel_ingot>,
   <item:emendatusenigmatica:silver_ingot>,
@@ -123,17 +115,17 @@ var ingots = [
 
 for i, chunk in chunks{
   var nugget = nuggets[i];
-  blastFurnace.addRecipe("blastfurnace_chunk_" + i, nugget * 6, chunk, 2.0, 100);
+  blastFurnace.addRecipe("blastfurnace_chunk_" + i, nugget * 5, chunk, 2.0, 100);
 }
-
+/*
 for i, clump in clumps{
   var nugget1 = nuggets[i];
   blastFurnace.addRecipe("blastfurnace_clump_" + i, nugget1 * 8, clump, 2.0, 100);
 }
-
+*/  
 for i, shard in shards{
   var nugget2 = nuggets[i];
-  blastFurnace.addRecipe("blastfurnace_shard_" + i, nugget2 * 3, shard, 2.0, 100);
+  blastFurnace.addRecipe("blastfurnace_shard_" + i, nugget2 * 2, shard, 2.0, 100);
 }
 
 for i, crystal in crystals{
@@ -145,13 +137,12 @@ for i, dust in dusts{
   var ingot1 = ingots[i];
   blastFurnace.addRecipe("blastfurnace_dust_" + i, ingot1, dust, 2.0, 100);
 }
-
+/*
 // ore to ore chunk
 var ores = [
   <tag:items:forge:ores/iron>,
   <tag:items:forge:ores/zinc>,
   <tag:items:forge:ores/tin>,
-  <tag:items:forge:ores/osmium>,
   <tag:items:forge:ores/lead>,
   <tag:items:forge:ores/nickel>,
   <tag:items:forge:ores/silver>,
@@ -162,7 +153,6 @@ var oreChunks = [
   <item:emendatusenigmatica:iron_chunk>,
   <item:emendatusenigmatica:zinc_chunk>,
   <item:emendatusenigmatica:tin_chunk>,
-  <item:emendatusenigmatica:osmium_chunk>,
   <item:emendatusenigmatica:lead_chunk>,
   <item:emendatusenigmatica:nickel_chunk>,
   <item:emendatusenigmatica:silver_chunk>,
@@ -174,12 +164,11 @@ for i, ore in ores{
   var hammers = <tag:items:forge:tools/hammers>.asIIngredient();
   <recipetype:farmersdelight:cutting>.addRecipe("fd_ore_to_chunk_" + i, ore, [oreChunk], hammers, "minecraft:block.stone.break");
 }
-
+*/
 var gravels = [
   <item:contenttweaker:iron_gravel>,
   <item:emendatusenigmatica:zinc_gravel>,
   <item:emendatusenigmatica:tin_gravel>,
-  <item:emendatusenigmatica:osmium_gravel>,
   <item:emendatusenigmatica:lead_gravel>,
   <item:emendatusenigmatica:nickel_gravel>,
   <item:emendatusenigmatica:silver_gravel>,
@@ -190,7 +179,6 @@ var oreClumps = [
   <item:mekanism:clump_iron>,
   <item:emendatusenigmatica:zinc_clump>,
   <item:mekanism:clump_tin>,
-  <item:mekanism:clump_osmium>,
   <item:mekanism:clump_lead>,
   <item:emendatusenigmatica:nickel_clump>,
   <item:emendatusenigmatica:silver_clump>,
@@ -201,7 +189,6 @@ var oreShards = [
   <item:mekanism:shard_iron>,
   <item:emendatusenigmatica:zinc_shard>,
   <item:mekanism:shard_tin>,
-  <item:mekanism:shard_osmium>,
   <item:mekanism:shard_lead>,
   <item:emendatusenigmatica:nickel_shard>,
   <item:emendatusenigmatica:silver_shard>,

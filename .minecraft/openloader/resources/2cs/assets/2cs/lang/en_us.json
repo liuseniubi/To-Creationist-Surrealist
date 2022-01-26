@@ -1,31 +1,16 @@
 {
-    "block.minecraft.soul_torch": "ToRcHeRiNo",
+    "2cs.item.fake_torcherino": "ToRcHeRiNo",
 
     "2cs.mcfunction.start": "§b§lWelcome to 2CS!",
 
     "2cs.misc.seed": "I found some seeds.",
-
-    "singularity.extendedcrafting.enderium": "Enderium",
-    "singularity.extendedcrafting.infused_enderium": "Infused Enderium",
     
     "item.thermal.rf_potato": "Uplay's Server",
 
-    "block.extendedcrafting.ender_ingot_block": "Elementary Ender Ingot Block",
-    "item.extendedcrafting.ender_ingot": "Elementary Ender Ingot",
-
-    "gui.appliedenergistics2.inWorldCraftingPresses": "All the Processor Press can be crafted.",
-
-    "item.minecraft.red_dye": "Red Dye",
-    "item.minecraft.yellow_dye": "Yellow Dye",
-    "item.minecraft.orange_dye": "Orange Dye",
-    "item.minecraft.green_dye": "Green Dye",
-    "item.minecraft.blue_dye": "Blue Dye",
-    "item.minecraft.purple_dye": "Purple Dye",
     "2cs.block.thunder_processor": "Thunder Processor",
     "2cs.block.explosion_processor": "Explosion Processor",
-    "2cs.block.automatic_cutter": "Automatic Cutter",
     "2cs.block.food_energe_generator": "Jin Yang™ Food Generator",
-
+    "2cs.block.caster": "Caster",
 
     "_1": "advancements",
     "advancements.2cs.root.title": "2CS!",
@@ -37,19 +22,16 @@
     "tips.title.tip":"Six_color's tip:",
     "2cs.tip.jei": "Search JEI maybe help.",
     "2cs.tip.clay": "It's useful to collect clay in the early age.",
-    "2cs.tip.ae2": "Use Applied Energistics 2 mod to make automation can improve your efficiency.",
     "2cs.tip.trashcan": "The Ultimate Trashcan can destroy every kind of trash, even the Exhausted Nuclear Waste in Mekanism.",
     "2cs.tip.kelp": "Kelp can also be grown in Botany pots.",
     "2cs.tip.jei_hide": "There are some useless things are hidden in JEI.",
     "2cs.tip.ae&drawer": "Drawer controller can be connected to AE network by connecting ME storage bus.",
-    "2cs.tip.autotui": "The Ulitimate Ingot automation is not that hard.",
     "2cs.tip.wrong": "If you find something wrong, create an issue on GitHub or just @me in the Discord.",
     "2cs.tip.iconislogo": "The icon of graduate item is my personal logo.",
     "2cs.tip.thank": "Thank you for playing my modpack!",
     "2cs.tip.niconiconi": "Niconiconi!",
-    "2cs.tip.capacity_card": "You can put the Capacity Card into the Inscriber.",
-    "2cs.tip.portal": "Both the nether portal and the end portal cannot be opened because this modpack does not need to enter the nether. Please eat the End Cake if you want to enter the end.",
-    "2cs.tip.flux_dust": "If you want to find some Bedrocks to get some Flux Dusts, I recommend you to got to the End.",
+    "2cs.tip.portal": "Both the nether portal and the end portal cannot be opened.",
+    "2cs.tip.flowers": "You can get all kinds of flowers by right click Dirt or Grass Block with Bone Meal.",
 
     "_3": "jeis",
     "2cs.jei.orepot1": "Tip:",
@@ -72,12 +54,11 @@
     "2cs.tooltip.basic_component": "It will not be consumed in crafting unless specifically marked.",
     "2cs.tooltip.onlyforcrafting": "Only for crafting.",
     "2cs.tooltip.pebble": "Can be obtained by breaking Burnt Planks.",
-    "2cs.tooltip.chicken_seed": "Right-click Dirt or Grass Block to get.",
+    "2cs.tooltip.animal_seed": "Right-click Dirt or Grass Block to get.",
     
     "_5": "specials",
     "2cs.tip.famous5000": "Special thanks to Famous5000 for fixing some of these tips! If anything looks off in the English variation, please yell at him.",
     "2cs.tip.hakzn_anox": "HakZn_Anox used to be called YanDIOda, why did he change his name? We don't know!",
-    "2cs.tip.huyalance": "YinShenGuai, also known as the DaiTou, It was not the tip he wanted most, but we made it up anyway.",
 
     "_6": "quests.chapter",
     "2cs.quests.chapter1": "The first chapter - The Origin"

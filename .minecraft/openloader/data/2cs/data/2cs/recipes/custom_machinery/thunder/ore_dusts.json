@@ -25,13 +25,6 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "emendatusenigmatica:osmium_dust",
-			"amount": 1,
-			"mode": "output",
-			"chance": 0.5
-		},
-		{
-			"type": "custommachinery:item",
 			"item": "emendatusenigmatica:tin_dust",
 			"amount": 1,
 			"mode": "output",
@@ -81,7 +74,7 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "contenttweaker:pebble",
+			"item": "botania:pebble",
 			"amount": 1,
 			"mode": "output",
 			"chance": 0.8

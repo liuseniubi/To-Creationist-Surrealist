@@ -31,7 +31,7 @@ var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 <recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");
 <recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");
 
-# crafting tables
+// crafting tables
 // deletes
 recipes.removeByName("create:sequenced_assembly/cogwheel");
 recipes.removeByName("create:sequenced_assembly/large_cogwheel");
@@ -41,13 +41,6 @@ craftingTable.removeRecipe(<item:create:brass_casing>);
 craftingTable.removeRecipe(<item:create:brass_block>);
 craftingTable.removeRecipe(<item:create:copper_casing>);
 craftingTable.removeRecipe(<item:emendatusenigmatica:brass_block>);
-
-<recipetype:tconstruct:casting_basin>.removeRecipe(<item:create:brass_block>);
-<recipetype:tconstruct:alloying>.removeRecipe(<fluid:tconstruct:molten_brass>);
-<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/ingot_gold_cast");
-<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/ingot_sand_cast");
-<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:compat/create/andesite_alloy_zinc");
-<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:compat/create/andesite_alloy_iron");
 
 <recipetype:create:cutting>.removeRecipe(<item:create:shaft>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_brass>);
@@ -66,7 +59,7 @@ craftingTable.addShapeless("copper_casing", <item:create:copper_casing>, [<item:
 
 craftingTable.addShapeless("re_csixcolonium_casing", <item:contenttweaker:sixcolonium_casing>, [<item:create:copper_casing>]);
 
-# gearbox
+// gearbox
 craftingTable.removeRecipe(<item:create:gearbox>);
 
 craftingTable.addShaped("gearbox", <item:create:gearbox>, [
@@ -75,7 +68,7 @@ craftingTable.addShaped("gearbox", <item:create:gearbox>, [
     [air, scog, air]
 ]);
 
-# speedometer
+// speedometer
 craftingTable.removeByName("create:crafting/kinetics/speedometer");
 
 craftingTable.addShaped("speedometer", <item:create:speedometer>, [
@@ -83,7 +76,7 @@ craftingTable.addShaped("speedometer", <item:create:speedometer>, [
     [<item:create:shaft>, sc, <item:create:shaft>]
 ]);
 
-# deployer
+// deployer
 craftingTable.removeRecipe(<item:create:deployer>);
 
 craftingTable.addShaped("deployer", <item:create:deployer>, [
@@ -92,7 +85,7 @@ craftingTable.addShaped("deployer", <item:create:deployer>, [
     [air, <item:create:brass_hand>, air]
 ]);
 
-# mechanical_saw
+// mechanical_saw
 craftingTable.removeRecipe(<item:create:mechanical_saw>);
 
 craftingTable.addShaped("mechanical_saw", <item:create:mechanical_saw>, [
@@ -101,7 +94,7 @@ craftingTable.addShaped("mechanical_saw", <item:create:mechanical_saw>, [
     [air, sc, air]
 ]);
 
-# depot
+// depot
 craftingTable.removeRecipe(<item:create:depot>);
 
 craftingTable.addShaped("depot", <item:create:depot>, [
@@ -109,7 +102,7 @@ craftingTable.addShaped("depot", <item:create:depot>, [
     [sc]
 ]);
 
-# chute
+// chute
 craftingTable.removeRecipe(<item:create:chute>);
 
 craftingTable.addShaped("chute", <item:create:chute> * 4, [
@@ -117,7 +110,7 @@ craftingTable.addShaped("chute", <item:create:chute> * 4, [
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
-# copper_valve_handle
+// copper_valve_handle
 craftingTable.removeRecipe(<item:create:copper_valve_handle>);
 
 craftingTable.addShaped("copper_valve_handle", <item:create:copper_valve_handle>, [
@@ -125,7 +118,7 @@ craftingTable.addShaped("copper_valve_handle", <item:create:copper_valve_handle>
     [air, s, air]
 ]);
 
-# minecart_coupling
+// minecart_coupling
 craftingTable.removeRecipe(<item:create:minecart_coupling>);
 
 craftingTable.addShaped("minecart_coupling", <item:create:minecart_coupling>, [
@@ -134,7 +127,7 @@ craftingTable.addShaped("minecart_coupling", <item:create:minecart_coupling>, [
     [s, air, air]
 ]);
 
-# andesite_funnel
+// andesite_funnel
 craftingTable.removeRecipe(<item:create:andesite_funnel>);
 
 craftingTable.addShaped("andesite_funnel", <item:create:andesite_funnel> * 2, [
@@ -142,7 +135,7 @@ craftingTable.addShaped("andesite_funnel", <item:create:andesite_funnel> * 2, [
     [air, <item:minecraft:dried_kelp>, air]
 ]);
 
-# brass_funnel
+// brass_funnel
 craftingTable.removeRecipe(<item:create:brass_funnel>);
 
 craftingTable.addShaped("brass_funnel", <item:create:brass_funnel> * 2, [
@@ -150,7 +143,7 @@ craftingTable.addShaped("brass_funnel", <item:create:brass_funnel> * 2, [
     [air, <item:minecraft:dried_kelp>, air]
 ]);
 
-# mechanical_arm
+// mechanical_arm
 craftingTable.removeRecipe(<item:create:mechanical_arm>);
 
 craftingTable.addShaped("mechanical_arm", <item:create:mechanical_arm>, [
@@ -159,7 +152,7 @@ craftingTable.addShaped("mechanical_arm", <item:create:mechanical_arm>, [
     [<item:create:electron_tube>, sc, <item:create:electron_tube>]
 ]);
 
-# whisk
+// whisk
 craftingTable.removeRecipe(<item:create:whisk>);
 
 craftingTable.addShaped("whisk", <item:create:whisk>, [
@@ -168,7 +161,7 @@ craftingTable.addShaped("whisk", <item:create:whisk>, [
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
-# mechanical_drill
+// mechanical_drill
 craftingTable.removeRecipe(<item:create:mechanical_drill>);
 
 craftingTable.addShaped("mechanical_drill", <item:create:mechanical_drill>, [
@@ -177,7 +170,7 @@ craftingTable.addShaped("mechanical_drill", <item:create:mechanical_drill>, [
     [air, sc, air]
 ]);
 
-# shaft
+// shaft
 craftingTable.removeRecipe(<item:create:shaft>);
 
 craftingTable.addShaped("shaft", <item:create:shaft> * 8, [
@@ -185,7 +178,7 @@ craftingTable.addShaped("shaft", <item:create:shaft> * 8, [
     [s]
 ]);
 
-# gantry_shaft
+// gantry_shaft
 craftingTable.removeRecipe(<item:create:gantry_shaft>);
 
 craftingTable.addShaped("gantry_shaft", <item:create:gantry_shaft> * 8, [
@@ -194,7 +187,7 @@ craftingTable.addShaped("gantry_shaft", <item:create:gantry_shaft> * 8, [
     [s]
 ]);
 
-# mechanical_bearing
+// mechanical_bearing
 craftingTable.removeRecipe(<item:create:mechanical_bearing>);
 
 craftingTable.addShaped("mechanical_bearing", <item:create:mechanical_bearing>, [
@@ -203,7 +196,7 @@ craftingTable.addShaped("mechanical_bearing", <item:create:mechanical_bearing>, 
     [air, <item:create:shaft>, air]
 ]);
 
-# clockwork_bearing
+// clockwork_bearing
 craftingTable.removeRecipe(<item:create:clockwork_bearing>);
 
 craftingTable.addShaped("clockwork_bearing", <item:create:clockwork_bearing>, [
@@ -212,7 +205,7 @@ craftingTable.addShaped("clockwork_bearing", <item:create:clockwork_bearing>, [
     [air, <item:create:shaft>, air]
 ]);
 
-# cart_assembler
+// cart_assembler
 craftingTable.removeRecipe(<item:create:cart_assembler>);
 
 craftingTable.addShaped("cart_assembler", <item:create:cart_assembler>, [
@@ -221,7 +214,7 @@ craftingTable.addShaped("cart_assembler", <item:create:cart_assembler>, [
     [<tag:items:minecraft:logs>, air, <tag:items:minecraft:logs>]
 ]);
 
-# large_cogwheel
+// large_cogwheel
 craftingTable.removeRecipe(<item:create:large_cogwheel>);
 
 craftingTable.addShaped("large_cogwheel", <item:create:large_cogwheel> * 2, [
@@ -230,7 +223,7 @@ craftingTable.addShaped("large_cogwheel", <item:create:large_cogwheel> * 2, [
     [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:planks>, <tag:items:minecraft:wooden_buttons>]
 ]);
 
-# metal_bracket
+// metal_bracket
 craftingTable.removeRecipe(<item:create:metal_bracket>);
 
 craftingTable.addShaped("metal_bracket", <item:create:metal_bracket> * 3, [
@@ -238,7 +231,7 @@ craftingTable.addShaped("metal_bracket", <item:create:metal_bracket> * 3, [
     [<tag:items:forge:ingots/iron>, s, <tag:items:forge:ingots/iron>]
 ]);
 
-# sticker
+// sticker
 craftingTable.removeRecipe(<item:create:sticker>);
 
 craftingTable.addShaped("sticker", <item:create:sticker>, [
@@ -246,7 +239,7 @@ craftingTable.addShaped("sticker", <item:create:sticker>, [
     [<tag:items:forge:cobblestone>, <item:minecraft:redstone>, <tag:items:forge:cobblestone>]
 ]);
 
-# nozzle
+// nozzle
 craftingTable.removeRecipe(<item:create:nozzle>);
 
 craftingTable.addShaped("nozzle", <item:create:nozzle>, [
@@ -255,7 +248,7 @@ craftingTable.addShaped("nozzle", <item:create:nozzle>, [
     [s, s, s]
 ]);
 
-# linear_chassis
+// linear_chassis
 craftingTable.removeRecipe(<item:create:linear_chassis>);
 
 craftingTable.addShaped("linear_chassis", <item:create:linear_chassis> * 3, [
@@ -264,7 +257,7 @@ craftingTable.addShaped("linear_chassis", <item:create:linear_chassis> * 3, [
     [air, s, air]
 ]);
 
-# basin
+// basin
 craftingTable.removeRecipe(<item:create:basin>);
 
 craftingTable.addShaped("basin", <item:create:basin>, [
@@ -272,7 +265,7 @@ craftingTable.addShaped("basin", <item:create:basin>, [
     [s, s, s]
 ]);
 
-# hand_crank
+// hand_crank
 craftingTable.removeRecipe(<item:create:hand_crank>);
 
 craftingTable.addShaped("hand_crank", <item:create:hand_crank>, [
@@ -281,7 +274,7 @@ craftingTable.addShaped("hand_crank", <item:create:hand_crank>, [
     [air, air, s]
 ]);
 
-# piston_extension_pole
+// piston_extension_pole
 craftingTable.removeRecipe(<item:create:piston_extension_pole>);
 
 craftingTable.addShaped("piston_extension_pole", <item:create:piston_extension_pole> * 8, [
@@ -290,7 +283,7 @@ craftingTable.addShaped("piston_extension_pole", <item:create:piston_extension_p
     [s]
 ]);
 
-# radial_chassis
+// radial_chassis
 craftingTable.removeRecipe(<item:create:radial_chassis>);
 
 craftingTable.addShaped("radial_chassis", <item:create:radial_chassis> * 3, [
@@ -299,7 +292,7 @@ craftingTable.addShaped("radial_chassis", <item:create:radial_chassis> * 3, [
     [air, <tag:items:minecraft:logs>, air]
 ]);
 
-# millstone
+// millstone
 craftingTable.removeRecipe(<item:create:millstone>);
 
 craftingTable.addShaped("millstone", <item:create:millstone>, [
@@ -308,7 +301,7 @@ craftingTable.addShaped("millstone", <item:create:millstone>, [
     [<item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>]
 ]);
 
-# mechanical_plough
+// mechanical_plough
 craftingTable.removeRecipe(<item:create:mechanical_plough>);
 
 craftingTable.addShaped("mechanical_plough", <item:create:mechanical_plough>, [
@@ -317,7 +310,7 @@ craftingTable.addShaped("mechanical_plough", <item:create:mechanical_plough>, [
     [air, sc, air]
 ]);
 
-# cogwheel
+// cogwheel
 craftingTable.removeRecipe(<item:create:cogwheel>);
 
 craftingTable.addShaped("cogwheel", <item:create:cogwheel> * 8, [
@@ -326,7 +319,7 @@ craftingTable.addShaped("cogwheel", <item:create:cogwheel> * 8, [
     [<tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>, <tag:items:minecraft:wooden_buttons>]
 ]);
 
-# andesite_tunnel
+// andesite_tunnel
 craftingTable.removeRecipe(<item:create:andesite_tunnel>);
 
 craftingTable.addShaped("andesite_tunnel", <item:create:andesite_tunnel> * 2, [
@@ -334,7 +327,7 @@ craftingTable.addShaped("andesite_tunnel", <item:create:andesite_tunnel> * 2, [
     [<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>]
 ]);
 
-# empty_blaze_burner
+// empty_blaze_burner
 craftingTable.removeRecipe(<item:create:empty_blaze_burner>);
 
 craftingTable.addShaped("empty_blaze_burner", <item:create:empty_blaze_burner>, [
@@ -342,7 +335,7 @@ craftingTable.addShaped("empty_blaze_burner", <item:create:empty_blaze_burner>, 
     [<item:minecraft:iron_bars>, <item:minecraft:iron_bars>]
 ]);
 
-# brass_tunnel
+// brass_tunnel
 craftingTable.removeRecipe(<item:create:brass_tunnel>);
 
 craftingTable.addShaped("brass_tunnel", <item:create:brass_tunnel> * 2, [
@@ -351,7 +344,7 @@ craftingTable.addShaped("brass_tunnel", <item:create:brass_tunnel> * 2, [
     [<item:minecraft:dried_kelp>, <item:minecraft:dried_kelp>]
 ]);
 
-# mechanical_harvester
+// mechanical_harvester
 craftingTable.removeRecipe(<item:create:mechanical_harvester>);
 
 craftingTable.addShaped("mechanical_harvester", <item:create:mechanical_harvester>, [
@@ -360,7 +353,7 @@ craftingTable.addShaped("mechanical_harvester", <item:create:mechanical_harveste
     [air, sc, air]
 ]);
 
-# propeller
+// propeller
 craftingTable.removeRecipe(<item:create:propeller>);
 
 craftingTable.addShaped("propeller", <item:create:propeller>, [
@@ -369,7 +362,7 @@ craftingTable.addShaped("propeller", <item:create:propeller>, [
     [air, <tag:items:forge:plates/iron>, air]
 ]);
 
-# ornate_iron_window
+// ornate_iron_window
 craftingTable.removeRecipe(<item:create:ornate_iron_window>);
 
 craftingTable.addShaped("new_ornate_iron_window", <item:create:ornate_iron_window> * 2, [
@@ -377,7 +370,7 @@ craftingTable.addShaped("new_ornate_iron_window", <item:create:ornate_iron_windo
     [s, <tag:items:forge:glass/colorless>, s]
 ]);
 
-# ornate_iron_window
+// ornate_iron_window
 craftingTable.removeRecipe(<item:create:wooden_bracket>);
 
 craftingTable.addShaped("ornate_iron_window", <item:create:wooden_bracket> * 4, [
@@ -385,7 +378,7 @@ craftingTable.addShaped("ornate_iron_window", <item:create:wooden_bracket> * 4, 
     [<tag:items:minecraft:planks>, s, <tag:items:minecraft:planks>]
 ]);
 
-# sail_frame
+// sail_frame
 craftingTable.removeRecipe(<item:create:sail_frame>);
 
 craftingTable.addShaped("sail_frame", <item:create:sail_frame> * 8, [
@@ -394,7 +387,7 @@ craftingTable.addShaped("sail_frame", <item:create:sail_frame> * 8, [
     [<item:minecraft:stick>, <item:minecraft:stick>, <item:minecraft:stick>]
 ]);
 
-# brass_hand
+// brass_hand
 craftingTable.removeRecipe(<item:create:brass_hand>);
 
 craftingTable.addShaped("brass_hand", <item:create:brass_hand>, [
@@ -403,7 +396,7 @@ craftingTable.addShaped("brass_hand", <item:create:brass_hand>, [
     [air, <item:contenttweaker:sixcolonium_plate>, air]
 ]);
 
-# gearshift
+// gearshift
 craftingTable.removeRecipe(<item:create:gearshift>);
 
 craftingTable.addShaped("gearshift", <item:create:gearshift>, [
@@ -412,7 +405,7 @@ craftingTable.addShaped("gearshift", <item:create:gearshift>, [
     [air, <item:minecraft:redstone>, air]
 ]);
 
-# gantry_carriage
+// gantry_carriage
 craftingTable.removeRecipe(<item:create:gantry_carriage>);
 
 craftingTable.addShaped("gantry_carriage", <item:create:gantry_carriage>, [
@@ -421,7 +414,7 @@ craftingTable.addShaped("gantry_carriage", <item:create:gantry_carriage>, [
     [air, <item:create:cogwheel>, air]
 ]);
 
-# analog_lever
+// analog_lever
 craftingTable.removeRecipe(<item:create:analog_lever>);
 
 craftingTable.addShaped("analog_lever", <item:create:analog_lever>, [
@@ -429,7 +422,7 @@ craftingTable.addShaped("analog_lever", <item:create:analog_lever>, [
     [sc]
 ]);
 
-# mechanical_piston
+// mechanical_piston
 craftingTable.removeRecipe(<item:create:mechanical_piston>);
 
 craftingTable.addShaped("mechanical_piston", <item:create:mechanical_piston>, [
@@ -438,7 +431,7 @@ craftingTable.addShaped("mechanical_piston", <item:create:mechanical_piston>, [
     [air, <item:create:piston_extension_pole>, air]
 ]);
 
-# encased_chain_drive
+// encased_chain_drive
 craftingTable.removeRecipe(<item:create:encased_chain_drive>);
 
 craftingTable.addShaped("encased_chain_drive", <item:create:encased_chain_drive> * 2, [
@@ -447,7 +440,7 @@ craftingTable.addShaped("encased_chain_drive", <item:create:encased_chain_drive>
     [air, <tag:items:forge:nuggets/iron>, air]
 ]);
 
-# rope_pulley
+// rope_pulley
 craftingTable.removeRecipe(<item:create:rope_pulley>);
 
 craftingTable.addShaped("rope_pulley", <item:create:rope_pulley>, [
@@ -456,7 +449,7 @@ craftingTable.addShaped("rope_pulley", <item:create:rope_pulley>, [
     [air, <tag:items:forge:plates/iron>, air]
 ]);
 
-# clutch
+// clutch
 craftingTable.removeRecipe(<item:create:clutch>);
 
 craftingTable.addShaped("clutch", <item:create:clutch>, [
@@ -465,7 +458,7 @@ craftingTable.addShaped("clutch", <item:create:clutch>, [
     [air, <item:minecraft:redstone>, air]
 ]);
 
-# encased_fan
+// encased_fan
 craftingTable.removeRecipe(<item:create:encased_fan>);
 
 craftingTable.addShaped("encased_fan", <item:create:encased_fan>, [
@@ -474,7 +467,7 @@ craftingTable.addShaped("encased_fan", <item:create:encased_fan>, [
     [<tag:items:minecraft:logs>, wrench, <tag:items:minecraft:logs>]
 ]);
 
-# fluid_tank
+// fluid_tank
 craftingTable.removeRecipe(<item:create:fluid_tank>);
 
 craftingTable.addShaped("fluid_tank", <item:create:fluid_tank> * 2, [
@@ -483,7 +476,7 @@ craftingTable.addShaped("fluid_tank", <item:create:fluid_tank> * 2, [
     [air, sc, air]
 ]);
 
-# hose_pulley
+// hose_pulley
 craftingTable.removeRecipe(<item:create:hose_pulley>);
 
 craftingTable.addShaped("hose_pulley", <item:create:hose_pulley>, [
@@ -492,7 +485,7 @@ craftingTable.addShaped("hose_pulley", <item:create:hose_pulley>, [
     [air, <tag:items:forge:plates/copper>, air]
 ]);
 
-# item_drain
+// item_drain
 craftingTable.removeRecipe(<item:create:item_drain>);
 
 craftingTable.addShaped("item_drain", <item:create:item_drain>, [
@@ -500,7 +493,7 @@ craftingTable.addShaped("item_drain", <item:create:item_drain>, [
     [sc]
 ]);
 
-# portable_fluid_interface
+// portable_fluid_interface
 craftingTable.removeRecipe(<item:create:portable_fluid_interface>);
 
 craftingTable.addShaped("portable_fluid_interface", <item:create:portable_fluid_interface>, [
@@ -508,7 +501,7 @@ craftingTable.addShaped("portable_fluid_interface", <item:create:portable_fluid_
     [sc]
 ]);
 
-# portable_storage_interface
+// portable_storage_interface
 craftingTable.removeRecipe(<item:create:portable_storage_interface>);
 
 craftingTable.addShaped("portable_storage_interface", <item:create:portable_storage_interface>, [
@@ -516,7 +509,7 @@ craftingTable.addShaped("portable_storage_interface", <item:create:portable_stor
     [sc]
 ]);
 
-# mechanical_crafter
+// mechanical_crafter
 craftingTable.removeRecipe(<item:create:mechanical_crafter>);
 
 craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> * 3, [
@@ -525,7 +518,7 @@ craftingTable.addShaped("mechanical_crafter", <item:create:mechanical_crafter> *
     [<item:minecraft:redstone>, <item:minecraft:crafting_table>, <item:minecraft:redstone>]
 ]);
 
-# sequenced_gearshift
+// sequenced_gearshift
 craftingTable.removeRecipe(<item:create:sequenced_gearshift>);
 
 craftingTable.addShaped("sequenced_gearshift", <item:create:sequenced_gearshift>, [
@@ -534,7 +527,7 @@ craftingTable.addShaped("sequenced_gearshift", <item:create:sequenced_gearshift>
     [air, <item:minecraft:clock>, air]
 ]);
 
-# rotation_speed_controller
+// rotation_speed_controller
 craftingTable.removeRecipe(<item:create:rotation_speed_controller>);
 
 craftingTable.addShaped("rotation_speed_controller", <item:create:rotation_speed_controller>, [
@@ -542,7 +535,7 @@ craftingTable.addShaped("rotation_speed_controller", <item:create:rotation_speed
     [<item:create:shaft>, sc, <item:create:shaft>]
 ]);
 
-# content_observer
+// content_observer
 craftingTable.removeRecipe(<item:create:content_observer>);
 
 craftingTable.addShaped("content_observer", <item:create:content_observer>, [
@@ -550,7 +543,7 @@ craftingTable.addShaped("content_observer", <item:create:content_observer>, [
     [air, sc, air]
 ]);
 
-# stockpile_switch
+// stockpile_switch
 craftingTable.removeRecipe(<item:create:stockpile_switch>);
 
 craftingTable.addShaped("stockpile_switch", <item:create:stockpile_switch>, [
@@ -558,7 +551,7 @@ craftingTable.addShaped("stockpile_switch", <item:create:stockpile_switch>, [
     [air, sc, air]
 ]);
 
-# adjustable_crate
+// adjustable_crate
 craftingTable.removeRecipe(<item:create:adjustable_crate>);
 
 craftingTable.addShaped("adjustable_crate", <item:create:adjustable_crate> * 4, [
@@ -567,14 +560,14 @@ craftingTable.addShaped("adjustable_crate", <item:create:adjustable_crate> * 4, 
     [sc, sc, sc]
 ]);
 
-# nixie_tube
+// nixie_tube
 craftingTable.removeRecipe(<item:create:nixie_tube>);
 
 craftingTable.addShaped("nixie_tube", <item:create:nixie_tube>, [
     [<item:create:electron_tube>, sc, <item:create:electron_tube>]
 ]);
 
-# redstone_link
+// redstone_link
 craftingTable.removeRecipe(<item:create:redstone_link>);
 
 craftingTable.addShaped("redstone_link", <item:create:redstone_link> * 2, [
@@ -582,7 +575,7 @@ craftingTable.addShaped("redstone_link", <item:create:redstone_link> * 2, [
     [<item:contenttweaker:sixcolonium_plate>, <tag:items:minecraft:planks>, <item:contenttweaker:sixcolonium_plate>]
 ]);
 
-# smart_fluid_pipe
+// smart_fluid_pipe
 craftingTable.removeRecipe(<item:create:smart_fluid_pipe>);
 
 craftingTable.addShaped("smart_fluid_pipe", <item:create:smart_fluid_pipe>, [
@@ -591,7 +584,7 @@ craftingTable.addShaped("smart_fluid_pipe", <item:create:smart_fluid_pipe>, [
     [<item:create:electron_tube>]
 ]);
 
-# smart_chute
+// smart_chute
 craftingTable.removeRecipe(<item:create:smart_chute>);
 
 craftingTable.addShaped("smart_chute", <item:create:smart_chute>, [
@@ -600,21 +593,21 @@ craftingTable.addShaped("smart_chute", <item:create:smart_chute>, [
     [<item:create:electron_tube>]
 ]);
 
-# attribute_filter
+// attribute_filter
 craftingTable.removeRecipe(<item:create:attribute_filter>);
 
 craftingTable.addShaped("attribute_filter", <item:create:attribute_filter>, [
     [<item:contenttweaker:sixcolonium_nugget>, <tag:items:forge:wool>, <item:contenttweaker:sixcolonium_nugget>]
 ]);
 
-# crafter_slot_cover
+// crafter_slot_cover
 craftingTable.removeRecipe(<item:create:crafter_slot_cover>);
 
 craftingTable.addShaped("crafter_slot_cover", <item:create:crafter_slot_cover>, [
     [<item:contenttweaker:sixcolonium_nugget>, <item:contenttweaker:sixcolonium_nugget>, <item:contenttweaker:sixcolonium_nugget>]
 ]);
 
-# wand_of_symmetry
+// wand_of_symmetry
 craftingTable.removeRecipe(<item:create:wand_of_symmetry>);
 
 craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
@@ -624,7 +617,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
 ]);
 
 // mechanical_crafter
-# flywheel
+// flywheel
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:flywheel>);
 
 <recipetype:create:mechanical_crafting>.addRecipe("flywheel", <item:create:flywheel>, [
@@ -633,7 +626,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
     [air, s, s, s]
 ]);
 
-# furnace_engine
+// furnace_engine
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:furnace_engine>);
 
 <recipetype:create:mechanical_crafting>.addRecipe("furnace_engine", <item:create:furnace_engine>, [
@@ -642,13 +635,13 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
     [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, s]
 ]);
 
-<recipetype:create:mechanical_crafting>.addRecipe("furnace_engine1", <item:create:furnace_engine>, [
+<recipetype:create:mechanical_crafting>.addRecipe("furnace_engine_sticky", <item:create:furnace_engine>, [
     [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, s],
     [<item:contenttweaker:sixcolonium_plate>, sc, <item:minecraft:sticky_piston>],
     [<item:contenttweaker:sixcolonium_plate>, <item:contenttweaker:sixcolonium_plate>, s]
 ]);
 
-# extendo_grip
+// extendo_grip
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:extendo_grip>);
 
 <recipetype:create:mechanical_crafting>.addRecipe("extendo_grip", <item:create:extendo_grip>, [
@@ -659,7 +652,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
     [air, <item:create:brass_hand>, air]
 ]);
 
-# potato_cannon
+// potato_cannon
 <recipetype:create:mechanical_crafting>.removeRecipe(<item:create:potato_cannon>);
 
 <recipetype:create:mechanical_crafting>.addRecipe("potato_cannon", <item:create:potato_cannon>, [
@@ -669,6 +662,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
 
 // remove splashing recipes
 <recipetype:create:splashing>.removeRecipe(<item:minecraft:yellow_concrete>);
+
 // remove crushing recipes
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_gold_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_iron_ore>);
@@ -677,5 +671,7 @@ craftingTable.addShaped("wand_of_symmetry", <item:create:wand_of_symmetry>, [
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_silver_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_nickel_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_tin_ore>);
-<recipetype:create:crushing>.removeRecipe(<item:create:crushed_osmium_ore>);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
+
+// remove CA extract recipes
+recipes.removeByModid("createautomated");

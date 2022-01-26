@@ -32,8 +32,8 @@ craftingTable.addShaped("sixcolonium_block", <item:contenttweaker:sixcolonium_bl
 
 // 4 pebbles = 1 cobble stone
 craftingTable.addShaped("pebble2cobblestone", <item:minecraft:cobblestone>, [
-    [<item:contenttweaker:pebble>, <item:contenttweaker:pebble>],
-    [<item:contenttweaker:pebble>, <item:contenttweaker:pebble>]
+    [<item:botania:pebble>, <item:botania:pebble>],
+    [<item:botania:pebble>, <item:botania:pebble>]
 ]);
 
 // thunder_stick
@@ -50,7 +50,7 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
     [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
 ]);
 
-// log2burnt plank
+// log 2 burnt plank
 <recipetype:interactio:item_lightning>.addJSONRecipe("log2burntplank", {
   "inputs": [
     {
@@ -76,7 +76,7 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
 <recipetype:interactio:item_lightning>.addJSONRecipe("pebble2bonemeal", {
   "inputs": [
     {
-      "item": "contenttweaker:pebble",
+      "item": "botania:pebble",
       "count": 1
     }
   ],
@@ -221,13 +221,6 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
       },
       {
         "result": {
-          "item": "emendatusenigmatica:osmium_chunk",
-          "count": 1
-        },
-        "weight": 5
-      },
-      {
-        "result": {
           "item": "emendatusenigmatica:silver_chunk",
           "count": 1
         },
@@ -341,5 +334,27 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
       }
     ],
     "empty_weight": 1
+  }
+});
+
+// flint to gunpowder
+<recipetype:interactio:item_explode>.addJSONRecipe("flint_to_gunpowder", {
+  "inputs": [
+    {
+      "item": "minecraft:flint",
+      "count": 1
+    }
+  ],
+  "output": {
+    "entries": [
+      {
+        "result": {
+           "item": "minecraft:gunpowder",
+           "count": 2
+        },
+        "weight": 100
+      }
+    ],
+    "empty_weight": 0
   }
 });

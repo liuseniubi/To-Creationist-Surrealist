@@ -33,31 +33,6 @@ craftingTable.addShapeless("oak_sapling", <item:minecraft:oak_sapling> * 2, [
     <item:minecraft:dark_oak_sapling>, <item:minecraft:dark_oak_sapling>
 ]);
 
-craftingTable.addShapeless("earth_slime_sapling", <item:tconstruct:earth_slime_sapling>, [
-    <tag:items:minecraft:saplings>, <item:minecraft:slime_ball>
-]);
-
-craftingTable.addShapeless("sky_slime_sapling", <item:tconstruct:sky_slime_sapling>, [
-    <tag:items:minecraft:saplings>, <item:tconstruct:sky_slime_ball>
-]);
-
-craftingTable.addShapeless("ender_slime_sapling", <item:tconstruct:ender_slime_sapling>, [
-    <tag:items:minecraft:saplings>, <item:tconstruct:ender_slime_ball>
-]);
-
-//slime_ball
-craftingTable.addShapeless("sky_slime_ball", <item:tconstruct:sky_slime_ball>, [
-    <item:create:dough>, <item:minecraft:light_blue_dye>
-]);
-
-craftingTable.addShapeless("ender_slime_ball", <item:tconstruct:ender_slime_ball>, [
-    <item:create:dough>, <item:minecraft:purple_dye>
-]);
-
-craftingTable.addShapeless("ichor_slime_ball", <item:tconstruct:ichor_slime_ball>, [
-    <item:create:dough>, <item:minecraft:orange_dye>
-]);
-
 //wood dust
 <recipetype:create:milling>.addRecipe("wood_dust", [<item:emendatusenigmatica:wood_dust>], <tag:items:minecraft:planks>);
 
@@ -65,9 +40,6 @@ craftingTable.addShapeless("ichor_slime_ball", <item:tconstruct:ichor_slime_ball
 craftingTable.removeRecipe(<tag:items:botanypots:botany_pots>.asIIngredient());
 
 <recipetype:create:compacting>.addRecipe("botany_pot", "none", <item:botanypots:hopper_botany_pot>, [<item:minecraft:terracotta> * 4, <item:contenttweaker:sixcolonium>]);
-
-//sixcolonium_base
-<recipetype:create:compacting>.addRecipe("sixcolonium_base", "none", <item:contenttweaker:sixcolonium_base> * 2, [<item:minecraft:redstone>, <item:contenttweaker:sixcolonium_plate>]);
 
 //iron plate
 craftingTable.addShaped("iron_plate", <item:emendatusenigmatica:iron_plate> * 2, [
@@ -163,13 +135,20 @@ craftingTable.addShaped("explosion_processor", <item:custommachinery:custom_mach
     [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
 ]);
 
-//black dye to inc sac
-craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:minecraft:black_dye>]);
-
 //precision_mechanism
 <recipetype:create:sequenced_assembly>.removeRecipe(<item:create:precision_mechanism>);
 
-<recipetype:create:mixing>.addRecipe("precision_mechanism", "heated", <item:create:precision_mechanism> * 8, [<tag:items:forge:plates/iron> * 3, <tag:items:forge:ingots/zinc> * 6, <item:minecraft:ink_sac> * 3, <item:contenttweaker:sixcolonium_base>], [<fluid:contenttweaker:weakened_hak_base> * 100]);
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("precision_mechanism")
+    .transitionTo(<item:kubejs:dummy_fluid_item>)
+    .require(<item:contenttweaker:sixcolonium>)
+    .loops(2)
+    .addOutput(<item:create:precision_mechanism>, 1)
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.withFluidIngredients(<fluid:contenttweaker:weakened_hak_base> * 100))
+    .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(100))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:minecraft:wooden_buttons>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:nuggets/steel>))
+    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(100))
+);
 
 //black dye
 <recipetype:interactio:item_explode>.addJSONRecipe("black_dye", {
@@ -179,7 +158,7 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
       "count": 1
     },
     {
-      "item": "contenttweaker:pebble",
+      "item": "botania:pebble",
       "count": 1
     }
   ],
@@ -553,13 +532,6 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
       },
       {
         "result": {
-          "item": "emendatusenigmatica:osmium_dust",
-          "count": 1
-        },
-        "weight": 5
-      },
-      {
-        "result": {
           "item": "emendatusenigmatica:silver_dust",
           "count": 1
         },
@@ -595,7 +567,7 @@ craftingTable.addShapeless("blackdye2incsac", <item:minecraft:ink_sac>, [<item:m
       },
       {
         "result": {
-          "item": "contenttweaker:pebble",
+          "item": "botania:pebble",
           "count": 1
         },
         "weight": 45

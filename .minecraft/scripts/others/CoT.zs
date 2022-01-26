@@ -1,5 +1,11 @@
 #priority 114514
 
+/*
+    Author: Six_color
+    Script: cot.zs
+    Made For 2CS
+*/
+
 #loader contenttweaker
 
 import mods.contenttweaker.block.BlockBuilder;
@@ -13,12 +19,10 @@ import crafttweaker.api.item.IIngredient;
 
 var newitems as string[] = [
     "sixcolonium",
-    "sixcolonium_base",
     "sixcolonium_plate",
     "sixcolonium_nugget",
     "explosive_stick",
     "thunder_stick",
-    "pebble",
     "iron_gravel",
     "graduate",
     "primary_knowledge_fragment",
@@ -35,7 +39,11 @@ var newitems as string[] = [
     "ultimate_knowledge_catalog",
     "coin",
     "crude_steel_ingot",
-    "poor_quality_conductive_coil"
+    "nether_certification",
+    "mining_dimension_certification",
+    "end_certification",
+    "alfheim_certification",
+    "world_blender_certification"
 ];
 
 for i in newitems {
@@ -51,14 +59,7 @@ new ItemBuilder()
 new mods.contenttweaker.item.MCToolType("wrench");
 
 var newblocks as string[] = [
-    "fake_digger",
     "burnt_plank",
-    "redstone_reaction_processing_board",
-    "circuit_processing_core_board",
-    "primary_energe_transfer_block",
-    "invar_plate_metal_block",
-    "invar_casing",
-    "copper_poor_quality_coil"
 ];
 
 for i in newblocks {
@@ -66,17 +67,9 @@ for i in newblocks {
     .withHarvestTool(<tooltype:pickaxe>)
     .withHarvestLevel(1)
     .withMaxStackSize(64)
-    .withHardnessAndResistance(0.5f, 0.5f).notSolid()
+    .withHardnessAndResistance(0.5f, 0.5f)
     .build(i);
 }
-
-new BlockBuilder()
-    .withHarvestTool(<tooltype:pickaxe>)
-    .withHarvestLevel(1)
-    .notSolid()
-    .withMaxStackSize(64)
-    .withHardnessAndResistance(0.5f, 0.5f)
-    .build("copper_poor_quality_cable");
 
 new BlockBuilder()
     .withHarvestTool(<tooltype:pickaxe>)
@@ -99,8 +92,13 @@ new FluidBuilder(false, 0xff4682b4, <resource:contenttweaker:fluids/hak_base>, <
 
 new FluidBuilder(false, 0xffb0e0e6, <resource:contenttweaker:fluids/weakened_hak_base>, <resource:contenttweaker:fluids/weakened_hak_base_flow>)
     .build("weakened_hak_base");
-
 /*
+new InfuseTypeBuilder()
+    .color(0x3FC0B)
+    .build("sixcolonium_infuse_type")
+    .builder();
+    
+
     Author: Six_color
     Script: cot.zs
     Made For 2CS

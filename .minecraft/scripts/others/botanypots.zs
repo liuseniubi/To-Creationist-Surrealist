@@ -49,10 +49,12 @@ val tin = crops.getCrop("tin");
 tin.addDrop(<item:emendatusenigmatica:tin_ore>, 1);
 tin.addDrop(<item:emendatusenigmatica:tin_ingot>, 0.05);
 
+/*
 crops.create("osmium", <tag:items:forge:storage_blocks/osmium>, <blockstate:emendatusenigmatica:osmium_ore>, 3000, "six");
 val osmium = crops.getCrop("osmium");
 osmium.addDrop(<item:emendatusenigmatica:osmium_ore>, 1);
 osmium.addDrop(<item:emendatusenigmatica:osmium_ingot>, 0.05);
+*/
 
 crops.create("zinc", <tag:items:forge:storage_blocks/zinc>, <blockstate:emendatusenigmatica:zinc_ore>, 3000, "six");
 val zinc = crops.getCrop("zinc");
