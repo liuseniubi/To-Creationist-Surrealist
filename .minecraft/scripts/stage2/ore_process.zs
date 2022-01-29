@@ -137,7 +137,7 @@ for i, dust in dusts{
   var ingot1 = ingots[i];
   blastFurnace.addRecipe("blastfurnace_dust_" + i, ingot1, dust, 2.0, 100);
 }
-/*
+
 // ore to ore chunk
 var ores = [
   <tag:items:forge:ores/iron>,
@@ -158,7 +158,7 @@ var oreChunks = [
   <item:emendatusenigmatica:silver_chunk>,
   <item:emendatusenigmatica:copper_chunk>
 ];
-
+/*
 for i, ore in ores{
   var oreChunk = oreChunks[i];
   var hammers = <tag:items:forge:tools/hammers>.asIIngredient();

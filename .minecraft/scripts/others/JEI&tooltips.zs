@@ -21,8 +21,7 @@ var graduate = game.localize("2cs.jei.graduate");
 mods.jei.JEI.hideRecipe("interactio:item_lightning", "crafttweaker:chargedcoconut");
 
 // tooltips
-# ofc
-var ofc = game.localize("2cs.tooltip.onlyforcrafting");
+# only for crafing
 var ofcs as IIngredient[] = [
     <item:contenttweaker:wrench>,
     <item:contenttweaker:primary_knowledge_fragment>,
@@ -40,24 +39,18 @@ var ofcs as IIngredient[] = [
 ];
 
 for i in ofcs{
-    i.addTooltip(ofc);
+    i.addTooltip(game.localize("2cs.tooltip.onlyforcrafting"));
 }
 
-var cobblestonettp = game.localize("2cs.tooltip.cobblestone");
-<item:minecraft:cobblestone>.addTooltip(cobblestonettp);
+<item:minecraft:cobblestone>.addTooltip(game.localize("2cs.tooltip.cobblestone"));
 
-var leaves = <tag:items:minecraft:leaves>.asIIngredient();
-var leavesttp = game.localize("2cs.tooltip.leaves");
-leaves.addTooltip(leavesttp);
+<tag:items:minecraft:leaves>.asIIngredient().addTooltip(game.localize("2cs.tooltip.leaves"));
 
-var thunder_stickttp = game.localize("2cs.tooltip.thunder_stick");
-<item:contenttweaker:thunder_stick>.addTooltip(thunder_stickttp);
+<item:contenttweaker:thunder_stick>.addTooltip(game.localize("2cs.tooltip.thunder_stick"));
 
-var explosive_stickttp = game.localize("2cs.tooltip.explosive_stick");
-<item:contenttweaker:explosive_stick>.addTooltip(explosive_stickttp);
+<item:contenttweaker:explosive_stick>.addTooltip(game.localize("2cs.tooltip.explosive_stick"));
 
-var pebblettp = game.localize("2cs.tooltip.pebble");
-<item:botania:pebble>.addTooltip(pebblettp);
+<item:botania:pebble>.addTooltip(game.localize("2cs.tooltip.pebble"));
 
 var seed_ttp = game.localize("2cs.tooltip.animal_seed");
 <item:animalcrops:seeds>.withTag({entity: "minecraft:chicken" as string}).addTooltip(seed_ttp);
