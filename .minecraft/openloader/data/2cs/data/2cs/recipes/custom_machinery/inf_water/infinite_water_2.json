@@ -1,0 +1,30 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:infinite_water",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "minecraft:water[level=0]"
+			},
+			"pattern": [
+			  [
+				" a",
+				"am"
+			  ]
+			]
+		},
+		{
+			"type": "custommachinery:redstone",
+			"power": 1,
+			"comparator": ">="
+		},
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "minecraft:water",
+			"amount": 10000,
+			"mode": "output"
+		}
+	]
+}

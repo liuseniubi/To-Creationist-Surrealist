@@ -47,9 +47,6 @@ craftingTable.removeRecipe(<item:emendatusenigmatica:brass_block>);
 <recipetype:create:mixing>.removeRecipe(<item:create:crushed_brass>);
 <recipetype:create:mixing>.removeRecipe(<item:create:brass_ingot>);
 
-<recipetype:thermal:smelter>.removeRecipe(<item:create:andesite_alloy>);
-<recipetype:thermal:smelter>.removeRecipe(<item:create:brass_ingot>);
-
 // tweaks
 craftingTable.addShapeless("andesite_casing", <item:create:andesite_casing>, [<item:contenttweaker:sixcolonium_casing>]);
 

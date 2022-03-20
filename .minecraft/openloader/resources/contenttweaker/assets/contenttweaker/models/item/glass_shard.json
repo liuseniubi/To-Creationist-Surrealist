@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures" :
-  {"layer0" : "contenttweaker:item/light_yellow_dye"
+  {"layer0" : "contenttweaker:item/glass_shard"
   }
 }

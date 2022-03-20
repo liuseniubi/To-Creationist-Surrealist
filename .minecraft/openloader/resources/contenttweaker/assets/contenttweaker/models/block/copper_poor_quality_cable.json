@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "contenttweaker:block/copper_poor_quality_cable_end",
-    "side": "contenttweaker:block/copper_poor_quality_cable_sides"
-  }
-}

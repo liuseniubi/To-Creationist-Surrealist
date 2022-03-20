@@ -90,8 +90,5 @@ for i, slab in slabs{
   ]);
 }
 
-// recipetypes
-<recipetype:thermal:press>.addRecipe("sixcolonium_plate", [<item:contenttweaker:sixcolonium_plate>], <fluid:minecraft:empty>, [<item:contenttweaker:sixcolonium>], 500);
-
 // add drop
 <entitytype:minecraft:blaze>.addWeaponOnlyLootModifier("ez_blaze_rod", <item:contenttweaker:wrench>, (loots, currentContext) => [<item:minecraft:blaze_rod> * 3]);

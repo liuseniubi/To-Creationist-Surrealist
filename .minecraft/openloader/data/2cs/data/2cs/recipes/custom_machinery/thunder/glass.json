@@ -1,0 +1,34 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "2cs:thunder_processor",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "#forge:glass",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:quartz",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.2
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "emendatusenigmatica:certus_quartz_gem",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.03
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "contenttweaker:glass_shard",
+			"amount": 3,
+			"mode": "output",
+			"chance": 0.85
+		}
+	]
+}

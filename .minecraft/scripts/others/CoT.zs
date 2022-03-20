@@ -39,11 +39,11 @@ var newitems as string[] = [
     "ultimate_knowledge_catalog",
     "coin",
     "crude_steel_ingot",
+    "glass_shard",
     "nether_certification",
     "mining_dimension_certification",
     "end_certification",
-    "alfheim_certification",
-    "world_blender_certification"
+    "alfheim_certification"
 ];
 
 for i in newitems {
@@ -60,6 +60,7 @@ new mods.contenttweaker.item.MCToolType("wrench");
 
 var newblocks as string[] = [
     "burnt_plank",
+    "elementium_casing"
 ];
 
 for i in newblocks {
@@ -92,14 +93,3 @@ new FluidBuilder(false, 0xff4682b4, <resource:contenttweaker:fluids/hak_base>, <
 
 new FluidBuilder(false, 0xffb0e0e6, <resource:contenttweaker:fluids/weakened_hak_base>, <resource:contenttweaker:fluids/weakened_hak_base_flow>)
     .build("weakened_hak_base");
-/*
-new InfuseTypeBuilder()
-    .color(0x3FC0B)
-    .build("sixcolonium_infuse_type")
-    .builder();
-    
-
-    Author: Six_color
-    Script: cot.zs
-    Made For 2CS
-*/

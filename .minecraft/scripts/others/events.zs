@@ -4,7 +4,7 @@
     Made For 2CS
 */
 
-import crafttweaker.api.events.CTEventManager;
+    import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCPlayerEvent;
 import crafttweaker.api.event.entity.player.MCAdvancementEvent;
 import crafttweaker.api.event.entity.player.interact.MCPlayerInteractEvent;
@@ -28,7 +28,6 @@ import crafttweaker.api.entity.MCItemEntity;
 // tOcHeRiNo
 CTEventManager.register<MCAdvancementEvent>((event) => {
 	if(event.id == <resource:2cs:root>){
-        print("123");
         event.player.give(<item:minecraft:soul_torch>.withTag({display: {Name: "{\"translate\":\"2cs.item.fake_torcherino\", \"italic\": false}" as string}}));
     }
 });
@@ -41,9 +40,9 @@ CTEventManager.register<MCRightClickBlockEvent>((event) => {
     var world as MCWorld = player.getWorld();
     
     if(!world.isRemote() && item.definition.commandString == <item:contenttweaker:thunder_stick>.definition.commandString){
-        world.asServerWorld().server.executeCommand("summon minecraft:lightning_bolt " + pos.x + " " + pos.y + " " + pos.z);
+        world.asServerWorld().server.executeCommand("summon minecraft:lightning_bolt " + pos.x + " " + pos.y + " " + pos.z, true);
         if(!player.isCreative()){
-			world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:thunder_stick 1");
+			world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:thunder_stick 1", true);
 		}
     }
 });
@@ -58,7 +57,7 @@ CTEventManager.register<MCRightClickBlockEvent>((event) => {
     if(!world.isRemote() && item.definition.commandString == <item:contenttweaker:explosive_stick>.definition.commandString){
         world.asServerWorld().server.executeCommand("summon appliedenergistics2:tiny_tnt_primed " + pos.x + " " + pos.y + " " + pos.z);
         if(!player.isCreative()){
-			world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:explosive_stick 1");
+			world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:explosive_stick 1", true);
 		}
     }
 });
@@ -158,7 +157,7 @@ CTEventManager.register<MCRightClickBlockEvent>((event) => {
     }
 });
 
-// Any player kill a player named Six_color can get a stack of Sixcolonium
+// Any player who killed a player named Six_color can get a stack of Sixcolonium
 CTEventManager.register<MCLivingDeathEvent>((event) => {
     if(event.entityLiving is MCPlayerEntity && event.source.trueSource is MCPlayerEntity) {
         if(event.entityLiving.name == "Six_color"){

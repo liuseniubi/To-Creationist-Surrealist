@@ -16,24 +16,6 @@ recipes.removeRecipe(<item:create:crushed_nickel_ore>);
 recipes.removeRecipe(<item:create:crushed_tin_ore>);
 recipes.removeRecipe(<item:create:crushed_zinc_ore>);
 
-<recipetype:thermal:pulverizer>.removeByName("thermal:compat/create/pulverizer_create_zinc_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_tin_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_nickel_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_lead_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_silver_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_copper_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_gold_ore");
-<recipetype:thermal:pulverizer>.removeByName("thermal:machine/pulverizer/pulverizer_iron_ore");
-
-<recipetype:thermal:smelter>.removeByName("thermal:compat/create/smelter_create_zinc_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_tin_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_nickel_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_lead_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_silver_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_copper_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_gold_ore");
-<recipetype:thermal:smelter>.removeByName("thermal:machine/smelter/smelter_iron_ore");
-
 blastFurnace.removeRecipe(<item:minecraft:iron_ingot>, <item:emendatusenigmatica:iron_chunk>);
 blastFurnace.removeRecipe(<item:minecraft:gold_ingot>, <item:emendatusenigmatica:gold_chunk>);
 blastFurnace.removeRecipe(<item:emendatusenigmatica:copper_ingot>, <item:emendatusenigmatica:copper_chunk>);

@@ -29,9 +29,10 @@
     "item.contenttweaker.mining_dimension_certification":"挖矿维度凭证",
     "item.contenttweaker.end_certification":"末地凭证",
     "item.contenttweaker.alfheim_certification":"亚尔夫海姆凭证",
-    "item.contenttweaker.world_blender_certification":"混乱世界凭证",
+    "item.contenttweaker.glass_shard":"玻璃碎片",
     "block.contenttweaker.sixcolonium_block": "铯金块",
     "block.contenttweaker.sixcolonium_casing": "铯金机壳",
+    "block.contenttweaker.elementium_casing": "源质钢机壳",
     "block.contenttweaker.burnt_plank": "焦木板",
     "fluid.contenttweaker.hak_base": "哈克碱",
     "fluid.contenttweaker.weakened_hak_base": "弱化哈克碱"

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "contenttweaker:block/fake_digger",
-    "side": "contenttweaker:block/fake_digger",
-    "front": "contenttweaker:block/fake_digger_front"
-  }
-}

@@ -9,16 +9,6 @@ craftingTable.addShaped("blast_furnace", <item:minecraft:blast_furnace>, [
     [<item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>, <item:minecraft:stone_bricks>]
 ]);
 
-// machine_pyrolyzer
-craftingTable.removeRecipe(<item:thermal:machine_pyrolyzer>);
-
-craftingTable.addShaped("machine_pyrolyzer", <item:thermal:machine_pyrolyzer>, [
-    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
-    [<tag:items:forge:plates/copper>, <item:thermal:machine_frame>, <tag:items:forge:plates/copper>],
-    [<tag:items:forge:gears/constantan>, <item:minecraft:blast_furnace>, <tag:items:forge:gears/constantan>]
-]);
-
-
 // remove furnace recipes
 var deletes = [
   <item:minecraft:iron_ingot>,

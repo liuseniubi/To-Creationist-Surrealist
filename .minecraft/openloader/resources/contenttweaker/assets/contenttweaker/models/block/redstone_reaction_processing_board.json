@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "contenttweaker:block/redstone_reaction_processing_board"
-  }
-}

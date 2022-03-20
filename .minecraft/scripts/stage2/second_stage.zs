@@ -89,15 +89,6 @@ craftingTable.addShaped("mechanical_mixer", <item:create:mechanical_mixer>, [
     [wrench, <item:create:whisk>, <item:contenttweaker:primary_knowledge_catalog>.reuse()]
 ]);
 
-// water_gen
-craftingTable.removeRecipe(<item:thermal:device_water_gen>);
-
-craftingTable.addShapedMirrored("water_gen", <item:thermal:device_water_gen>, [
-    [wrench, <item:minecraft:ice>, <item:minecraft:ice>],
-    [<item:minecraft:ice>, <item:contenttweaker:sixcolonium_casing>, <item:minecraft:ice>],
-    [<item:minecraft:ice>, <item:minecraft:ice>, <item:contenttweaker:primary_knowledge_fragment>]
-]);
-
 // wrench
 craftingTable.addShaped("wrench", <item:contenttweaker:wrench>, [
     [<item:contenttweaker:sixcolonium>, air, <item:contenttweaker:sixcolonium>],

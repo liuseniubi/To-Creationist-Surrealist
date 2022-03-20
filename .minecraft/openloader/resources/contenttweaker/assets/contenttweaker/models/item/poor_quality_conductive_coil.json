@@ -1,6 +1,0 @@
-{
-  "parent" : "item/generated",
-  "textures" :
-  {"layer0" : "contenttweaker:item/poor_quality_conductive_coil"
-  }
-}

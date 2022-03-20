@@ -29,9 +29,10 @@
     "item.contenttweaker.mining_dimension_certification":"Mining Dimension Certification",
     "item.contenttweaker.end_certification":"End Certification",
     "item.contenttweaker.alfheim_certification":"Alfheim Certification",
-    "item.contenttweaker.world_blender_certification":"World Blender Certification",
+    "item.contenttweaker.glass_shard":"Glass Shard",  
     "block.contenttweaker.sixcolonium_block": "Sixcolonium Block",
     "block.contenttweaker.sixcolonium_casing": "Sixcolonium Casing",
+    "block.contenttweaker.elementium_casing": "Elementium Casing",
     "block.contenttweaker.burnt_plank": "Burnt Planks",
     "fluid.contenttweaker.hak_base": "Hak Base",
     "fluid.contenttweaker.weakened_hak_base": "Hak Base"

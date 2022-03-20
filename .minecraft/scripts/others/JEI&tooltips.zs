@@ -71,7 +71,6 @@ mods.jei.JEI.addInfo(<item:emendatusenigmatica:uranium_ore>, [orepot1, orepot2, 
 mods.jei.JEI.addInfo(<item:emendatusenigmatica:zinc_ore>, [orepot1, orepot2, orepot3]);
 
 // mods.jei.JEI.addInfo(, [""]);
-mods.jei.JEI.addInfo(<item:thermal:explosive_grenade>, [explosive]);
 mods.jei.JEI.addInfo(<item:minecraft:tnt>, [explosive]);
 mods.jei.JEI.addInfo(<item:minecraft:tnt_minecart>, [explosive]);
 mods.jei.JEI.addInfo(<item:contenttweaker:explosive_stick>, [explosive]);
