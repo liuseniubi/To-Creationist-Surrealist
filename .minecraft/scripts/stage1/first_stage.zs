@@ -8,7 +8,7 @@ craftingTable.removeByModid("emendatusenigmatica");
 
 var leaves = <tag:items:minecraft:leaves>.asIIngredient();
 
-<item:contenttweaker:burnt_plank>.burnTime = 400;
+<item:contenttweaker:burnt_planks>.burnTime = 400;
 <item:contenttweaker:thunder_stick>.burnTime = 1200;
 <item:contenttweaker:explosive_stick>.burnTime = 2000;
 leaves.burnTime = 400;
@@ -62,7 +62,7 @@ craftingTable.addShaped("explosive_stick", <item:contenttweaker:explosive_stick>
     "entries": [
       {
         "result": {
-          "item": "contenttweaker:burnt_plank",
+          "item": "contenttweaker:burnt_planks",
           "count": 3
         },
         "weight": 100

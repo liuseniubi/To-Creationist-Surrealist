@@ -4,10 +4,11 @@
     Made For 2CS
 */
 
-    import crafttweaker.api.events.CTEventManager;
+import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCPlayerEvent;
 import crafttweaker.api.event.entity.player.MCAdvancementEvent;
 import crafttweaker.api.event.entity.player.interact.MCPlayerInteractEvent;
+import crafttweaker.api.event.entity.player.interact.MCEntityInteractEvent;
 import crafttweaker.api.event.entity.player.interact.MCRightClickBlockEvent;
 import crafttweaker.api.event.entity.living.MCLivingDeathEvent;
 import crafttweaker.api.event.entity.MCEntityTravelToDimensionEvent;
@@ -55,10 +56,13 @@ CTEventManager.register<MCRightClickBlockEvent>((event) => {
     var world as MCWorld = player.getWorld();
     
     if(!world.isRemote() && item.definition.commandString == <item:contenttweaker:explosive_stick>.definition.commandString){
-        world.asServerWorld().server.executeCommand("summon appliedenergistics2:tiny_tnt_primed " + pos.x + " " + pos.y + " " + pos.z);
-        if(!player.isCreative()){
-			world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:explosive_stick 1", true);
-		}
+        if(world.getBlockState(pos).commandString != "blockstate:minecraft:water"){
+                world.asServerWorld().server.executeCommand("summon appliedenergistics2:tiny_tnt_primed " + pos.x + " " + pos.y + " " + pos.z);
+                    if(!player.isCreative()){
+			            world.asServerWorld().server.executeCommand("clear " + player.getName().getString() + " contenttweaker:explosive_stick 1", true);
+		    }
+        }
+        else return;
     }
 });
 
@@ -157,6 +161,9 @@ CTEventManager.register<MCRightClickBlockEvent>((event) => {
     }
 });
 
+
+// Easter eggs
+// Six_color
 // Any player who killed a player named Six_color can get a stack of Sixcolonium
 CTEventManager.register<MCLivingDeathEvent>((event) => {
     if(event.entityLiving is MCPlayerEntity && event.source.trueSource is MCPlayerEntity) {
@@ -165,6 +172,19 @@ CTEventManager.register<MCLivingDeathEvent>((event) => {
             var world = event.entityLiving.getWorld();
             var item = new MCItemEntity(world, pos.x, pos.y + 1, pos.z, <item:contenttweaker:sixcolonium> * 64);
             world.addEntity(item);
+        }
+    }
+});
+
+// Jelly_Aries (WIP)
+CTEventManager.register<MCEntityInteractEvent>((event) => {
+    if(event.itemStack == <item:minecraft:shears> && event.entityLiving is MCPlayerEntity) {
+        if(event.entityLiving.name == "Jelly_Aries") {
+            var pos = event.entityLiving.getPosition();
+            var world = event.entityLiving.getWorld();
+            var item = new MCItemEntity(world, pos.x, pos.y + 1, pos.z, <item:minecraft:yellow_wool> * 1);
+            world.addEntity(item);
+            event.entityLiving.attackEntityFrom(<damageSource:magic>, 1.0f) as void;
         }
     }
 });

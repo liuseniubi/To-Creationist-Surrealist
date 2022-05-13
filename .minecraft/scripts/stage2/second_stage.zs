@@ -2,6 +2,12 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.tag.MCTag;
 
+/*
+    Author: Six_color
+    Script: secong_stage.zs
+    Made For 2CS
+*/
+
 var air = <item:minecraft:air>;
 var wrench = <item:contenttweaker:wrench>.anyDamage().transformDamage();
 

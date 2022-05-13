@@ -1,0 +1,12 @@
+{
+    "2cs_test": {
+        "category":"music",
+        "subtitle":"2cs_test.sub",
+        "sounds":[
+            {
+                "name":"2cs:2cs_test"
+            }
+        ]
+    }
+
+}

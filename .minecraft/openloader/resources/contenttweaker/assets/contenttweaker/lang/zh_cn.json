@@ -1,4 +1,5 @@
 {
+    "itemGroup.contenttweaker": "CoT 物品",
     "item.contenttweaker.graduate": "毕业物品!",
     "item.contenttweaker.steel_plate": "钢板",
     "item.contenttweaker.sixcolonium": "铯金",
@@ -13,6 +14,7 @@
     "item.contenttweaker.hak_base_bucket": "哈克碱桶",
     "item.contenttweaker.weakened_hak_base_bucket": "弱化哈克碱桶",
     "item.contenttweaker.iron_gravel": "铁砂砾",
+    "item.contenttweaker.charged_certus_quartz_dust": "充能赛特斯石英粉",
     "item.contenttweaker.primary_knowledge_fragment": "初级知识残页",
     "item.contenttweaker.primary_knowledge_catalog": "初级知识目录",
     "item.contenttweaker.junior_knowledge_fragment": "中级知识残页",
@@ -33,7 +35,7 @@
     "block.contenttweaker.sixcolonium_block": "铯金块",
     "block.contenttweaker.sixcolonium_casing": "铯金机壳",
     "block.contenttweaker.elementium_casing": "源质钢机壳",
-    "block.contenttweaker.burnt_plank": "焦木板",
+    "block.contenttweaker.burnt_planks": "焦木板",
     "fluid.contenttweaker.hak_base": "哈克碱",
     "fluid.contenttweaker.weakened_hak_base": "弱化哈克碱"
 }

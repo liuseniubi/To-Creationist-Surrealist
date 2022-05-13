@@ -9,13 +9,16 @@
 #loader contenttweaker
 
 import mods.contenttweaker.block.BlockBuilder;
-import mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable;
 import mods.contenttweaker.fluid.FluidBuilder;
 import mods.contenttweaker.item.ItemBuilder;
 import mods.contenttweaker.item.ItemTypeBuilder;
 import mods.contenttweaker.item.basic.ItemBuilderBasic;
 import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.item.ItemGroup;
 import crafttweaker.api.item.IIngredient;
+import crafttweaker.api.BracketHandlers;
+
+var tab = ItemGroup.create("contenttweaker", () => BracketHandlers.getItem("contenttweaker:graduate"));
 
 var newitems as string[] = [
     "sixcolonium",
@@ -37,30 +40,34 @@ var newitems as string[] = [
     "advanced_knowledge_catalog",
     "ultimate_knowledge_fragment",
     "ultimate_knowledge_catalog",
-    "coin",
     "crude_steel_ingot",
     "glass_shard",
     "nether_certification",
     "mining_dimension_certification",
     "end_certification",
-    "alfheim_certification"
+    "alfheim_certification",
+    "charged_certus_quartz_dust"
 ];
 
 for i in newitems {
     new ItemBuilder()
     .withMaxStackSize(64)
+    .withItemGroup(tab)
     .build(i);
 }
 
 new ItemBuilder()
     .withMaxDamage(128)
+    .withItemGroup(tab)
     .build("wrench");
 
 new mods.contenttweaker.item.MCToolType("wrench");
 
 var newblocks as string[] = [
-    "burnt_plank",
-    "elementium_casing"
+    "burnt_planks",
+    "elementium_casing",
+    "alfsteel_cogwheel",
+    "elementium_cogwheel"
 ];
 
 for i in newblocks {
@@ -69,6 +76,7 @@ for i in newblocks {
     .withHarvestLevel(1)
     .withMaxStackSize(64)
     .withHardnessAndResistance(0.5f, 0.5f)
+    .withItemGroup(tab)
     .build(i);
 }
 
@@ -78,6 +86,7 @@ new BlockBuilder()
     .withLightValue(15)
     .withMaxStackSize(64)
     .withHardnessAndResistance(0.5f, 0.5f)
+    .withItemGroup(tab)
     .build("sixcolonium_block");
 
 new BlockBuilder()
@@ -86,6 +95,7 @@ new BlockBuilder()
     .withLightValue(15)
     .withMaxStackSize(64)
     .withHardnessAndResistance(0.5f, 0.5f)
+    .withItemGroup(tab)
     .build("sixcolonium_casing");
 
 new FluidBuilder(false, 0xff4682b4, <resource:contenttweaker:fluids/hak_base>, <resource:contenttweaker:fluids/hak_base_flow>)

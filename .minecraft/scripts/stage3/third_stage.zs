@@ -4,6 +4,12 @@ import mods.botania.RuneAltar;
 import mods.botania.TerraPlate;
 import mods.botania.ElvenTrade;
 
+/*
+    Author: Six_color, jocemod
+    Script: third_stage.zs
+    Made For 2CS
+*/
+
 var air = <item:minecraft:air>;
 
 // crafting table recipes
@@ -245,6 +251,36 @@ craftingTable.addShaped("calculation_processor_press", <item:appliedenergistics2
     [<tag:items:forge:ingots/elementium>, <tag:items:forge:ingots/elementium>, <tag:items:forge:ingots/elementium>]
 ]);
 
+// ME controller
+recipes.removeRecipe(<item:appliedenergistics2:controller>);
+
+craftingTable.addShaped("ae2_controller", <item:appliedenergistics2:controller>, [
+    [<item:botania:dragonstone_block>, <tag:items:appliedenergistics2:crystals/fluix>, <item:botania:dragonstone_block>],
+    [<tag:items:forge:ingots/elementium>, <item:appliedenergistics2:engineering_processor>, <tag:items:forge:ingots/elementium>],
+    [<item:botania:dragonstone_block>, <tag:items:appliedenergistics2:crystals/fluix>, <item:botania:dragonstone_block>]
+]);
+
+// charger
+recipes.removeRecipe(<item:appliedenergistics2:charger>);
+
+craftingTable.addShaped("ae2_charger", <item:appliedenergistics2:charger>, [
+    [<tag:items:forge:ingots/elementium>, <tag:items:appliedenergistics2:crystals/fluix>, <tag:items:forge:ingots/elementium>],
+    [<tag:items:forge:ingots/elementium>, <item:pipez:energy_pipe>, air],
+    [<tag:items:forge:ingots/elementium>, <tag:items:appliedenergistics2:crystals/fluix>, <tag:items:forge:ingots/elementium>]
+]);
+
+// elementium_casing
+craftingTable.addShaped("cfdsafdasf", <item:contenttweaker:elementium_casing>, [
+    [<tag:items:forge:storage_blocks/elementium>, <item:appliedenergistics2:engineering_processor>, <tag:items:forge:storage_blocks/elementium>],
+    [<tag:items:forge:gems/dragonstone>, <tag:items:forge:nuggets/terrasteel>, <tag:items:forge:gems/dragonstone>],
+    [<tag:items:forge:storage_blocks/elementium>, <item:appliedenergistics2:engineering_processor>, <tag:items:forge:storage_blocks/elementium>]
+]);
+
+// Coal Block = Charcoal Block
+craftingTable.addShapeless("coal_trans", <item:mekanism:block_charcoal>, [<tag:items:forge:storage_blocks/coal>]);
+
+craftingTable.addShapeless("coal_trans", <item:minecraft:coal_block>, [<tag:items:forge:storage_blocks/charcoal>]);
+
 // create recipes
 // glass
 <recipetype:create:mixing>.addRecipe("glass_from_glass_shard", "heated", <item:minecraft:glass>,
@@ -267,7 +303,7 @@ recipes.removeRecipe(<item:botania:pure_daisy>);
 
 // diamond
 <recipetype:create:mixing>.addRecipe("diamond", "heated", <item:minecraft:diamond> * 4,
-    [<tag:items:minecraft:coals> * 4]
+    [<tag:items:minecraft:coals> * 64]
 );
 
 // crude_steel_ingot
@@ -289,6 +325,35 @@ recipes.removeRecipe(<item:appliedenergistics2:quartz_vibrant_glass>);
 <recipetype:create:mixing>.addRecipe("quartz_vibrant_glass", "heated", <item:appliedenergistics2:quartz_vibrant_glass>,
     [<item:botania:elf_glass> * 4, <tag:items:forge:dusts/certus_quartz> * 5]
 );
+
+// quartz_glass
+recipes.removeRecipe(<item:botania:gourmaryllis>);
+
+<recipetype:create:mixing>.addRecipe("gourmaryllis", "heated", <item:botania:gourmaryllis>,
+    [<item:botania:mana_tablet>, <tag:items:minecraft:flowers>, <tag:items:forge:dyes/yellow> * 2, <tag:items:forge:dyes/red>]
+);
+
+// -Compacting
+// blaze_cake_base
+recipes.removeRecipe(<item:create:blaze_cake_base>);
+
+<recipetype:create:compacting>.addRecipe("blaze_cake_base", "none", <item:create:blaze_cake_base>, [<tag:items:forge:plates/copper>, <tag:items:forge:plates/copper>, <tag:items:forge:plates/copper>, <tag:items:forge:plates/copper>, <tag:items:forge:plates/copper>], [], 200);
+
+// charcoal
+
+<recipetype:create:compacting>.addRecipe("charcoal", "none", <item:minecraft:charcoal>, [<item:contenttweaker:burnt_planks>], [], 200);
+
+// -Mechanical Crafting
+// steel_casing
+recipes.removeRecipe(<item:mekanism:steel_casing>);
+
+<recipetype:create:mechanical_crafting>.addRecipe("steel_casing", <item:mekanism:steel_casing>, [
+    [<tag:items:forge:ingots/steel>, <tag:items:forge:ingots/elementium>, <item:appliedenergistics2:calculation_processor>, <tag:items:forge:ingots/elementium>, <tag:items:forge:ingots/steel>],
+    [<tag:items:forge:ingots/elementium>, <tag:items:forge:gears/steel>, <item:contenttweaker:junior_knowledge_fragment>, <tag:items:forge:gears/steel>, <tag:items:forge:ingots/elementium>],
+    [<item:appliedenergistics2:logic_processor>, <item:contenttweaker:junior_knowledge_fragment>, <item:contenttweaker:sixcolonium_casing>, <item:contenttweaker:junior_knowledge_fragment>, <item:appliedenergistics2:engineering_processor>],
+    [<tag:items:forge:ingots/elementium>, <tag:items:forge:gears/steel>, <item:contenttweaker:junior_knowledge_fragment>, <tag:items:forge:gears/steel>, <tag:items:forge:ingots/elementium>],
+    [<tag:items:forge:ingots/steel>, <tag:items:forge:ingots/elementium>, <tag:items:forge:ingots/steel>, <tag:items:forge:ingots/elementium>, <tag:items:forge:ingots/steel>]
+]);
 
 //botania recipes
 // -Pure Daisy
@@ -363,4 +428,59 @@ recipes.removeRecipe(<item:appliedenergistics2:silicon>);
 <recipetype:botania:elven_trade>.addRecipe("purified_certus_quartz_crystal_botania", 
     [<item:appliedenergistics2:purified_certus_quartz_crystal>],
     <item:emendatusenigmatica:certus_quartz_gem> * 2
+);
+
+// -Mythicbotany Infusion
+recipes.removeRecipe(<item:mythicbotany:alfsteel_ingot>);
+<recipetype:mythicbotany:infusion>.addJSONRecipe("alfsteel_ingot",{
+  "type": "mythicbotany:infusion",
+  "group": "infuser",
+  "output": {
+    "item": "mythicbotany:alfsteel_ingot",
+    "count": 8
+  },
+  "mana": 500000,
+  "ingredients": [
+    {
+      "tag": "forge:dusts/osmium"
+    },
+    {
+      "tag": "forge:dusts/steel"
+    },
+    {
+      "item": "botania:terrasteel_ingot"
+    }
+  ],
+  "fromColor": 16711821,
+  "toColor": 16750080
+});
+
+// Other types
+// -Inscriber
+// printed_engineering_processor
+<recipetype:appliedenergistics2:inscriber>.removeRecipe(<item:appliedenergistics2:printed_engineering_processor>);
+
+<recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("printed_engineering_processor", <item:appliedenergistics2:printed_engineering_processor>,
+    <item:botania:dragonstone>, [<item:appliedenergistics2:engineering_processor_press>]
+);
+
+// calculation_processor
+<recipetype:appliedenergistics2:inscriber>.removeRecipe(<item:appliedenergistics2:calculation_processor>);
+
+<recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("calculation_processor", <item:appliedenergistics2:calculation_processor>,
+    <item:botania:mana_powder>, [<item:appliedenergistics2:printed_calculation_processor>, <item:appliedenergistics2:printed_silicon>]
+);
+
+// engineering_processor
+<recipetype:appliedenergistics2:inscriber>.removeRecipe(<item:appliedenergistics2:engineering_processor>);
+
+<recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("engineering_processor", <item:appliedenergistics2:engineering_processor>,
+    <item:botania:mana_powder>, [<item:appliedenergistics2:printed_engineering_processor>, <item:appliedenergistics2:printed_silicon>]
+);
+
+// logic_processor
+<recipetype:appliedenergistics2:inscriber>.removeRecipe(<item:appliedenergistics2:logic_processor>);
+
+<recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("logic_processor", <item:appliedenergistics2:logic_processor>,
+    <item:botania:mana_powder>, [<item:appliedenergistics2:printed_logic_processor>, <item:appliedenergistics2:printed_silicon>]
 );

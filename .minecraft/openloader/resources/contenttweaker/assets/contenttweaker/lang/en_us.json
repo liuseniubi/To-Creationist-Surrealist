@@ -1,4 +1,5 @@
 {
+    "itemGroup.contenttweaker": "CoT items",
     "item.contenttweaker.graduate": "Congratulations!",
     "item.contenttweaker.steel_plate": "Steel Plate",
     "item.contenttweaker.sixcolonium": "Sixcoloium Ingot",
@@ -13,6 +14,7 @@
     "item.contenttweaker.hak_base_bucket": "Hak Base Bucket",
     "item.contenttweaker.weakened_hak_base_bucket": "Weakened Hak Base Bucket",
     "item.contenttweaker.iron_gravel": "Iron Gravel",
+    "item.contenttweaker.charged_certus_quartz_dust": "Charged Certus Quartz Dust",
     "item.contenttweaker.primary_knowledge_fragment": "Primary Knowledge Fragment",
     "item.contenttweaker.primary_knowledge_catalog": "Primary Knowledge Catalog",
     "item.contenttweaker.junior_knowledge_fragment": "Junior Knowledge Fragment",
@@ -33,7 +35,7 @@
     "block.contenttweaker.sixcolonium_block": "Sixcolonium Block",
     "block.contenttweaker.sixcolonium_casing": "Sixcolonium Casing",
     "block.contenttweaker.elementium_casing": "Elementium Casing",
-    "block.contenttweaker.burnt_plank": "Burnt Planks",
+    "block.contenttweaker.burnt_planks": "Burnt Planks",
     "fluid.contenttweaker.hak_base": "Hak Base",
     "fluid.contenttweaker.weakened_hak_base": "Hak Base"
 }
